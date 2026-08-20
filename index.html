@@ -1,223 +1,541 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Grupo ASINEC</title>
+<title>Grupo ASINEC</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
-    }
+<style>
 
-    header {
-      background: #0f2747;
-      color: white;
-      padding: 18px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+*{
+box-sizing:border-box;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#ffffff;
+color:#10213b;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
+header{
+background:white;
+padding:14px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #0f2747, #1f5f99);
-      color: white;
-      padding: 90px 40px;
-      text-align: center;
-    }
+.logo{
+height:65px;
+border-radius:8px;
+}
 
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+nav a{
+text-decoration:none;
+color:#10213b;
+font-weight:bold;
+margin-left:25px;
+font-size:15px;
+}
 
-    .hero p {
-      max-width: 750px;
-      margin: auto;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+nav a:hover{
+color:#087cff;
+}
 
-    .boton {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: white;
-      color: #0f2747;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+/* PORTADA */
 
-    .seccion {
-      max-width: 1150px;
-      margin: auto;
-      padding: 70px 30px;
-    }
+.hero{
+min-height:600px;
+background:linear-gradient(135deg,#031a3d,#074f9e);
+display:flex;
+align-items:center;
+justify-content:center;
+padding:70px 7%;
+gap:40px;
+color:white;
+overflow:hidden;
+}
 
-    .seccion h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
-      color: #0f2747;
-    }
+.hero-texto{
+max-width:620px;
+}
 
-    .servicios {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
+.hero-texto small{
+color:#53b5ff;
+font-weight:bold;
+font-size:17px;
+}
 
-    .tarjeta {
-      background: white;
-      padding: 28px;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
+.hero h1{
+font-size:52px;
+line-height:1.05;
+margin:15px 0;
+}
 
-    .tarjeta h3 {
-      color: #0f2747;
-      margin-top: 0;
-    }
+.hero h1 span{
+color:#48a9ff;
+}
 
-    .ia {
-      background: #eaf2fa;
-      text-align: center;
-      border-radius: 16px;
-      padding: 50px 30px;
-    }
+.hero p{
+font-size:18px;
+line-height:1.7;
+color:#e1ecfa;
+}
 
-    .ia h2 {
-      margin-top: 0;
-    }
+.botones{
+margin-top:30px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
 
-    .contacto {
-      text-align: center;
-    }
+.boton{
+display:inline-block;
+padding:15px 25px;
+border-radius:8px;
+background:#1688ff;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 
-    footer {
-      background: #0f2747;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
-  </style>
+.boton-secundario{
+background:transparent;
+border:2px solid white;
+}
+
+.robot{
+width:390px;
+max-width:42%;
+filter:drop-shadow(0 25px 30px rgba(0,0,0,.25));
+}
+
+/* SERVICIOS */
+
+.seccion{
+padding:75px 7%;
+max-width:1300px;
+margin:auto;
+}
+
+.titulo{
+text-align:center;
+margin-bottom:45px;
+}
+
+.titulo span{
+color:#087cff;
+font-size:14px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.titulo h2{
+font-size:38px;
+margin:10px 0;
+color:#08244a;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+border:1px solid #e5eaf2;
+border-radius:18px;
+padding:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(16,33,59,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 38px rgba(16,33,59,.14);
+}
+
+.card img{
+width:150px;
+height:150px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.card h3{
+font-size:22px;
+margin:5px 0 10px;
+color:#08244a;
+}
+
+.card p{
+color:#64748b;
+line-height:1.5;
+}
+
+/* IA */
+
+.ia{
+background:linear-gradient(135deg,#eef7ff,#ffffff);
+padding:70px 7%;
+}
+
+.ia-contenido{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+}
+
+.ia img{
+width:370px;
+max-width:40%;
+}
+
+.ia-texto{
+max-width:570px;
+}
+
+.ia-texto h2{
+font-size:40px;
+color:#08244a;
+margin-bottom:15px;
+}
+
+.ia-texto h2 span{
+color:#087cff;
+}
+
+.ia-texto p{
+font-size:18px;
+line-height:1.7;
+color:#53657d;
+}
+
+.ia-lista{
+margin:25px 0;
+}
+
+.ia-lista div{
+margin:12px 0;
+font-weight:bold;
+color:#16375f;
+}
+
+/* CONTACTO */
+
+.contacto{
+background:#06234a;
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.contacto h2{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.contacto p{
+font-size:18px;
+color:#d4e4f8;
+}
+
+/* FOOTER */
+
+footer{
+background:#03162f;
+color:white;
+text-align:center;
+padding:25px;
+font-size:14px;
+}
+
+/* CELULAR */
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.robot{
+max-width:80%;
+width:320px;
+}
+
+.botones{
+justify-content:center;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.ia-contenido{
+flex-direction:column;
+text-align:center;
+}
+
+.ia img{
+max-width:80%;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>GRUPO ASINEC</h1>
+<header>
 
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#ia">Asistente IA</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<img
+src="80d8e063-2d7d-4aa2-81e2-4854d6b26c05.png"
+class="logo"
+alt="Grupo ASINEC">
 
-  <section class="hero" id="inicio">
-    <h2>Gestión empresarial, cumplimiento y mejora continua</h2>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#asistente">Asistente IA</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-    <p>
-      Apoyamos a empresas y organizaciones en la implementación de sistemas
-      de gestión, auditorías, cumplimiento normativo, capacitación y mejora
-      continua.
-    </p>
+</header>
 
-    <a class="boton" href="#servicios">Conoce nuestros servicios</a>
-  </section>
 
-  <section class="seccion" id="servicios">
-    <h2>Nuestros servicios</h2>
+<section class="hero" id="inicio">
 
-    <div class="servicios">
+<div class="hero-texto">
 
-      <div class="tarjeta">
-        <h3>ISO 9001</h3>
-        <p>Gestión de la calidad y mejora continua de los procesos empresariales.</p>
-      </div>
+<small>GRUPO ASINEC</small>
 
-      <div class="tarjeta">
-        <h3>ISO 18788</h3>
-        <p>Sistemas de gestión para operaciones de seguridad privada.</p>
-      </div>
+<h1>
+Gestión empresarial,
+<span>cumplimiento y mejora continua.</span>
+</h1>
 
-      <div class="tarjeta">
-        <h3>ISO 45001</h3>
-        <p>Gestión de seguridad y salud en el trabajo.</p>
-      </div>
+<p>
+Acompañamos a organizaciones en la implementación,
+auditoría, capacitación y fortalecimiento de sistemas
+de gestión, ayudándolas a alcanzar mayores niveles
+de calidad, seguridad y confianza.
+</p>
 
-      <div class="tarjeta">
-        <h3>ISO 27001</h3>
-        <p>Gestión de seguridad de la información y protección de activos.</p>
-      </div>
+<div class="botones">
 
-      <div class="tarjeta">
-        <h3>LOPDP</h3>
-        <p>Cumplimiento de la Ley Orgánica de Protección de Datos Personales.</p>
-      </div>
+<a href="#servicios" class="boton">
+Conoce nuestros servicios
+</a>
 
-      <div class="tarjeta">
-        <h3>BASC</h3>
-        <p>Gestión de control y seguridad para organizaciones y cadenas logísticas.</p>
-      </div>
+<a href="#asistente" class="boton boton-secundario">
+Habla con ASINEC IA
+</a>
 
-    </div>
-  </section>
+</div>
 
-  <section class="seccion" id="ia">
+</div>
 
-    <div class="ia">
 
-      <h2>Asistente Inteligente ASINEC</h2>
+<img
+src="ChatGPT Imagen 20 ago 2026, 05_03_43 p.m..png"
+class="robot"
+alt="Asistente virtual ASINEC">
 
-      <p>
-        Próximamente podrás realizar consultas sobre normas ISO, identificar
-        necesidades de tu empresa, recibir orientación inicial y generar
-        documentación de apoyo mediante inteligencia artificial.
-      </p>
+</section>
 
-      <a class="boton" href="#contacto">Quiero conocer más</a>
 
-    </div>
+<section class="seccion" id="servicios">
 
-  </section>
+<div class="titulo">
+<span>NUESTROS SERVICIOS</span>
+<h2>¿Cómo podemos ayudarte?</h2>
+</div>
 
-  <section class="seccion contacto" id="contacto">
 
-    <h2>¿Necesitas asesoría?</h2>
+<div class="grid">
 
-    <p>
-      Contáctanos para conocer nuestros servicios de implementación,
-      auditoría, capacitación y consultoría empresarial.
-    </p>
 
-    <a class="boton" href="#">Contactar a Grupo ASINEC</a>
+<div class="card">
 
-  </section>
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_05_33 p.m..png">
 
-  <footer>
-    © 2026 Grupo ASINEC | Gestión empresarial y sistemas de gestión
-  </footer>
+<h3>ISO 9001</h3>
+
+<p>
+Sistema de Gestión de la Calidad y mejora continua
+de los procesos empresariales.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_10_04 p.m..png">
+
+<h3>ISO 18788</h3>
+
+<p>
+Sistema de gestión para operaciones de seguridad privada.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_11_33 p.m..png">
+
+<h3>ISO 45001</h3>
+
+<p>
+Gestión de seguridad y salud en el trabajo.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_13_41 p.m..png">
+
+<h3>ISO 27001</h3>
+
+<p>
+Gestión de seguridad de la información y protección
+de activos empresariales.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_14_22 p.m..png">
+
+<h3>LOPDP</h3>
+
+<p>
+Cumplimiento de la Ley Orgánica de Protección
+de Datos Personales.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 04_15_14 p.m..png">
+
+<h3>BASC</h3>
+
+<p>
+Gestión de control y seguridad para organizaciones
+y cadenas logísticas.
+</p>
+
+</div>
+
+
+</div>
+</section>
+
+
+<section class="ia" id="asistente">
+
+<div class="ia-contenido">
+
+
+<img
+src="ChatGPT Imagen 20 ago 2026, 05_03_43 p.m..png"
+alt="ASINEC Inteligencia Artificial">
+
+
+<div class="ia-texto">
+
+<h2>
+Conoce a <span>ASINEC IA</span>
+</h2>
+
+<p>
+Nuestro asistente inteligente estará disponible para
+orientar a empresas y usuarios sobre normas,
+sistemas de gestión y servicios de Grupo ASINEC.
+</p>
+
+<div class="ia-lista">
+
+<div>✓ Consultas sobre normas ISO</div>
+
+<div>✓ Diagnóstico inicial de tu empresa</div>
+
+<div>✓ Orientación sobre documentación</div>
+
+<div>✓ Información sobre nuestros servicios</div>
+
+<div>✓ Asistencia inteligente 24/7</div>
+
+</div>
+
+<a href="#contacto" class="boton">
+Quiero hablar con ASINEC IA
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contacto" id="contacto">
+
+<h2>¿Necesitas asesoría?</h2>
+
+<p>
+Nuestro equipo está preparado para ayudarte en
+implementación, auditoría, capacitación y consultoría.
+</p>
+
+<a href="#" class="boton">
+Contactar a Grupo ASINEC
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 Grupo ASINEC · Gestión empresarial · Cumplimiento · Mejora continua
+
+</footer>
 
 </body>
 </html>

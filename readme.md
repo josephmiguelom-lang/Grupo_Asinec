@@ -1,4 +1,4 @@
-Grupo Asinec
+GRUPO ASINEC
 
 Bienvenido a nuestra plataforma de apoyo a la gestión empresarial cumplimiento y mejora continua  
 

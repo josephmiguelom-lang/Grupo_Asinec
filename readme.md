@@ -13,3 +13,4 @@ IMPLEMENTADOR Y AUDITOR EN:
 📌ISO 45001-Salud Ocupacional
 
 📌BASC- Control y Seguridad
+

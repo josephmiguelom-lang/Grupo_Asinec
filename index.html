@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +15,8 @@ content="Grupo ASINEC. Consultoría, auditoría, capacitación, sistemas de gest
 <style>
 
 /* ==========================================================
-   VARIABLES
+   GRUPO ASINEC
+   SITIO COMPLETO
 ========================================================== */
 
 :root{
@@ -24,6 +26,7 @@ content="Grupo ASINEC. Consultoría, auditoría, capacitación, sistemas de gest
 
     --blue:#087cff;
     --blue2:#22a7ff;
+    --cyan:#6bcaff;
 
     --green:#15964a;
     --red:#d62c39;
@@ -83,8 +86,8 @@ button{
 }
 
 img{
-    display:block;
     max-width:100%;
+    display:block;
 }
 
 
@@ -182,12 +185,12 @@ img{
 .btn-outline{
     color:#fff;
 
+    background:
+    rgba(255,255,255,.07);
+
     border:
     1px solid
     rgba(255,255,255,.35);
-
-    background:
-    rgba(255,255,255,.07);
 }
 
 
@@ -206,12 +209,13 @@ img{
 
     min-height:88px;
 
-    padding:
-    13px 6%;
+    padding:13px 6%;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
+
+    gap:25px;
 
     background:
     rgba(3,20,38,.90);
@@ -247,8 +251,7 @@ img{
 .logo{
     width:220px;
 
-    padding:
-    6px 14px;
+    padding:6px 14px;
 
     border-radius:14px;
 
@@ -261,6 +264,8 @@ img{
 
 .main-nav{
     display:flex;
+    align-items:center;
+
     gap:5px;
 }
 
@@ -325,8 +330,8 @@ img{
     ),
 
     radial-gradient(
-        circle at 10% 10%,
-        rgba(28,150,78,.12),
+        circle at 8% 12%,
+        rgba(30,150,78,.13),
         transparent 24%
     ),
 
@@ -342,7 +347,6 @@ img{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     opacity:.18;
@@ -430,7 +434,6 @@ img{
     margin-top:35px;
 
     display:flex;
-
     flex-wrap:wrap;
 
     gap:13px;
@@ -442,7 +445,6 @@ img{
     min-height:580px;
 
     display:flex;
-
     justify-content:center;
     align-items:center;
 }
@@ -504,7 +506,7 @@ img{
 
 
 /* ==========================================================
-   IDENTIDAD
+   MISIÓN / VISIÓN
 ========================================================== */
 
 .identity{
@@ -638,11 +640,13 @@ img{
 
 .service-link{
     display:block;
+    height:100%;
 }
 
 .service-card{
     position:relative;
 
+    height:100%;
     min-height:410px;
 
     padding:29px;
@@ -711,7 +715,6 @@ img{
     height:220px;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 }
@@ -836,7 +839,7 @@ img{
 
 
 /* ==========================================================
-   IA
+   ASINEC IA SECCIÓN
 ========================================================== */
 
 .ai-section{
@@ -917,7 +920,6 @@ img{
     display:flex;
 
     flex-direction:column;
-
     justify-content:center;
 }
 
@@ -1004,11 +1006,122 @@ img{
 
 
 /* ==========================================================
+   REDES SOCIALES
+========================================================== */
+
+.social-section{
+    padding:
+    75px 6%;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        145deg,
+        #06172d,
+        #092f56
+    );
+}
+
+.social-container{
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr auto;
+
+    align-items:center;
+
+    gap:45px;
+}
+
+.social-kicker{
+    color:#68c9ff;
+
+    font-size:10px;
+    font-weight:900;
+
+    letter-spacing:2px;
+}
+
+.social-section h2{
+    margin-top:9px;
+
+    font-size:
+    clamp(30px,4vw,44px);
+}
+
+.social-section p{
+    max-width:560px;
+
+    margin-top:10px;
+
+    color:#c9dcec;
+
+    line-height:1.7;
+}
+
+.social-links{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+.social-button{
+    min-width:145px;
+
+    padding:
+    13px 17px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    border-radius:999px;
+
+    color:#fff;
+
+    border:
+    1px solid
+    rgba(255,255,255,.16);
+
+    background:
+    rgba(255,255,255,.07);
+
+    font-size:13px;
+    font-weight:800;
+
+    transition:.25s;
+}
+
+.social-button:hover{
+    transform:
+    translateY(-4px);
+
+    background:
+    rgba(255,255,255,.14);
+}
+
+.social-button span{
+    font-size:18px;
+    font-weight:900;
+}
+
+
+/* ==========================================================
    FOOTER
 ========================================================== */
 
 footer{
-    padding:29px 6%;
+    padding:
+    29px 6%;
 
     text-align:center;
 
@@ -1021,11 +1134,9 @@ footer{
 
 
 /* ==========================================================
-   VISTAS DE SERVICIO
+   PÁGINAS DE NORMAS
 
-   IMPORTANTE:
-   ESTAS ABREN CON CSS :target.
-   NO DEPENDEN DEL JAVASCRIPT.
+   ABREN SIN JAVASCRIPT.
 ========================================================== */
 
 .service-page{
@@ -1047,7 +1158,9 @@ footer{
 }
 
 
-/* HEADER DE NORMA */
+/* ==========================================================
+   HEADER NORMA
+========================================================== */
 
 .service-page-header{
     position:sticky;
@@ -1062,9 +1175,10 @@ footer{
     11px 6%;
 
     display:flex;
-
     align-items:center;
     justify-content:space-between;
+
+    gap:20px;
 
     background:
     rgba(3,20,38,.97);
@@ -1108,7 +1222,9 @@ footer{
 }
 
 
-/* HERO NORMA */
+/* ==========================================================
+   HERO NORMA
+========================================================== */
 
 .service-inner-hero{
     position:relative;
@@ -1119,7 +1235,6 @@ footer{
     70px 7%;
 
     display:flex;
-
     align-items:center;
 
     color:#fff;
@@ -1261,7 +1376,9 @@ footer{
 }
 
 
-/* INFORMACIÓN */
+/* ==========================================================
+   INFORMACIÓN NORMA
+========================================================== */
 
 .inner-info{
     padding:
@@ -1353,8 +1470,7 @@ footer{
 }
 
 .purchase-top{
-    padding:
-    48px;
+    padding:48px;
 
     display:grid;
 
@@ -1390,7 +1506,7 @@ footer{
 }
 
 .price-box{
-    min-width:180px;
+    min-width:185px;
 
     padding:22px;
 
@@ -1508,23 +1624,17 @@ footer{
     padding:
     14px 18px;
 
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
     border-radius:999px;
 
     cursor:pointer;
 
-    font-weight:900;
+    color:#fff;
 
     font-size:13px;
+    font-weight:900;
 }
 
 .payphone-button{
-    color:#fff;
-
     background:
     linear-gradient(
         135deg,
@@ -1534,8 +1644,6 @@ footer{
 }
 
 .transfer-button{
-    color:#fff;
-
     background:
     linear-gradient(
         135deg,
@@ -1592,7 +1700,8 @@ footer{
 }
 
 .payment-modal-head{
-    padding:24px 25px;
+    padding:
+    24px 25px;
 
     display:flex;
 
@@ -1654,7 +1763,8 @@ footer{
 }
 
 .bank-row{
-    padding:13px 14px;
+    padding:
+    13px 14px;
 
     border-radius:12px;
 
@@ -1725,7 +1835,7 @@ footer{
 
 
 /* ==========================================================
-   CHAT
+   CHAT LAUNCHER
 ========================================================== */
 
 .chat-launcher{
@@ -1790,6 +1900,11 @@ footer{
     font-size:10px;
 }
 
+
+/* ==========================================================
+   CHAT
+========================================================== */
+
 .chat-window{
     position:fixed;
 
@@ -1798,8 +1913,8 @@ footer{
 
     z-index:13000;
 
-    width:400px;
-    height:600px;
+    width:405px;
+    height:620px;
 
     max-width:
     calc(100vw - 30px);
@@ -1846,6 +1961,7 @@ footer{
 
 .chat-profile{
     display:flex;
+
     align-items:center;
 
     gap:10px;
@@ -1864,6 +1980,36 @@ footer{
     background:#fff;
 }
 
+.chat-profile strong{
+    font-size:15px;
+}
+
+.chat-status{
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-top:3px;
+
+    color:#bbe0f7;
+
+    font-size:10px;
+}
+
+.online{
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#48dd79;
+
+    box-shadow:
+    0 0 8px #48dd79;
+}
+
 .chat-close{
     width:35px;
     height:35px;
@@ -1876,7 +2022,58 @@ footer{
 
     background:
     rgba(255,255,255,.10);
+
+    font-size:20px;
 }
+
+
+/* PREGUNTAS RÁPIDAS */
+
+.quick-questions{
+    display:flex;
+
+    gap:6px;
+
+    padding:10px;
+
+    overflow-x:auto;
+
+    background:#edf5fb;
+
+    border-bottom:
+    1px solid #dce7f0;
+}
+
+.quick-questions button{
+    flex:none;
+
+    padding:
+    7px 11px;
+
+    border:
+    1px solid #d3e2ef;
+
+    border-radius:999px;
+
+    color:#345a79;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:10px;
+
+    transition:.2s;
+}
+
+.quick-questions button:hover{
+    color:#fff;
+
+    background:#087cff;
+}
+
+
+/* MENSAJES */
 
 .chat-messages{
     flex:1;
@@ -1885,7 +2082,12 @@ footer{
 
     padding:17px;
 
-    background:#eff6fb;
+    background:
+    linear-gradient(
+        180deg,
+        #f6fafd,
+        #edf5fb
+    );
 }
 
 .message{
@@ -1912,6 +2114,8 @@ footer{
 
     border:
     1px solid #dce7f0;
+
+    border-bottom-left-radius:4px;
 }
 
 .user-message{
@@ -1920,7 +2124,53 @@ footer{
     color:#fff;
 
     background:#087cff;
+
+    border-bottom-right-radius:4px;
 }
+
+.typing{
+    display:none;
+
+    padding:
+    7px 17px;
+
+    color:#66788a;
+
+    background:#edf5fb;
+
+    font-size:10px;
+}
+
+
+/* ASESOR */
+
+.human-contact{
+    display:none;
+
+    padding:14px;
+
+    text-align:center;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #28ce68,
+        #159647
+    );
+
+    font-size:12px;
+
+    font-weight:900;
+}
+
+.human-contact.show{
+    display:block;
+}
+
+
+/* INPUT */
 
 .chat-input{
     min-height:60px;
@@ -1928,6 +2178,9 @@ footer{
     display:flex;
 
     background:#fff;
+
+    border-top:
+    1px solid #dce7f0;
 }
 
 .chat-input input{
@@ -1968,7 +2221,8 @@ footer{
     .identity-head,
     .ai-box,
     .contact-grid,
-    .service-inner-grid{
+    .service-inner-grid,
+    .social-container{
         grid-template-columns:1fr;
     }
 
@@ -1993,11 +2247,13 @@ footer{
     }
 
     .services-grid{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+        1fr 1fr;
     }
 
     .process-grid{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+        1fr 1fr;
     }
 
     .service-inner-hero{
@@ -2018,6 +2274,19 @@ footer{
         margin-right:auto;
     }
 
+    .social-container{
+        text-align:center;
+    }
+
+    .social-section p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .social-links{
+        justify-content:center;
+    }
+
     .purchase-top{
         grid-template-columns:1fr;
     }
@@ -2027,6 +2296,7 @@ footer{
     }
 
 }
+
 
 @media(max-width:650px){
 
@@ -2058,7 +2328,8 @@ footer{
     }
 
     .section{
-        padding:75px 0;
+        padding:
+        75px 0;
     }
 
     .identity-card{
@@ -2155,6 +2426,11 @@ footer{
         20px 23px 30px;
     }
 
+    .chat-launcher{
+        right:13px;
+        bottom:14px;
+    }
+
     .chat-window{
         right:10px;
         bottom:10px;
@@ -2162,12 +2438,15 @@ footer{
         width:
         calc(100vw - 20px);
 
-        height:78vh;
+        height:79vh;
+
+        max-height:none;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -2211,8 +2490,12 @@ footer{
 
         </a>
 
-        <a href="#contacto">
+        <a
+        href="#contacto"
+        class="nav-contact">
+
             Contacto
+
         </a>
 
     </nav>
@@ -2462,7 +2745,9 @@ de adquisición.
 
 <!-- ISO 9001 -->
 
-<a href="#iso9001" class="service-link">
+<a
+href="#iso9001"
+class="service-link">
 
 <article class="service-card">
 
@@ -2502,7 +2787,9 @@ Conocer y adquirir →
 
 <!-- ISO 18788 -->
 
-<a href="#iso18788" class="service-link">
+<a
+href="#iso18788"
+class="service-link">
 
 <article class="service-card">
 
@@ -2542,7 +2829,9 @@ Conocer y adquirir →
 
 <!-- ISO 45001 -->
 
-<a href="#iso45001" class="service-link">
+<a
+href="#iso45001"
+class="service-link">
 
 <article class="service-card">
 
@@ -2582,7 +2871,9 @@ Conocer y adquirir →
 
 <!-- ISO 27001 -->
 
-<a href="#iso27001" class="service-link">
+<a
+href="#iso27001"
+class="service-link">
 
 <article class="service-card">
 
@@ -2622,7 +2913,9 @@ Conocer y adquirir →
 
 <!-- LOPDP -->
 
-<a href="#lopdp" class="service-link">
+<a
+href="#lopdp"
+class="service-link">
 
 <article class="service-card">
 
@@ -2662,7 +2955,9 @@ Conocer y adquirir →
 
 <!-- BASC -->
 
-<a href="#basc" class="service-link">
+<a
+href="#basc"
+class="service-link">
 
 <article class="service-card">
 
@@ -2740,39 +3035,110 @@ de cada organización.
 <div class="process-grid">
 
 <div class="process-card">
-<small>01 / DIAGNÓSTICO</small>
-<h3>Evaluamos</h3>
-<p>Identificamos necesidades, brechas y oportunidades.</p>
+
+<small>
+01 / DIAGNÓSTICO
+</small>
+
+<h3>
+Evaluamos
+</h3>
+
+<p>
+Identificamos necesidades,
+brechas y oportunidades.
+</p>
+
 </div>
 
-<div class="process-card">
-<small>02 / PLANIFICACIÓN</small>
-<h3>Diseñamos</h3>
-<p>Definimos alcance, prioridades y metodología.</p>
-</div>
 
 <div class="process-card">
-<small>03 / IMPLEMENTACIÓN</small>
-<h3>Construimos</h3>
-<p>Fortalecemos procesos, documentación y controles.</p>
+
+<small>
+02 / PLANIFICACIÓN
+</small>
+
+<h3>
+Diseñamos
+</h3>
+
+<p>
+Definimos alcance,
+prioridades y metodología.
+</p>
+
 </div>
 
-<div class="process-card">
-<small>04 / CAPACITACIÓN</small>
-<h3>Desarrollamos</h3>
-<p>Fortalecemos conocimientos y capacidades.</p>
-</div>
 
 <div class="process-card">
-<small>05 / AUDITORÍA</small>
-<h3>Evaluamos resultados</h3>
-<p>Identificamos hallazgos y oportunidades de mejora.</p>
+
+<small>
+03 / IMPLEMENTACIÓN
+</small>
+
+<h3>
+Construimos
+</h3>
+
+<p>
+Fortalecemos procesos,
+documentación y controles.
+</p>
+
 </div>
 
+
 <div class="process-card">
-<small>06 / MEJORA</small>
-<h3>Evolucionamos</h3>
-<p>Realizamos seguimiento y fortalecimiento continuo.</p>
+
+<small>
+04 / CAPACITACIÓN
+</small>
+
+<h3>
+Desarrollamos
+</h3>
+
+<p>
+Fortalecemos conocimientos
+y capacidades.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<small>
+05 / AUDITORÍA
+</small>
+
+<h3>
+Evaluamos resultados
+</h3>
+
+<p>
+Identificamos hallazgos
+y oportunidades de mejora.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<small>
+06 / MEJORA
+</small>
+
+<h3>
+Evolucionamos
+</h3>
+
+<p>
+Realizamos seguimiento
+y fortalecimiento continuo.
+</p>
+
 </div>
 
 </div>
@@ -2822,22 +3188,45 @@ sin hacerte esperar.
 
 <p class="description">
 
-ASINEC IA brinda orientación inicial
-sobre normas, auditorías,
-implementación, capacitación,
-LOPDP, BASC y nuestros servicios.
+ASINEC IA puede brindarte
+orientación inicial sobre normas,
+auditorías, implementación,
+capacitación, LOPDP,
+BASC y servicios de Grupo ASINEC.
+
+Si una consulta requiere
+atención especializada,
+podrá conectarte directamente
+con un asesor.
 
 </p>
 
 
 <div class="ai-grid">
 
-<div class="ai-item">✓ Normas ISO</div>
-<div class="ai-item">✓ Auditorías</div>
-<div class="ai-item">✓ Implementación</div>
-<div class="ai-item">✓ Capacitación</div>
-<div class="ai-item">✓ LOPDP</div>
-<div class="ai-item">✓ BASC</div>
+<div class="ai-item">
+✓ Normas ISO
+</div>
+
+<div class="ai-item">
+✓ Auditorías
+</div>
+
+<div class="ai-item">
+✓ Implementación
+</div>
+
+<div class="ai-item">
+✓ Capacitación
+</div>
+
+<div class="ai-item">
+✓ LOPDP
+</div>
+
+<div class="ai-item">
+✓ BASC
+</div>
 
 </div>
 
@@ -2874,8 +3263,10 @@ id="contacto">
 <div>
 
 <h2>
+
 Soluciones para
 hacer avanzar tu organización.
+
 </h2>
 
 <p>
@@ -2905,6 +3296,87 @@ Ver servicios →
 
 
 
+<!-- ==========================================================
+     REDES SOCIALES
+========================================================== -->
+
+<section class="social-section">
+
+<div class="social-container">
+
+
+<div>
+
+<span class="social-kicker">
+SÍGUENOS
+</span>
+
+<h2>
+
+Conecta con Grupo ASINEC
+
+</h2>
+
+<p>
+
+Síguenos en nuestras redes sociales
+para conocer novedades,
+contenidos y servicios.
+
+</p>
+
+</div>
+
+
+
+<div class="social-links">
+
+
+<a
+href="#"
+class="social-button"
+onclick="return abrirRed(event,'facebook')">
+
+<span>f</span>
+
+Facebook
+
+</a>
+
+
+<a
+href="#"
+class="social-button"
+onclick="return abrirRed(event,'instagram')">
+
+<span>◎</span>
+
+Instagram
+
+</a>
+
+
+<a
+href="#"
+class="social-button"
+onclick="return abrirRed(event,'tiktok')">
+
+<span>♪</span>
+
+TikTok
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
 <footer>
 
 © 2026 Grupo ASINEC ·
@@ -2919,7 +3391,9 @@ Seguridad · Mejora Continua
      ISO 9001
 ========================================================== -->
 
-<section class="service-page" id="iso9001">
+<section
+class="service-page"
+id="iso9001">
 
 <header class="service-page-header">
 
@@ -2928,8 +3402,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -2942,11 +3420,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / ISO 9001
+
 </div>
 
 <span class="service-tag">
+
 GESTIÓN DE LA CALIDAD
+
 </span>
 
 <h1>
@@ -2955,8 +3437,9 @@ ISO 9001
 
 <p>
 
-Gestión de calidad,
-procesos, satisfacción del cliente
+Sistema de gestión orientado
+a la calidad, procesos,
+satisfacción del cliente
 y mejora continua.
 
 </p>
@@ -2986,8 +3469,10 @@ CONOCE ISO 9001
 </span>
 
 <h2 class="title">
+
 Gestión de calidad
 con visión integral.
+
 </h2>
 
 <p class="description">
@@ -3003,44 +3488,87 @@ de procesos y mejora continua.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Fortalecer procesos,
 desempeño y orientación
 hacia clientes
 y partes interesadas.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones de distintos tamaños
 y actividades que busquen fortalecer
 su gestión de calidad.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Procesos, responsabilidades,
 objetivos, riesgos, documentación,
 indicadores y mejora.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Diagnóstico, implementación,
 capacitación, auditoría
 y acompañamiento.
+
 </p>
+
 </div>
 
 </div>
@@ -3054,6 +3582,7 @@ y acompañamiento.
 
 <div class="purchase-card">
 
+
 <div class="purchase-top">
 
 <div>
@@ -3063,7 +3592,9 @@ PAQUETE ISO 9001
 </span>
 
 <h2 class="purchase-title">
+
 Adquiere el paquete ISO 9001
+
 </h2>
 
 <p class="purchase-description">
@@ -3086,7 +3617,7 @@ INVERSIÓN
 class="price"
 data-price="iso9001">
 
-Configurar
+Precio pendiente
 
 </span>
 
@@ -3109,8 +3640,10 @@ PayPhone
 </h3>
 
 <p>
+
 Realiza el pago mediante
 el checkout seguro de PayPhone.
+
 </p>
 
 <button
@@ -3135,9 +3668,11 @@ Transferencia bancaria
 </h3>
 
 <p>
+
 Consulta los datos bancarios
 de Grupo ASINEC
 para realizar tu transferencia.
+
 </p>
 
 <button
@@ -3153,6 +3688,7 @@ Pagar por transferencia →
 
 </div>
 
+
 </div>
 
 </section>
@@ -3165,7 +3701,9 @@ Pagar por transferencia →
      ISO 18788
 ========================================================== -->
 
-<section class="service-page" id="iso18788">
+<section
+class="service-page"
+id="iso18788">
 
 <header class="service-page-header">
 
@@ -3174,8 +3712,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -3188,11 +3730,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / ISO 18788
+
 </div>
 
 <span class="service-tag">
-SEGURIDAD PRIVADA
+
+OPERACIONES DE SEGURIDAD PRIVADA
+
 </span>
 
 <h1>
@@ -3203,7 +3749,8 @@ ISO 18788
 
 Gestión para operaciones
 de seguridad privada
-y control operacional.
+y fortalecimiento
+del control operacional.
 
 </p>
 
@@ -3232,8 +3779,10 @@ CONOCE ISO 18788
 </span>
 
 <h2 class="title">
+
 Gestión responsable
 de operaciones de seguridad.
+
 </h2>
 
 <p class="description">
@@ -3249,43 +3798,86 @@ de seguridad privada.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Fortalecer la planificación,
 gestión y control responsable
 de operaciones de seguridad.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones vinculadas
 con servicios y operaciones
 de seguridad privada.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Riesgos, planificación,
 controles, responsabilidades
 y seguimiento operacional.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Diagnóstico, implementación,
 capacitación y fortalecimiento
 del sistema.
+
 </p>
+
 </div>
 
 </div>
@@ -3308,24 +3900,31 @@ PAQUETE ISO 18788
 </span>
 
 <h2 class="purchase-title">
+
 Adquiere el paquete ISO 18788
+
 </h2>
 
 <p class="purchase-description">
+
 Selecciona tu método de pago.
+
 </p>
 
 </div>
 
+
 <div class="price-box">
 
-<small>INVERSIÓN</small>
+<small>
+INVERSIÓN
+</small>
 
 <span
 class="price"
 data-price="iso18788">
 
-Configurar
+Precio pendiente
 
 </span>
 
@@ -3336,15 +3935,22 @@ Configurar
 
 <div class="payment-options">
 
+
 <div class="payment-option">
 
-<div class="payment-icon">P</div>
+<div class="payment-icon">
+P
+</div>
 
-<h3>PayPhone</h3>
+<h3>
+PayPhone
+</h3>
 
 <p>
+
 Paga mediante el checkout
 seguro de PayPhone.
+
 </p>
 
 <button
@@ -3360,13 +3966,19 @@ Pagar con PayPhone →
 
 <div class="payment-option">
 
-<div class="payment-icon">⇄</div>
+<div class="payment-icon">
+⇄
+</div>
 
-<h3>Transferencia bancaria</h3>
+<h3>
+Transferencia bancaria
+</h3>
 
 <p>
+
 Realiza una transferencia
 directamente a Grupo ASINEC.
+
 </p>
 
 <button
@@ -3378,6 +3990,7 @@ Pagar por transferencia →
 </button>
 
 </div>
+
 
 </div>
 
@@ -3393,7 +4006,9 @@ Pagar por transferencia →
      ISO 45001
 ========================================================== -->
 
-<section class="service-page" id="iso45001">
+<section
+class="service-page"
+id="iso45001">
 
 <header class="service-page-header">
 
@@ -3402,8 +4017,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -3416,11 +4035,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / ISO 45001
+
 </div>
 
 <span class="service-tag">
+
 SEGURIDAD Y SALUD EN EL TRABAJO
+
 </span>
 
 <h1>
@@ -3460,8 +4083,10 @@ CONOCE ISO 45001
 </span>
 
 <h2 class="title">
+
 Gestión enfocada
 en trabajo seguro.
+
 </h2>
 
 <p class="description">
@@ -3477,42 +4102,85 @@ en el trabajo.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Prevenir riesgos
 y fortalecer condiciones
 de trabajo seguras.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones que busquen
 fortalecer la seguridad
 y salud de sus trabajadores.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Peligros, riesgos,
 controles, objetivos,
 responsabilidades e incidentes.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Diagnóstico, implementación,
 capacitación y auditoría.
+
 </p>
+
 </div>
 
 </div>
@@ -3529,14 +4197,38 @@ capacitación y auditoría.
 <div class="purchase-top">
 
 <div>
-<span class="kicker">PAQUETE ISO 45001</span>
-<h2 class="purchase-title">Adquiere el paquete ISO 45001</h2>
-<p class="purchase-description">Selecciona tu método de pago.</p>
+
+<span class="kicker">
+PAQUETE ISO 45001
+</span>
+
+<h2 class="purchase-title">
+
+Adquiere el paquete ISO 45001
+
+</h2>
+
+<p class="purchase-description">
+Selecciona tu método de pago.
+</p>
+
 </div>
 
+
 <div class="price-box">
-<small>INVERSIÓN</small>
-<span class="price" data-price="iso45001">Configurar</span>
+
+<small>
+INVERSIÓN
+</small>
+
+<span
+class="price"
+data-price="iso45001">
+
+Precio pendiente
+
+</span>
+
 </div>
 
 </div>
@@ -3544,11 +4236,23 @@ capacitación y auditoría.
 
 <div class="payment-options">
 
+
 <div class="payment-option">
 
-<div class="payment-icon">P</div>
-<h3>PayPhone</h3>
-<p>Paga mediante el checkout seguro de PayPhone.</p>
+<div class="payment-icon">
+P
+</div>
+
+<h3>
+PayPhone
+</h3>
+
+<p>
+
+Paga mediante el checkout
+seguro de PayPhone.
+
+</p>
 
 <button
 class="payphone-button"
@@ -3563,9 +4267,20 @@ Pagar con PayPhone →
 
 <div class="payment-option">
 
-<div class="payment-icon">⇄</div>
-<h3>Transferencia bancaria</h3>
-<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
+<div class="payment-icon">
+⇄
+</div>
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<p>
+
+Realiza una transferencia
+directamente a Grupo ASINEC.
+
+</p>
 
 <button
 class="transfer-button"
@@ -3576,6 +4291,7 @@ Pagar por transferencia →
 </button>
 
 </div>
+
 
 </div>
 
@@ -3591,7 +4307,9 @@ Pagar por transferencia →
      ISO 27001
 ========================================================== -->
 
-<section class="service-page" id="iso27001">
+<section
+class="service-page"
+id="iso27001">
 
 <header class="service-page-header">
 
@@ -3600,8 +4318,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -3614,11 +4336,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / ISO 27001
+
 </div>
 
 <span class="service-tag">
+
 SEGURIDAD DE LA INFORMACIÓN
+
 </span>
 
 <h1>
@@ -3658,8 +4384,10 @@ CONOCE ISO 27001
 </span>
 
 <h2 class="title">
+
 Protección estructurada
 de la información.
+
 </h2>
 
 <p class="description">
@@ -3674,42 +4402,85 @@ de seguridad de la información.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Fortalecer la protección
 y gestión de información
 relevante para la organización.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones que manejan
 datos, tecnología
 e información crítica.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Activos, riesgos,
 controles, accesos,
 incidentes y seguimiento.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Diagnóstico, implementación,
 capacitación y acompañamiento.
+
 </p>
+
 </div>
 
 </div>
@@ -3726,14 +4497,38 @@ capacitación y acompañamiento.
 <div class="purchase-top">
 
 <div>
-<span class="kicker">PAQUETE ISO 27001</span>
-<h2 class="purchase-title">Adquiere el paquete ISO 27001</h2>
-<p class="purchase-description">Selecciona tu método de pago.</p>
+
+<span class="kicker">
+PAQUETE ISO 27001
+</span>
+
+<h2 class="purchase-title">
+
+Adquiere el paquete ISO 27001
+
+</h2>
+
+<p class="purchase-description">
+Selecciona tu método de pago.
+</p>
+
 </div>
 
+
 <div class="price-box">
-<small>INVERSIÓN</small>
-<span class="price" data-price="iso27001">Configurar</span>
+
+<small>
+INVERSIÓN
+</small>
+
+<span
+class="price"
+data-price="iso27001">
+
+Precio pendiente
+
+</span>
+
 </div>
 
 </div>
@@ -3741,23 +4536,58 @@ capacitación y acompañamiento.
 
 <div class="payment-options">
 
-<div class="payment-option">
-<div class="payment-icon">P</div>
-<h3>PayPhone</h3>
-<p>Paga mediante el checkout seguro de PayPhone.</p>
-<button class="payphone-button" onclick="pagarPayPhone('iso27001')">
-Pagar con PayPhone →
-</button>
-</div>
 
 <div class="payment-option">
-<div class="payment-icon">⇄</div>
-<h3>Transferencia bancaria</h3>
-<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
-<button class="transfer-button" onclick="abrirTransferencia('iso27001')">
-Pagar por transferencia →
-</button>
+
+<div class="payment-icon">
+P
 </div>
+
+<h3>
+PayPhone
+</h3>
+
+<p>
+Paga mediante el checkout
+seguro de PayPhone.
+</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('iso27001')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">
+⇄
+</div>
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<p>
+Realiza una transferencia
+directamente a Grupo ASINEC.
+</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('iso27001')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
 
 </div>
 
@@ -3773,7 +4603,9 @@ Pagar por transferencia →
      LOPDP
 ========================================================== -->
 
-<section class="service-page" id="lopdp">
+<section
+class="service-page"
+id="lopdp">
 
 <header class="service-page-header">
 
@@ -3782,8 +4614,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -3796,11 +4632,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / LOPDP
+
 </div>
 
 <span class="service-tag">
+
 PROTECCIÓN DE DATOS PERSONALES
+
 </span>
 
 <h1>
@@ -3839,8 +4679,10 @@ CONOCE LOPDP
 </span>
 
 <h2 class="title">
+
 Fortalecer la gestión
 de datos personales.
+
 </h2>
 
 <p class="description">
@@ -3848,8 +4690,8 @@ de datos personales.
 La Ley Orgánica de Protección
 de Datos Personales establece
 un marco relacionado
-con el tratamiento
-y protección de información personal.
+con el tratamiento y protección
+de información personal.
 
 </p>
 
@@ -3857,42 +4699,85 @@ y protección de información personal.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Fortalecer prácticas responsables
 de tratamiento
 y protección de datos.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones que recopilan,
 usan o administran
 datos personales.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Procesos, responsabilidades,
 documentación y controles.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Orientación y acompañamiento
-para fortalecer
+general para fortalecer
 la gestión de datos.
+
 </p>
+
 </div>
 
 </div>
@@ -3909,14 +4794,38 @@ la gestión de datos.
 <div class="purchase-top">
 
 <div>
-<span class="kicker">PAQUETE LOPDP</span>
-<h2 class="purchase-title">Adquiere el paquete LOPDP</h2>
-<p class="purchase-description">Selecciona tu método de pago.</p>
+
+<span class="kicker">
+PAQUETE LOPDP
+</span>
+
+<h2 class="purchase-title">
+
+Adquiere el paquete LOPDP
+
+</h2>
+
+<p class="purchase-description">
+Selecciona tu método de pago.
+</p>
+
 </div>
 
+
 <div class="price-box">
-<small>INVERSIÓN</small>
-<span class="price" data-price="lopdp">Configurar</span>
+
+<small>
+INVERSIÓN
+</small>
+
+<span
+class="price"
+data-price="lopdp">
+
+Precio pendiente
+
+</span>
+
 </div>
 
 </div>
@@ -3924,23 +4833,58 @@ la gestión de datos.
 
 <div class="payment-options">
 
-<div class="payment-option">
-<div class="payment-icon">P</div>
-<h3>PayPhone</h3>
-<p>Paga mediante el checkout seguro de PayPhone.</p>
-<button class="payphone-button" onclick="pagarPayPhone('lopdp')">
-Pagar con PayPhone →
-</button>
-</div>
 
 <div class="payment-option">
-<div class="payment-icon">⇄</div>
-<h3>Transferencia bancaria</h3>
-<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
-<button class="transfer-button" onclick="abrirTransferencia('lopdp')">
-Pagar por transferencia →
-</button>
+
+<div class="payment-icon">
+P
 </div>
+
+<h3>
+PayPhone
+</h3>
+
+<p>
+Paga mediante el checkout
+seguro de PayPhone.
+</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('lopdp')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">
+⇄
+</div>
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<p>
+Realiza una transferencia
+directamente a Grupo ASINEC.
+</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('lopdp')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
 
 </div>
 
@@ -3956,7 +4900,9 @@ Pagar por transferencia →
      BASC
 ========================================================== -->
 
-<section class="service-page" id="basc">
+<section
+class="service-page"
+id="basc">
 
 <header class="service-page-header">
 
@@ -3965,8 +4911,12 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a href="#servicios" class="back-button">
+<a
+href="#servicios"
+class="back-button">
+
 ← Volver a servicios
+
 </a>
 
 </header>
@@ -3979,11 +4929,15 @@ alt="Grupo ASINEC">
 <div>
 
 <div class="breadcrumb">
+
 INICIO / SERVICIOS / BASC
+
 </div>
 
 <span class="service-tag">
+
 CONTROL Y SEGURIDAD
+
 </span>
 
 <h1>
@@ -4023,8 +4977,10 @@ CONOCE BASC
 </span>
 
 <h2 class="title">
+
 Control y seguridad
 para operaciones logísticas.
+
 </h2>
 
 <p class="description">
@@ -4041,42 +4997,85 @@ y cadenas logísticas.
 <div class="inner-grid">
 
 <div class="info-card">
-<small>01 / PROPÓSITO</small>
-<h3>¿Qué busca?</h3>
+
+<small>
+01 / PROPÓSITO
+</small>
+
+<h3>
+¿Qué busca?
+</h3>
+
 <p>
+
 Fortalecer controles,
 gestión de riesgos
 y prácticas de seguridad.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>02 / APLICACIÓN</small>
-<h3>¿Para quién?</h3>
+
+<small>
+02 / APLICACIÓN
+</small>
+
+<h3>
+¿Para quién?
+</h3>
+
 <p>
+
 Organizaciones vinculadas
 con comercio, logística
 y cadenas de suministro.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>03 / GESTIÓN</small>
-<h3>¿Qué puede involucrar?</h3>
+
+<small>
+03 / GESTIÓN
+</small>
+
+<h3>
+¿Qué puede involucrar?
+</h3>
+
 <p>
+
 Riesgos, controles,
 proveedores, procesos
 y seguridad operacional.
+
 </p>
+
 </div>
 
+
 <div class="info-card">
-<small>04 / ASINEC</small>
-<h3>¿Cómo podemos apoyar?</h3>
+
+<small>
+04 / ASINEC
+</small>
+
+<h3>
+¿Cómo podemos apoyar?
+</h3>
+
 <p>
+
 Diagnóstico, implementación,
 capacitación y fortalecimiento.
+
 </p>
+
 </div>
 
 </div>
@@ -4093,14 +5092,38 @@ capacitación y fortalecimiento.
 <div class="purchase-top">
 
 <div>
-<span class="kicker">PAQUETE BASC</span>
-<h2 class="purchase-title">Adquiere el paquete BASC</h2>
-<p class="purchase-description">Selecciona tu método de pago.</p>
+
+<span class="kicker">
+PAQUETE BASC
+</span>
+
+<h2 class="purchase-title">
+
+Adquiere el paquete BASC
+
+</h2>
+
+<p class="purchase-description">
+Selecciona tu método de pago.
+</p>
+
 </div>
 
+
 <div class="price-box">
-<small>INVERSIÓN</small>
-<span class="price" data-price="basc">Configurar</span>
+
+<small>
+INVERSIÓN
+</small>
+
+<span
+class="price"
+data-price="basc">
+
+Precio pendiente
+
+</span>
+
 </div>
 
 </div>
@@ -4108,23 +5131,58 @@ capacitación y fortalecimiento.
 
 <div class="payment-options">
 
-<div class="payment-option">
-<div class="payment-icon">P</div>
-<h3>PayPhone</h3>
-<p>Paga mediante el checkout seguro de PayPhone.</p>
-<button class="payphone-button" onclick="pagarPayPhone('basc')">
-Pagar con PayPhone →
-</button>
-</div>
 
 <div class="payment-option">
-<div class="payment-icon">⇄</div>
-<h3>Transferencia bancaria</h3>
-<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
-<button class="transfer-button" onclick="abrirTransferencia('basc')">
-Pagar por transferencia →
-</button>
+
+<div class="payment-icon">
+P
 </div>
+
+<h3>
+PayPhone
+</h3>
+
+<p>
+Paga mediante el checkout
+seguro de PayPhone.
+</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('basc')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">
+⇄
+</div>
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<p>
+Realiza una transferencia
+directamente a Grupo ASINEC.
+</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('basc')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
 
 </div>
 
@@ -4186,7 +5244,7 @@ Banco
 </small>
 
 <strong id="bankName">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4199,7 +5257,7 @@ Titular
 </small>
 
 <strong id="bankHolder">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4212,7 +5270,7 @@ Tipo de cuenta
 </small>
 
 <strong id="bankType">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4225,7 +5283,7 @@ Número de cuenta
 </small>
 
 <strong id="bankAccount">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4238,7 +5296,7 @@ Identificación
 </small>
 
 <strong id="bankId">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4251,7 +5309,7 @@ Valor
 </small>
 
 <strong id="bankAmount">
-PENDIENTE
+Pendiente
 </strong>
 
 </div>
@@ -4262,9 +5320,12 @@ PENDIENTE
 
 <div class="bank-warning">
 
-La transferencia se realiza directamente
-a la cuenta bancaria de Grupo ASINEC.
-No ingreses datos de tu tarjeta
+La transferencia se realiza
+directamente a la cuenta
+de Grupo ASINEC.
+
+Nunca ingreses claves bancarias
+ni claves de tarjetas
 dentro de esta página.
 
 </div>
@@ -4288,7 +5349,7 @@ Copiar datos de transferencia
 
 
 <!-- ==========================================================
-     ASINEC IA
+     BOTÓN ASINEC IA
 ========================================================== -->
 
 <button
@@ -4298,7 +5359,7 @@ onclick="abrirChat()">
 
 <img
 src="./ASISTENTE.png"
-alt="">
+alt="ASINEC IA">
 
 <span>
 
@@ -4316,11 +5377,17 @@ Consulta rápida
 
 
 
+<!-- ==========================================================
+     CHAT ASINEC IA
+========================================================== -->
+
 <div
 class="chat-window"
 id="chatWindow">
 
+
 <div class="chat-head">
+
 
 <div class="chat-profile">
 
@@ -4329,20 +5396,108 @@ src="./ASISTENTE.png"
 alt="ASINEC IA">
 
 <div>
-<strong>ASINEC IA</strong>
-<br>
-<small>Asistente disponible</small>
+
+<strong>
+ASINEC IA
+</strong>
+
+<div class="chat-status">
+
+<span class="online"></span>
+
+Asistente disponible
+
 </div>
 
 </div>
+
+</div>
+
 
 <button
 class="chat-close"
 onclick="cerrarChat()">
+
 ×
+
 </button>
 
+
 </div>
+
+
+
+<!-- PREGUNTAS RÁPIDAS -->
+
+<div class="quick-questions">
+
+
+<button
+onclick="preguntaRapida('¿Qué es ISO 9001?')">
+
+ISO 9001
+
+</button>
+
+
+<button
+onclick="preguntaRapida('¿Qué es ISO 18788?')">
+
+ISO 18788
+
+</button>
+
+
+<button
+onclick="preguntaRapida('¿Qué es ISO 45001?')">
+
+ISO 45001
+
+</button>
+
+
+<button
+onclick="preguntaRapida('¿Qué es ISO 27001?')">
+
+ISO 27001
+
+</button>
+
+
+<button
+onclick="preguntaRapida('¿Qué es LOPDP?')">
+
+LOPDP
+
+</button>
+
+
+<button
+onclick="preguntaRapida('¿Qué es BASC?')">
+
+BASC
+
+</button>
+
+
+<button
+onclick="preguntaRapida('Necesito una auditoría')">
+
+Auditoría
+
+</button>
+
+
+<button
+onclick="preguntaRapida('Necesito un asesor')">
+
+Asesor
+
+</button>
+
+
+</div>
+
 
 
 <div
@@ -4353,11 +5508,9 @@ id="chatMessages">
 
 ¡Hola! 👋 Soy ASINEC IA.
 
-Puedo brindarte una orientación inicial
-sobre ISO 9001, ISO 18788,
-ISO 45001, ISO 27001,
-LOPDP, BASC y los servicios
-de Grupo ASINEC.
+Puedo brindarte una primera orientación sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC, auditorías, implementación, capacitación y los servicios de Grupo ASINEC.
+
+Si tu consulta requiere atención especializada o no tengo información suficiente para responder con seguridad, te conectaré directamente con un asesor.
 
 ¿En qué puedo ayudarte?
 
@@ -4366,18 +5519,49 @@ de Grupo ASINEC.
 </div>
 
 
+
+<div
+class="typing"
+id="typing">
+
+ASINEC IA está escribiendo...
+
+</div>
+
+
+
+<!-- ASESOR WHATSAPP -->
+
+<a
+class="human-contact"
+id="humanContact"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20vengo%20desde%20ASINEC%20IA%20y%20necesito%20atenci%C3%B3n%20personalizada."
+target="_blank"
+rel="noopener">
+
+Hablar con un asesor por WhatsApp →
+
+</a>
+
+
+
 <div class="chat-input">
 
 <input
 id="chatInput"
-placeholder="Escribe tu consulta..."
-autocomplete="off">
+type="text"
+autocomplete="off"
+placeholder="Escribe tu consulta...">
 
-<button onclick="enviarMensaje()">
+<button
+onclick="enviarMensaje()">
+
 ➤
+
 </button>
 
 </div>
+
 
 </div>
 
@@ -4388,17 +5572,20 @@ autocomplete="off">
 /* ==========================================================
    CONFIGURACIÓN DE PAGOS
 
-   ESTA ES LA ÚNICA PARTE QUE TENDREMOS
-   QUE COMPLETAR CON TUS DATOS REALES.
+   RELLENAR DESPUÉS CON DATOS REALES.
 ========================================================== */
 
-
 /*
-NO COLOQUES AQUÍ CONTRASEÑAS,
-TOKENS NI CLAVES PRIVADAS DE PAYPHONE.
+IMPORTANTE:
 
-Aquí solamente se colocan
-LINKS PÚBLICOS DE COBRO/CHECKOUT.
+NO coloques aquí:
+- contraseñas
+- claves privadas
+- tokens secretos de PayPhone
+- claves bancarias
+
+En "payphone" solamente debe ir
+un ENLACE PÚBLICO de cobro/check-out.
 */
 
 
@@ -4518,6 +5705,30 @@ const pagos = {
 
 
 /* ==========================================================
+   CONFIGURACIÓN REDES SOCIALES
+========================================================== */
+
+/*
+Cuando tengas las URL oficiales,
+solo colócalas aquí.
+*/
+
+const redesSociales = {
+
+    facebook:
+    "",
+
+    instagram:
+    "",
+
+    tiktok:
+    ""
+
+};
+
+
+
+/* ==========================================================
    MOSTRAR PRECIOS
 ========================================================== */
 
@@ -4528,6 +5739,7 @@ document
 .forEach(
 
     function(elemento){
+
 
         const codigo =
         elemento.dataset.price;
@@ -4583,29 +5795,15 @@ function pagarPayPhone(codigo){
     }
 
 
-    /*
-    Cuando coloques el link público
-    de cobro de PayPhone,
-    esta función enviará al cliente
-    directamente al checkout.
-    */
-
-
     if(
         paquete.payphone &&
         paquete.payphone.trim() !== ""
     ){
 
         window.open(
-
             paquete.payphone,
-
-            "_blank",
-
-            "noopener"
-
+            "_blank"
         );
-
 
         return;
 
@@ -4614,7 +5812,7 @@ function pagarPayPhone(codigo){
 
     alert(
 
-        "Este pago con PayPhone todavía necesita el enlace de cobro de " +
+        "Todavía falta configurar el enlace público de pago PayPhone para " +
         paquete.nombre +
         "."
 
@@ -4758,7 +5956,7 @@ function cerrarTransferencia(){
 
 
 /* ==========================================================
-   COPIAR DATOS
+   COPIAR TRANSFERENCIA
 ========================================================== */
 
 function copiarDatosTransferencia(){
@@ -4778,8 +5976,11 @@ function copiarDatosTransferencia(){
     }
 
 
-    const paquete =
-    paqueteTransferencia;
+    if(!paqueteTransferencia){
+
+        return;
+
+    }
 
 
     const texto =
@@ -4787,10 +5988,10 @@ function copiarDatosTransferencia(){
 `GRUPO ASINEC
 
 Paquete:
-${paquete.nombre}
+${paqueteTransferencia.nombre}
 
 Valor:
-$${paquete.precio}
+$${paqueteTransferencia.precio}
 
 Banco:
 ${pagos.banco.nombre}
@@ -4808,27 +6009,317 @@ Identificación:
 ${pagos.banco.identificacion}`;
 
 
+    if(
+        navigator.clipboard
+    ){
 
-    navigator
-    .clipboard
-    .writeText(texto)
-    .then(
+        navigator
+        .clipboard
+        .writeText(texto)
+        .then(
 
+            function(){
+
+                alert(
+                    "Datos de transferencia copiados."
+                );
+
+            }
+
+        )
+        .catch(
+
+            function(){
+
+                alert(
+                    "No fue posible copiar automáticamente."
+                );
+
+            }
+
+        );
+
+    }
+
+    else{
+
+        alert(texto);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   REDES
+========================================================== */
+
+function abrirRed(event,red){
+
+
+    event.preventDefault();
+
+
+    const url =
+    redesSociales[red];
+
+
+    if(!url){
+
+        alert(
+
+            "El enlace oficial de " +
+            red +
+            " todavía está pendiente de configurar."
+
+        );
+
+        return false;
+
+    }
+
+
+    window.open(
+        url,
+        "_blank"
+    );
+
+
+    return false;
+
+}
+
+
+
+/* ==========================================================
+   ASINEC IA
+========================================================== */
+
+const chatWindow =
+document.getElementById(
+    "chatWindow"
+);
+
+
+const chatLauncher =
+document.getElementById(
+    "chatLauncher"
+);
+
+
+const chatMessages =
+document.getElementById(
+    "chatMessages"
+);
+
+
+const chatInput =
+document.getElementById(
+    "chatInput"
+);
+
+
+const typing =
+document.getElementById(
+    "typing"
+);
+
+
+const humanContact =
+document.getElementById(
+    "humanContact"
+);
+
+
+
+function abrirChat(){
+
+
+    chatWindow
+    .classList
+    .add(
+        "open"
+    );
+
+
+    chatLauncher.style.display =
+    "none";
+
+
+    setTimeout(
         function(){
 
-            alert(
-                "Datos de transferencia copiados."
-            );
+            chatInput.focus();
+
+        },
+
+        150
+    );
+
+}
+
+
+
+function cerrarChat(){
+
+
+    chatWindow
+    .classList
+    .remove(
+        "open"
+    );
+
+
+    chatLauncher.style.display =
+    "flex";
+
+}
+
+
+
+function preguntaRapida(texto){
+
+
+    chatInput.value =
+    texto;
+
+
+    enviarMensaje();
+
+}
+
+
+
+chatInput
+.addEventListener(
+
+    "keydown",
+
+    function(event){
+
+
+        if(
+            event.key === "Enter"
+        ){
+
+            event.preventDefault();
+
+            enviarMensaje();
 
         }
 
-    )
-    .catch(
+    }
 
-        function(){
+);
 
-            alert(
-                "No fue posible copiar automáticamente."
+
+
+function agregarMensaje(
+    texto,
+    clase
+){
+
+
+    const div =
+    document.createElement(
+        "div"
+    );
+
+
+    div.className =
+    "message " + clase;
+
+
+    div.textContent =
+    texto;
+
+
+    chatMessages.appendChild(
+        div
+    );
+
+
+    chatMessages.scrollTop =
+    chatMessages.scrollHeight;
+
+}
+
+
+
+function normalizar(texto){
+
+
+    return texto
+
+    .toLowerCase()
+
+    .normalize("NFD")
+
+    .replace(
+        /[\u0300-\u036f]/g,
+        ""
+    );
+
+}
+
+
+
+/* ==========================================================
+   SABER CUÁNDO ENVIAR A ASESOR
+========================================================== */
+
+function requiereAsesor(texto){
+
+
+    const t =
+    normalizar(texto);
+
+
+    const palabras = [
+
+        "asesor",
+        "asesora",
+        "asesoria",
+
+        "persona",
+        "humano",
+
+        "hablar con alguien",
+        "hablar con una persona",
+
+        "telefono",
+        "whatsapp",
+
+        "llamada",
+        "llamar",
+
+        "reunion",
+        "visita",
+
+        "cotizacion",
+        "cotizar",
+
+        "propuesta",
+
+        "contratar",
+        "contratacion",
+
+        "personalizado",
+        "personalizada",
+
+        "certificar",
+        "certificacion"
+
+    ];
+
+
+    return palabras.some(
+
+        function(palabra){
+
+            return t.includes(
+                palabra
             );
 
         }
@@ -4840,122 +6331,303 @@ ${pagos.banco.identificacion}`;
 
 
 /* ==========================================================
-   CHAT
+   RESPUESTAS DE ASINEC IA
 ========================================================== */
 
-const chatWindow =
-document.getElementById(
-    "chatWindow"
-);
-
-const chatLauncher =
-document.getElementById(
-    "chatLauncher"
-);
-
-const chatMessages =
-document.getElementById(
-    "chatMessages"
-);
-
-const chatInput =
-document.getElementById(
-    "chatInput"
-);
+function obtenerRespuesta(pregunta){
 
 
-
-function abrirChat(){
-
-    chatWindow.classList.add(
-        "open"
+    const t =
+    normalizar(
+        pregunta
     );
 
-    chatLauncher.style.display =
-    "none";
 
-    setTimeout(
-        function(){
+    /* SALUDO */
 
-            chatInput.focus();
+    if(
+        t.includes("hola") ||
+        t.includes("buenas") ||
+        t.includes("buen dia") ||
+        t.includes("buenas tardes")
+    ){
 
-        },
-        150
-    );
+        return{
 
-}
+            texto:
 
+            "¡Hola! 👋 Puedo orientarte sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC, auditorías, implementación, capacitación y servicios de Grupo ASINEC. ¿Qué deseas conocer?",
 
+            asesor:false
 
-function cerrarChat(){
-
-    chatWindow.classList.remove(
-        "open"
-    );
-
-    chatLauncher.style.display =
-    "flex";
-
-}
-
-
-
-chatInput.addEventListener(
-"keydown",
-function(event){
-
-    if(event.key === "Enter"){
-
-        event.preventDefault();
-
-        enviarMensaje();
+        };
 
     }
 
-});
+
+
+    /* ISO 9001 */
+
+    if(t.includes("9001")){
+
+        return{
+
+            texto:
+
+            "ISO 9001 está relacionada con sistemas de gestión de la calidad. Su enfoque incluye procesos, satisfacción del cliente, desempeño y mejora continua. Puedes abrir la sección ISO 9001 de nuestra página para conocer el servicio completo.",
+
+            asesor:false
+
+        };
+
+    }
 
 
 
-function agregarMensaje(
-    texto,
-    clase
-){
+    /* ISO 18788 */
 
-    const div =
-    document.createElement(
-        "div"
-    );
+    if(t.includes("18788")){
 
-    div.className =
-    "message " + clase;
+        return{
 
-    div.textContent =
-    texto;
+            texto:
 
-    chatMessages.appendChild(
-        div
-    );
+            "ISO 18788 está relacionada con sistemas de gestión para operaciones de seguridad privada y el fortalecimiento del control operacional. Puedes abrir su sección para conocer nuestro servicio.",
 
-    chatMessages.scrollTop =
-    chatMessages.scrollHeight;
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* ISO 45001 */
+
+    if(t.includes("45001")){
+
+        return{
+
+            texto:
+
+            "ISO 45001 está orientada a sistemas de gestión de seguridad y salud en el trabajo, prevención de riesgos laborales y fortalecimiento de condiciones de trabajo seguras.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* ISO 27001 */
+
+    if(t.includes("27001")){
+
+        return{
+
+            texto:
+
+            "ISO 27001 está relacionada con sistemas de gestión de seguridad de la información, gestión de riesgos y protección de activos de información.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* LOPDP */
+
+    if(
+        t.includes("lopdp") ||
+        t.includes("proteccion de datos") ||
+        t.includes("datos personales")
+    ){
+
+        return{
+
+            texto:
+
+            "La LOPDP está relacionada con la protección y gestión responsable de datos personales. Grupo ASINEC puede brindar orientación general y acompañamiento en este ámbito. Para situaciones legales específicas puede ser necesario un análisis especializado.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* BASC */
+
+    if(t.includes("basc")){
+
+        return{
+
+            texto:
+
+            "BASC está relacionado con sistemas de gestión de control y seguridad aplicables a organizaciones y cadenas logísticas.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* AUDITORÍA */
+
+    if(
+        t.includes("auditoria") ||
+        t.includes("auditar")
+    ){
+
+        return{
+
+            texto:
+
+            "Una auditoría permite evaluar un sistema de gestión, detectar hallazgos e identificar oportunidades de mejora. Grupo ASINEC puede brindar acompañamiento relacionado con procesos de auditoría.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* IMPLEMENTACIÓN */
+
+    if(
+        t.includes("implementacion") ||
+        t.includes("implementar")
+    ){
+
+        return{
+
+            texto:
+
+            "Grupo ASINEC puede acompañar procesos de implementación y fortalecimiento de sistemas de gestión. El alcance depende de la norma y las características de cada organización.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* CAPACITACIÓN */
+
+    if(
+        t.includes("capacitacion") ||
+        t.includes("capacitar") ||
+        t.includes("curso")
+    ){
+
+        return{
+
+            texto:
+
+            "Grupo ASINEC contempla servicios de capacitación relacionados con sistemas de gestión, cumplimiento y fortalecimiento organizacional.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* SERVICIOS */
+
+    if(
+        t.includes("servicio") ||
+        t.includes("que hacen") ||
+        t.includes("que ofrecen")
+    ){
+
+        return{
+
+            texto:
+
+            "Grupo ASINEC trabaja en consultoría, implementación, auditoría, capacitación y fortalecimiento de sistemas de gestión, incluyendo ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP y BASC.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* COMPRA */
+
+    if(
+        t.includes("comprar") ||
+        t.includes("pagar") ||
+        t.includes("pago") ||
+        t.includes("payphone") ||
+        t.includes("transferencia")
+    ){
+
+        return{
+
+            texto:
+
+            "Puedes adquirir un paquete directamente desde la sección de la norma correspondiente. Allí encontrarás las opciones PayPhone y transferencia bancaria.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* PRECIO */
+
+    if(
+        t.includes("precio") ||
+        t.includes("costo")
+    ){
+
+        return{
+
+            texto:
+
+            "El precio de cada paquete aparecerá dentro de la sección correspondiente cuando la información comercial definitiva haya sido configurada.",
+
+            asesor:false
+
+        };
+
+    }
+
+
+
+    /* NO SABE */
+
+    return{
+
+        texto:
+
+        "No tengo información suficiente para responder esa consulta con seguridad. Prefiero no darte una respuesta incorrecta. Puedo conectarte directamente con un asesor de Grupo ASINEC.",
+
+        asesor:true
+
+    };
 
 }
 
 
 
-function normalizar(texto){
-
-    return texto
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(
-        /[\u0300-\u036f]/g,
-        ""
-    );
-
-}
-
-
+/* ==========================================================
+   ENVIAR MENSAJE
+========================================================== */
 
 function enviarMensaje(){
 
@@ -4972,90 +6644,128 @@ function enviarMensaje(){
 
 
     agregarMensaje(
+
         pregunta,
+
         "user-message"
+
     );
 
 
     chatInput.value = "";
 
 
-    const t =
-    normalizar(
+    humanContact
+    .classList
+    .remove(
+        "show"
+    );
+
+
+    typing.style.display =
+    "block";
+
+
+    chatMessages.scrollTop =
+    chatMessages.scrollHeight;
+
+
+
+    /* PEDIDO DIRECTO DE ASESOR */
+
+    if(
+        requiereAsesor(
+            pregunta
+        )
+    ){
+
+        setTimeout(
+
+            function(){
+
+
+                typing.style.display =
+                "none";
+
+
+                agregarMensaje(
+
+                    "Esta consulta requiere atención personalizada. Puedes comunicarte directamente con un asesor de Grupo ASINEC utilizando el botón que aparece a continuación.",
+
+                    "ai-message"
+
+                );
+
+
+                humanContact
+                .classList
+                .add(
+                    "show"
+                );
+
+
+                chatMessages.scrollTop =
+                chatMessages.scrollHeight;
+
+            },
+
+            600
+
+        );
+
+
+        return;
+
+    }
+
+
+
+    /* RESPUESTA NORMAL */
+
+    const respuesta =
+    obtenerRespuesta(
         pregunta
     );
 
 
-    let respuesta =
-
-    "Puedo brindarte orientación inicial sobre los servicios de Grupo ASINEC. Para información específica, selecciona la norma correspondiente en nuestra página.";
-
-
-
-    if(t.includes("9001")){
-
-        respuesta =
-        "ISO 9001 está relacionada con sistemas de gestión de calidad, procesos y mejora continua.";
-
-    }
-
-
-    else if(t.includes("18788")){
-
-        respuesta =
-        "ISO 18788 está relacionada con sistemas de gestión para operaciones de seguridad privada.";
-
-    }
-
-
-    else if(t.includes("45001")){
-
-        respuesta =
-        "ISO 45001 está enfocada en seguridad y salud en el trabajo.";
-
-    }
-
-
-    else if(t.includes("27001")){
-
-        respuesta =
-        "ISO 27001 está orientada a la gestión de seguridad de la información.";
-
-    }
-
-
-    else if(
-        t.includes("lopdp") ||
-        t.includes(
-            "datos personales"
-        )
-    ){
-
-        respuesta =
-        "LOPDP está relacionada con la protección y gestión responsable de datos personales.";
-
-    }
-
-
-    else if(t.includes("basc")){
-
-        respuesta =
-        "BASC está relacionado con sistemas de gestión de control y seguridad.";
-
-    }
-
-
-
     setTimeout(
+
         function(){
 
+
+            typing.style.display =
+            "none";
+
+
             agregarMensaje(
-                respuesta,
+
+                respuesta.texto,
+
                 "ai-message"
+
             );
 
+
+            if(
+                respuesta.asesor
+            ){
+
+                humanContact
+                .classList
+                .add(
+                    "show"
+                );
+
+            }
+
+
+            chatMessages.scrollTop =
+            chatMessages.scrollHeight;
+
         },
-        450
+
+        600
+
     );
 
 }

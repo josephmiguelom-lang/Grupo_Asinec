@@ -1196,7 +1196,65 @@ Contactar a Grupo ASINEC
 © 2026 Grupo ASINEC · Gestión empresarial · Cumplimiento · Mejora continua
 
 </footer>
+<!-- ASINEC IA - CHAT FLOTANTE -->
 
+<button id="abrir-chat" class="chat-boton">
+    💬 ASINEC IA
+</button>
+
+<div id="chat-asinec" class="chat-contenedor">
+
+    <div class="chat-cabecera">
+        <div>
+            <strong>ASINEC IA</strong>
+            <small>Asistente inteligente</small>
+        </div>
+
+        <button onclick="cerrarChat()">✕</button>
+    </div>
+
+    <div id="mensajes" class="chat-mensajes">
+
+        <div class="mensaje ia-mensaje">
+            ¡Hola! 👋 Soy ASINEC IA.
+
+            Puedo orientarte sobre ISO 9001, ISO 18788,
+            ISO 45001, ISO 27001, LOPDP, BASC y nuestros
+            servicios.
+
+            ¿En qué puedo ayudarte?
+        </div>
+
+    </div>
+
+    <div id="escribiendo" class="escribiendo">
+        ASINEC IA está escribiendo...
+    </div>
+
+    <div class="chat-input">
+
+        <input
+            id="pregunta"
+            type="text"
+            placeholder="Escribe tu consulta..."
+        >
+
+        <button onclick="enviarPregunta()">
+            ➤
+        </button>
+
+    </div>
+
+    <a
+        id="boton-asesor"
+        class="boton-asesor"
+        href="https://wa.me/593XXXXXXXXX"
+        target="_blank"
+    >
+        🟢 Hablar con un asesor
+    </a>
+
+</div>
 
 </body>
 

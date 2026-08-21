@@ -1072,17 +1072,17 @@ img{
 }
 
 .social-button{
-    min-width:145px;
+    min-width:155px;
 
     padding:
-    13px 17px;
+    12px 18px;
 
     display:flex;
 
     align-items:center;
     justify-content:center;
 
-    gap:9px;
+    gap:10px;
 
     border-radius:999px;
 
@@ -1109,15 +1109,19 @@ img{
     rgba(255,255,255,.14);
 }
 
-.social-button span{
-    font-size:18px;
-    font-weight:900;
-}
+
+/*
+LOS LOGOS VAN COMO SVG DENTRO
+DEL MISMO HTML.
+NO DEPENDEN DE IMÁGENES EXTERNAS.
+*/
 
 .social-icon{
-    width:21px;
-    height:21px;
+    width:30px;
+    height:30px;
+
     flex:none;
+
     display:block;
 }
 
@@ -1142,8 +1146,6 @@ footer{
 
 /* ==========================================================
    PÁGINAS DE NORMAS
-
-   ABREN SIN JAVASCRIPT.
 ========================================================== */
 
 .service-page{
@@ -1842,7 +1844,7 @@ footer{
 
 
 /* ==========================================================
-   CHAT LAUNCHER
+   CHAT
 ========================================================== */
 
 .chat-launcher{
@@ -1906,11 +1908,6 @@ footer{
 
     font-size:10px;
 }
-
-
-/* ==========================================================
-   CHAT
-========================================================== */
 
 .chat-window{
     position:fixed;
@@ -2033,9 +2030,6 @@ footer{
     font-size:20px;
 }
 
-
-/* PREGUNTAS RÁPIDAS */
-
 .quick-questions{
     display:flex;
 
@@ -2078,9 +2072,6 @@ footer{
 
     background:#087cff;
 }
-
-
-/* MENSAJES */
 
 .chat-messages{
     flex:1;
@@ -2148,9 +2139,6 @@ footer{
     font-size:10px;
 }
 
-
-/* ASESOR */
-
 .human-contact{
     display:none;
 
@@ -2175,9 +2163,6 @@ footer{
 .human-contact.show{
     display:block;
 }
-
-
-/* INPUT */
 
 .chat-input{
     min-height:60px;
@@ -2296,10 +2281,6 @@ footer{
 
     .purchase-top{
         grid-template-columns:1fr;
-    }
-
-    .price-box{
-        max-width:230px;
     }
 
 }
@@ -2459,61 +2440,56 @@ footer{
 <body>
 
 
-<!-- ==========================================================
-     HEADER
-========================================================== -->
+<!-- HEADER -->
 
 <header class="main-header">
 
-    <a href="#inicio">
+<a href="#inicio">
 
-        <img
-        src="./GRUPO ASINEC LOGO.png"
-        class="logo"
-        alt="Grupo ASINEC">
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="logo"
+alt="Grupo ASINEC">
 
-    </a>
+</a>
 
 
-    <nav class="main-nav">
+<nav class="main-nav">
 
-        <a href="#inicio">
-            Inicio
-        </a>
+<a href="#inicio">
+Inicio
+</a>
 
-        <a href="#nosotros">
-            Nosotros
-        </a>
+<a href="#nosotros">
+Nosotros
+</a>
 
-        <a href="#servicios">
-            Servicios
-        </a>
+<a href="#servicios">
+Servicios
+</a>
 
-        <a
-        href="#asistente"
-        onclick="event.preventDefault(); abrirChat();">
+<a
+href="#asistente"
+onclick="event.preventDefault(); abrirChat();">
 
-            ASINEC IA
+ASINEC IA
 
-        </a>
+</a>
 
-        <a
-        href="#contacto"
-        class="nav-contact">
+<a
+href="#contacto"
+class="nav-contact">
 
-            Contacto
+Contacto
 
-        </a>
+</a>
 
-    </nav>
+</nav>
 
 </header>
 
 
-
-<!-- ==========================================================
-     HERO
-========================================================== -->
+<!-- HERO -->
 
 <section
 class="hero"
@@ -2524,11 +2500,8 @@ id="inicio">
 <div>
 
 <div class="hero-kicker">
-
 GRUPO ASINEC · CONSULTORÍA Y GESTIÓN
-
 </div>
-
 
 <h1>
 
@@ -2539,7 +2512,6 @@ que quieren avanzar.
 </span>
 
 </h1>
-
 
 <p>
 
@@ -2553,7 +2525,6 @@ y mejora continua.
 
 </p>
 
-
 <div class="hero-actions">
 
 <a
@@ -2563,7 +2534,6 @@ class="btn btn-blue">
 Explorar servicios →
 
 </a>
-
 
 <button
 class="btn btn-outline"
@@ -2576,7 +2546,6 @@ onclick="abrirChat()">
 </div>
 
 </div>
-
 
 
 <div class="hero-art">
@@ -2593,17 +2562,13 @@ alt="ASINEC IA">
 </section>
 
 
-
-<!-- ==========================================================
-     MISIÓN / VISIÓN
-========================================================== -->
+<!-- MISIÓN / VISIÓN -->
 
 <section
 class="section identity"
 id="nosotros">
 
 <div class="container">
-
 
 <div class="identity-head">
 
@@ -2638,9 +2603,7 @@ de mejora continua.
 </div>
 
 
-
 <div class="identity-grid">
-
 
 <article class="identity-card">
 
@@ -2669,7 +2632,6 @@ mediante un servicio profesional,
 </article>
 
 
-
 <article class="identity-card">
 
 <small>
@@ -2696,7 +2658,6 @@ de nuestros clientes.
 
 </article>
 
-
 </div>
 
 </div>
@@ -2704,10 +2665,7 @@ de nuestros clientes.
 </section>
 
 
-
-<!-- ==========================================================
-     SERVICIOS
-========================================================== -->
+<!-- SERVICIOS -->
 
 <section
 class="section"
@@ -2733,7 +2691,6 @@ que necesita tu organización.
 
 </div>
 
-
 <p class="description">
 
 Selecciona una norma para conocer
@@ -2746,11 +2703,8 @@ de adquisición.
 </div>
 
 
-
 <div class="services-grid">
 
-
-<!-- ISO 9001 -->
 
 <a
 href="#iso9001"
@@ -2791,9 +2745,6 @@ Conocer y adquirir →
 </a>
 
 
-
-<!-- ISO 18788 -->
-
 <a
 href="#iso18788"
 class="service-link">
@@ -2832,9 +2783,6 @@ Conocer y adquirir →
 
 </a>
 
-
-
-<!-- ISO 45001 -->
 
 <a
 href="#iso45001"
@@ -2875,9 +2823,6 @@ Conocer y adquirir →
 </a>
 
 
-
-<!-- ISO 27001 -->
-
 <a
 href="#iso27001"
 class="service-link">
@@ -2916,9 +2861,6 @@ Conocer y adquirir →
 
 </a>
 
-
-
-<!-- LOPDP -->
 
 <a
 href="#lopdp"
@@ -2959,9 +2901,6 @@ Conocer y adquirir →
 </a>
 
 
-
-<!-- BASC -->
-
 <a
 href="#basc"
 class="service-link">
@@ -3000,7 +2939,6 @@ Conocer y adquirir →
 
 </a>
 
-
 </div>
 
 </div>
@@ -3008,10 +2946,7 @@ Conocer y adquirir →
 </section>
 
 
-
-<!-- ==========================================================
-     PROCESO
-========================================================== -->
+<!-- PROCESO -->
 
 <section class="section process">
 
@@ -3155,10 +3090,7 @@ y fortalecimiento continuo.
 </section>
 
 
-
-<!-- ==========================================================
-     ASINEC IA
-========================================================== -->
+<!-- ASINEC IA -->
 
 <section
 class="section ai-section"
@@ -3168,7 +3100,6 @@ id="asistente">
 
 <div class="ai-box">
 
-
 <div class="ai-visual">
 
 <img
@@ -3177,7 +3108,6 @@ class="ai-image"
 alt="ASINEC IA">
 
 </div>
-
 
 
 <div class="ai-content">
@@ -3248,7 +3178,6 @@ onclick="abrirChat()">
 
 </div>
 
-
 </div>
 
 </div>
@@ -3256,10 +3185,7 @@ onclick="abrirChat()">
 </section>
 
 
-
-<!-- ==========================================================
-     CONTACTO
-========================================================== -->
+<!-- CONTACTO -->
 
 <section
 class="contact"
@@ -3302,9 +3228,9 @@ Ver servicios →
 </section>
 
 
-
 <!-- ==========================================================
      REDES SOCIALES
+     AQUÍ ESTÁ EL ÚNICO CAMBIO
 ========================================================== -->
 
 <section class="social-section">
@@ -3319,9 +3245,7 @@ SÍGUENOS
 </span>
 
 <h2>
-
 Conecta con Grupo ASINEC
-
 </h2>
 
 <p>
@@ -3335,9 +3259,10 @@ contenidos y servicios.
 </div>
 
 
-
 <div class="social-links">
 
+
+<!-- FACEBOOK -->
 
 <a
 href="#"
@@ -3347,12 +3272,20 @@ aria-label="Facebook de Grupo ASINEC">
 
 <svg
 class="social-icon"
-viewBox="0 0 24 24"
+viewBox="0 0 48 48"
 aria-hidden="true">
 
+<circle
+cx="24"
+cy="24"
+r="22"
+fill="#1877F2">
+</circle>
+
 <path
-fill="currentColor"
-d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07C2 17.09 5.66 21.25 10.44 22v-7.03H7.9v-2.9h2.54V9.86c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.77l-.44 2.9h-2.33V22C18.34 21.25 22 17.09 22 12.07Z"/>
+fill="#FFFFFF"
+d="M27.4 25.5h5.1l.8-5.8h-5.9V16c0-1.7.5-2.8 2.9-2.8h3.2V8c-.6-.1-2.5-.2-4.7-.2-4.6 0-7.8 2.8-7.8 8v4h-5.2v5.8H21V40h6.4V25.5z">
+</path>
 
 </svg>
 
@@ -3360,6 +3293,8 @@ Facebook
 
 </a>
 
+
+<!-- INSTAGRAM -->
 
 <a
 href="#"
@@ -3369,12 +3304,80 @@ aria-label="Instagram de Grupo ASINEC">
 
 <svg
 class="social-icon"
-viewBox="0 0 24 24"
+viewBox="0 0 48 48"
 aria-hidden="true">
 
-<path
-fill="currentColor"
-d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+<defs>
+
+<radialGradient
+id="instagramGradient"
+cx="30%"
+cy="107%"
+r="150%">
+
+<stop
+offset="0%"
+stop-color="#FFD600">
+</stop>
+
+<stop
+offset="34%"
+stop-color="#FF7A00">
+</stop>
+
+<stop
+offset="60%"
+stop-color="#FF0169">
+</stop>
+
+<stop
+offset="100%"
+stop-color="#D300C5">
+</stop>
+
+</radialGradient>
+
+</defs>
+
+
+<rect
+x="4"
+y="4"
+width="40"
+height="40"
+rx="12"
+fill="url(#instagramGradient)">
+</rect>
+
+
+<rect
+x="13"
+y="13"
+width="22"
+height="22"
+rx="7"
+fill="none"
+stroke="#FFFFFF"
+stroke-width="3.2">
+</rect>
+
+
+<circle
+cx="24"
+cy="24"
+r="5.5"
+fill="none"
+stroke="#FFFFFF"
+stroke-width="3.2">
+</circle>
+
+
+<circle
+cx="32.5"
+cy="15.7"
+r="2.1"
+fill="#FFFFFF">
+</circle>
 
 </svg>
 
@@ -3382,6 +3385,8 @@ Instagram
 
 </a>
 
+
+<!-- TIKTOK -->
 
 <a
 href="#"
@@ -3391,12 +3396,44 @@ aria-label="TikTok de Grupo ASINEC">
 
 <svg
 class="social-icon"
-viewBox="0 0 24 24"
+viewBox="0 0 48 48"
 aria-hidden="true">
 
+
+<rect
+x="4"
+y="4"
+width="40"
+height="40"
+rx="11"
+fill="#000000">
+</rect>
+
+
+<!-- SOMBRA CIAN -->
+
 <path
-fill="currentColor"
-d="M15.5 2c.28 1.77 1.33 3.17 2.77 4.08A6.8 6.8 0 0 0 22 7.12v3.12a9.6 9.6 0 0 1-6.45-2.37v7.05A7.08 7.08 0 1 1 9.5 7.9v3.22a3.9 3.9 0 1 0 2.88 3.77V2h3.12Z"/>
+fill="#25F4EE"
+d="M28.6 11.2c.8 3.7 3 5.9 6.7 6.7v4.7c-2.4-.1-4.7-.8-6.7-2.1v9.2c0 5.5-4.4 10-10 10a10 10 0 0 1-4.6-18.9c1.7-.9 3.6-1.3 5.5-1.1v5c-.5-.2-1-.3-1.6-.3a5.1 5.1 0 1 0 5.1 5.1V11.2h5.6z"
+transform="translate(-1.4,1.2)">
+</path>
+
+
+<!-- SOMBRA ROJA -->
+
+<path
+fill="#FE2C55"
+d="M28.6 11.2c.8 3.7 3 5.9 6.7 6.7v4.7c-2.4-.1-4.7-.8-6.7-2.1v9.2c0 5.5-4.4 10-10 10a10 10 0 0 1-4.6-18.9c1.7-.9 3.6-1.3 5.5-1.1v5c-.5-.2-1-.3-1.6-.3a5.1 5.1 0 1 0 5.1 5.1V11.2h5.6z"
+transform="translate(1.4,0)">
+</path>
+
+
+<!-- LOGO BLANCO CENTRAL -->
+
+<path
+fill="#FFFFFF"
+d="M28.6 11.2c.8 3.7 3 5.9 6.7 6.7v4.7c-2.4-.1-4.7-.8-6.7-2.1v9.2c0 5.5-4.4 10-10 10a10 10 0 0 1-4.6-18.9c1.7-.9 3.6-1.3 5.5-1.1v5c-.5-.2-1-.3-1.6-.3a5.1 5.1 0 1 0 5.1 5.1V11.2h5.6z">
+</path>
 
 </svg>
 
@@ -3407,11 +3444,9 @@ TikTok
 
 </div>
 
-
 </div>
 
 </section>
-
 
 
 <footer>
@@ -3421,7 +3456,6 @@ Gestión · Cumplimiento ·
 Seguridad · Mejora Continua
 
 </footer>
-
 
 
 <!-- ==========================================================
@@ -3457,15 +3491,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / ISO 9001
-
 </div>
 
 <span class="service-tag">
-
 GESTIÓN DE LA CALIDAD
-
 </span>
 
 <h1>
@@ -3619,7 +3649,6 @@ y acompañamiento.
 
 <div class="purchase-card">
 
-
 <div class="purchase-top">
 
 <div>
@@ -3664,7 +3693,6 @@ Precio pendiente
 
 
 <div class="payment-options">
-
 
 <div class="payment-option">
 
@@ -3722,16 +3750,13 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -3767,15 +3792,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / ISO 18788
-
 </div>
 
 <span class="service-tag">
-
 OPERACIONES DE SEGURIDAD PRIVADA
-
 </span>
 
 <h1>
@@ -3937,15 +3958,11 @@ PAQUETE ISO 18788
 </span>
 
 <h2 class="purchase-title">
-
 Adquiere el paquete ISO 18788
-
 </h2>
 
 <p class="purchase-description">
-
 Selecciona tu método de pago.
-
 </p>
 
 </div>
@@ -3972,7 +3989,6 @@ Precio pendiente
 
 <div class="payment-options">
 
-
 <div class="payment-option">
 
 <div class="payment-icon">
@@ -3984,10 +4000,8 @@ PayPhone
 </h3>
 
 <p>
-
 Paga mediante el checkout
 seguro de PayPhone.
-
 </p>
 
 <button
@@ -4012,10 +4026,8 @@ Transferencia bancaria
 </h3>
 
 <p>
-
 Realiza una transferencia
 directamente a Grupo ASINEC.
-
 </p>
 
 <button
@@ -4028,7 +4040,6 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
 
 </div>
@@ -4036,7 +4047,6 @@ Pagar por transferencia →
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -4072,15 +4082,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / ISO 45001
-
 </div>
 
 <span class="service-tag">
-
 SEGURIDAD Y SALUD EN EL TRABAJO
-
 </span>
 
 <h1>
@@ -4240,9 +4246,7 @@ PAQUETE ISO 45001
 </span>
 
 <h2 class="purchase-title">
-
 Adquiere el paquete ISO 45001
-
 </h2>
 
 <p class="purchase-description">
@@ -4273,7 +4277,6 @@ Precio pendiente
 
 <div class="payment-options">
 
-
 <div class="payment-option">
 
 <div class="payment-icon">
@@ -4285,10 +4288,8 @@ PayPhone
 </h3>
 
 <p>
-
 Paga mediante el checkout
 seguro de PayPhone.
-
 </p>
 
 <button
@@ -4313,10 +4314,8 @@ Transferencia bancaria
 </h3>
 
 <p>
-
 Realiza una transferencia
 directamente a Grupo ASINEC.
-
 </p>
 
 <button
@@ -4329,7 +4328,6 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
 
 </div>
@@ -4337,7 +4335,6 @@ Pagar por transferencia →
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -4373,15 +4370,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / ISO 27001
-
 </div>
 
 <span class="service-tag">
-
 SEGURIDAD DE LA INFORMACIÓN
-
 </span>
 
 <h1>
@@ -4540,9 +4533,7 @@ PAQUETE ISO 27001
 </span>
 
 <h2 class="purchase-title">
-
 Adquiere el paquete ISO 27001
-
 </h2>
 
 <p class="purchase-description">
@@ -4572,7 +4563,6 @@ Precio pendiente
 
 
 <div class="payment-options">
-
 
 <div class="payment-option">
 
@@ -4625,7 +4615,6 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
 
 </div>
@@ -4633,7 +4622,6 @@ Pagar por transferencia →
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -4669,15 +4657,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / LOPDP
-
 </div>
 
 <span class="service-tag">
-
 PROTECCIÓN DE DATOS PERSONALES
-
 </span>
 
 <h1>
@@ -4837,9 +4821,7 @@ PAQUETE LOPDP
 </span>
 
 <h2 class="purchase-title">
-
 Adquiere el paquete LOPDP
-
 </h2>
 
 <p class="purchase-description">
@@ -4869,7 +4851,6 @@ Precio pendiente
 
 
 <div class="payment-options">
-
 
 <div class="payment-option">
 
@@ -4922,7 +4903,6 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
 
 </div>
@@ -4930,7 +4910,6 @@ Pagar por transferencia →
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -4966,15 +4945,11 @@ class="back-button">
 <div>
 
 <div class="breadcrumb">
-
 INICIO / SERVICIOS / BASC
-
 </div>
 
 <span class="service-tag">
-
 CONTROL Y SEGURIDAD
-
 </span>
 
 <h1>
@@ -5135,9 +5110,7 @@ PAQUETE BASC
 </span>
 
 <h2 class="purchase-title">
-
 Adquiere el paquete BASC
-
 </h2>
 
 <p class="purchase-description">
@@ -5167,7 +5140,6 @@ Precio pendiente
 
 
 <div class="payment-options">
-
 
 <div class="payment-option">
 
@@ -5220,7 +5192,6 @@ Pagar por transferencia →
 
 </div>
 
-
 </div>
 
 </div>
@@ -5228,7 +5199,6 @@ Pagar por transferencia →
 </section>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -5260,7 +5230,6 @@ onclick="cerrarTransferencia()">
 
 
 <div class="modal-body">
-
 
 <div
 class="transfer-service"
@@ -5351,7 +5320,6 @@ Pendiente
 
 </div>
 
-
 </div>
 
 
@@ -5376,13 +5344,11 @@ Copiar datos de transferencia
 
 </button>
 
-
 </div>
 
 </div>
 
 </div>
-
 
 
 <!-- ==========================================================
@@ -5413,7 +5379,6 @@ Consulta rápida
 </button>
 
 
-
 <!-- ==========================================================
      CHAT ASINEC IA
 ========================================================== -->
@@ -5424,7 +5389,6 @@ id="chatWindow">
 
 
 <div class="chat-head">
-
 
 <div class="chat-profile">
 
@@ -5459,15 +5423,10 @@ onclick="cerrarChat()">
 
 </button>
 
-
 </div>
 
 
-
-<!-- PREGUNTAS RÁPIDAS -->
-
 <div class="quick-questions">
-
 
 <button
 onclick="preguntaRapida('¿Qué es ISO 9001?')">
@@ -5532,9 +5491,7 @@ Asesor
 
 </button>
 
-
 </div>
-
 
 
 <div
@@ -5556,7 +5513,6 @@ Si tu consulta requiere atención especializada o no tengo información suficien
 </div>
 
 
-
 <div
 class="typing"
 id="typing">
@@ -5565,9 +5521,6 @@ ASINEC IA está escribiendo...
 
 </div>
 
-
-
-<!-- ASESOR WHATSAPP -->
 
 <a
 class="human-contact"
@@ -5579,7 +5532,6 @@ rel="noopener">
 Hablar con un asesor por WhatsApp →
 
 </a>
-
 
 
 <div class="chat-input">
@@ -5599,140 +5551,63 @@ onclick="enviarMensaje()">
 
 </div>
 
-
 </div>
-
 
 
 <script>
 
 /* ==========================================================
    CONFIGURACIÓN DE PAGOS
-
-   RELLENAR DESPUÉS CON DATOS REALES.
 ========================================================== */
-
-/*
-IMPORTANTE:
-
-NO coloques aquí:
-- contraseñas
-- claves privadas
-- tokens secretos de PayPhone
-- claves bancarias
-
-En "payphone" solamente debe ir
-un ENLACE PÚBLICO de cobro/check-out.
-*/
-
 
 const pagos = {
 
-
     banco:{
 
-        nombre:
-        "",
-
-        titular:
-        "",
-
-        tipo:
-        "",
-
-        cuenta:
-        "",
-
-        identificacion:
-        ""
+        nombre:"",
+        titular:"",
+        tipo:"",
+        cuenta:"",
+        identificacion:""
 
     },
 
-
     paquetes:{
 
-
         iso9001:{
-
-            nombre:
-            "ISO 9001",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"ISO 9001",
+            precio:"",
+            payphone:""
         },
-
 
         iso18788:{
-
-            nombre:
-            "ISO 18788",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"ISO 18788",
+            precio:"",
+            payphone:""
         },
-
 
         iso45001:{
-
-            nombre:
-            "ISO 45001",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"ISO 45001",
+            precio:"",
+            payphone:""
         },
-
 
         iso27001:{
-
-            nombre:
-            "ISO 27001",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"ISO 27001",
+            precio:"",
+            payphone:""
         },
-
 
         lopdp:{
-
-            nombre:
-            "LOPDP",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"LOPDP",
+            precio:"",
+            payphone:""
         },
 
-
         basc:{
-
-            nombre:
-            "BASC",
-
-            precio:
-            "",
-
-            payphone:
-            ""
-
+            nombre:"BASC",
+            precio:"",
+            payphone:""
         }
 
     }
@@ -5740,34 +5615,18 @@ const pagos = {
 };
 
 
-
 /* ==========================================================
-   CONFIGURACIÓN REDES SOCIALES
+   REDES
 ========================================================== */
-
-/*
-Cuando tengas las URL oficiales,
-solo colócalas aquí.
-*/
 
 const redesSociales = {
 
-    facebook:
-    "",
-
-    instagram:
-    "",
-
-    tiktok:
-    ""
+    facebook:"",
+    instagram:"",
+    tiktok:""
 
 };
 
-
-
-/* ==========================================================
-   MOSTRAR PRECIOS
-========================================================== */
 
 document
 .querySelectorAll(
@@ -5775,51 +5634,36 @@ document
 )
 .forEach(
 
-    function(elemento){
+function(elemento){
 
-
-        const codigo =
-        elemento.dataset.price;
-
-
-        const paquete =
-        pagos.paquetes[codigo];
-
-
-        if(
-            paquete &&
-            paquete.precio
-        ){
-
-            elemento.textContent =
-            "$" +
-            paquete.precio;
-
-        }
-
-        else{
-
-            elemento.textContent =
-            "Precio pendiente";
-
-        }
-
-    }
-
-);
-
-
-
-/* ==========================================================
-   PAYPHONE
-========================================================== */
-
-function pagarPayPhone(codigo){
-
+    const codigo =
+    elemento.dataset.price;
 
     const paquete =
     pagos.paquetes[codigo];
 
+    if(
+        paquete &&
+        paquete.precio
+    ){
+
+        elemento.textContent =
+        "$" + paquete.precio;
+
+    }else{
+
+        elemento.textContent =
+        "Precio pendiente";
+
+    }
+
+});
+
+
+function pagarPayPhone(codigo){
+
+    const paquete =
+    pagos.paquetes[codigo];
 
     if(!paquete){
 
@@ -5839,7 +5683,8 @@ function pagarPayPhone(codigo){
 
         window.open(
             paquete.payphone,
-            "_blank"
+            "_blank",
+            "noopener"
         );
 
         return;
@@ -5858,109 +5703,71 @@ function pagarPayPhone(codigo){
 }
 
 
-
-/* ==========================================================
-   TRANSFERENCIA
-========================================================== */
-
 let paqueteTransferencia =
 null;
 
 
 function abrirTransferencia(codigo){
 
-
     const paquete =
     pagos.paquetes[codigo];
 
-
     if(!paquete){
-
         return;
-
     }
-
 
     paqueteTransferencia =
     paquete;
 
 
-    document
-    .getElementById(
+    document.getElementById(
         "transferService"
-    )
-    .textContent =
-
+    ).textContent =
     "Compra: " +
     paquete.nombre;
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankName"
-    )
-    .textContent =
-
+    ).textContent =
     pagos.banco.nombre ||
     "Pendiente de configurar";
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankHolder"
-    )
-    .textContent =
-
+    ).textContent =
     pagos.banco.titular ||
     "Pendiente de configurar";
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankType"
-    )
-    .textContent =
-
+    ).textContent =
     pagos.banco.tipo ||
     "Pendiente de configurar";
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankAccount"
-    )
-    .textContent =
-
+    ).textContent =
     pagos.banco.cuenta ||
     "Pendiente de configurar";
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankId"
-    )
-    .textContent =
-
+    ).textContent =
     pagos.banco.identificacion ||
     "Pendiente de configurar";
 
 
-
-    document
-    .getElementById(
+    document.getElementById(
         "bankAmount"
-    )
-    .textContent =
-
+    ).textContent =
     paquete.precio
     ? "$" + paquete.precio
     : "Pendiente de configurar";
-
 
 
     document
@@ -5975,9 +5782,7 @@ function abrirTransferencia(codigo){
 }
 
 
-
 function cerrarTransferencia(){
-
 
     document
     .getElementById(
@@ -5991,13 +5796,7 @@ function cerrarTransferencia(){
 }
 
 
-
-/* ==========================================================
-   COPIAR TRANSFERENCIA
-========================================================== */
-
 function copiarDatosTransferencia(){
-
 
     if(
         !pagos.banco.nombre ||
@@ -6014,14 +5813,11 @@ function copiarDatosTransferencia(){
 
 
     if(!paqueteTransferencia){
-
         return;
-
     }
 
 
     const texto =
-
 `GRUPO ASINEC
 
 Paquete:
@@ -6053,32 +5849,24 @@ ${pagos.banco.identificacion}`;
         navigator
         .clipboard
         .writeText(texto)
-        .then(
 
-            function(){
+        .then(function(){
 
-                alert(
-                    "Datos de transferencia copiados."
-                );
+            alert(
+                "Datos de transferencia copiados."
+            );
 
-            }
+        })
 
-        )
-        .catch(
+        .catch(function(){
 
-            function(){
+            alert(
+                "No fue posible copiar automáticamente."
+            );
 
-                alert(
-                    "No fue posible copiar automáticamente."
-                );
+        });
 
-            }
-
-        );
-
-    }
-
-    else{
+    }else{
 
         alert(texto);
 
@@ -6087,20 +5875,12 @@ ${pagos.banco.identificacion}`;
 }
 
 
-
-/* ==========================================================
-   REDES
-========================================================== */
-
 function abrirRed(event,red){
-
 
     event.preventDefault();
 
-
     const url =
     redesSociales[red];
-
 
     if(!url){
 
@@ -6116,17 +5896,15 @@ function abrirRed(event,red){
 
     }
 
-
     window.open(
         url,
-        "_blank"
+        "_blank",
+        "noopener"
     );
-
 
     return false;
 
 }
-
 
 
 /* ==========================================================
@@ -6138,30 +5916,25 @@ document.getElementById(
     "chatWindow"
 );
 
-
 const chatLauncher =
 document.getElementById(
     "chatLauncher"
 );
-
 
 const chatMessages =
 document.getElementById(
     "chatMessages"
 );
 
-
 const chatInput =
 document.getElementById(
     "chatInput"
 );
 
-
 const typing =
 document.getElementById(
     "typing"
 );
-
 
 const humanContact =
 document.getElementById(
@@ -6169,9 +5942,7 @@ document.getElementById(
 );
 
 
-
 function abrirChat(){
-
 
     chatWindow
     .classList
@@ -6179,10 +5950,8 @@ function abrirChat(){
         "open"
     );
 
-
     chatLauncher.style.display =
     "none";
-
 
     setTimeout(
         function(){
@@ -6190,16 +5959,13 @@ function abrirChat(){
             chatInput.focus();
 
         },
-
         150
     );
 
 }
 
 
-
 function cerrarChat(){
-
 
     chatWindow
     .classList
@@ -6207,49 +5973,40 @@ function cerrarChat(){
         "open"
     );
 
-
     chatLauncher.style.display =
     "flex";
 
 }
 
 
-
 function preguntaRapida(texto){
-
 
     chatInput.value =
     texto;
-
 
     enviarMensaje();
 
 }
 
 
-
 chatInput
 .addEventListener(
 
-    "keydown",
+"keydown",
 
-    function(event){
+function(event){
 
+    if(
+        event.key === "Enter"
+    ){
 
-        if(
-            event.key === "Enter"
-        ){
+        event.preventDefault();
 
-            event.preventDefault();
-
-            enviarMensaje();
-
-        }
+        enviarMensaje();
 
     }
 
-);
-
+});
 
 
 function agregarMensaje(
@@ -6257,25 +6014,20 @@ function agregarMensaje(
     clase
 ){
 
-
     const div =
     document.createElement(
         "div"
     );
 
-
     div.className =
     "message " + clase;
-
 
     div.textContent =
     texto;
 
-
     chatMessages.appendChild(
         div
     );
-
 
     chatMessages.scrollTop =
     chatMessages.scrollHeight;
@@ -6283,9 +6035,7 @@ function agregarMensaje(
 }
 
 
-
 function normalizar(texto){
-
 
     return texto
 
@@ -6301,17 +6051,10 @@ function normalizar(texto){
 }
 
 
-
-/* ==========================================================
-   SABER CUÁNDO ENVIAR A ASESOR
-========================================================== */
-
 function requiereAsesor(texto){
-
 
     const t =
     normalizar(texto);
-
 
     const palabras = [
 
@@ -6366,21 +6109,13 @@ function requiereAsesor(texto){
 }
 
 
-
-/* ==========================================================
-   RESPUESTAS DE ASINEC IA
-========================================================== */
-
 function obtenerRespuesta(pregunta){
-
 
     const t =
     normalizar(
         pregunta
     );
 
-
-    /* SALUDO */
 
     if(
         t.includes("hola") ||
@@ -6392,7 +6127,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "¡Hola! 👋 Puedo orientarte sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC, auditorías, implementación, capacitación y servicios de Grupo ASINEC. ¿Qué deseas conocer?",
 
             asesor:false
@@ -6402,15 +6136,11 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* ISO 9001 */
-
     if(t.includes("9001")){
 
         return{
 
             texto:
-
             "ISO 9001 está relacionada con sistemas de gestión de la calidad. Su enfoque incluye procesos, satisfacción del cliente, desempeño y mejora continua. Puedes abrir la sección ISO 9001 de nuestra página para conocer el servicio completo.",
 
             asesor:false
@@ -6420,15 +6150,11 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* ISO 18788 */
-
     if(t.includes("18788")){
 
         return{
 
             texto:
-
             "ISO 18788 está relacionada con sistemas de gestión para operaciones de seguridad privada y el fortalecimiento del control operacional. Puedes abrir su sección para conocer nuestro servicio.",
 
             asesor:false
@@ -6438,15 +6164,11 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* ISO 45001 */
-
     if(t.includes("45001")){
 
         return{
 
             texto:
-
             "ISO 45001 está orientada a sistemas de gestión de seguridad y salud en el trabajo, prevención de riesgos laborales y fortalecimiento de condiciones de trabajo seguras.",
 
             asesor:false
@@ -6456,15 +6178,11 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* ISO 27001 */
-
     if(t.includes("27001")){
 
         return{
 
             texto:
-
             "ISO 27001 está relacionada con sistemas de gestión de seguridad de la información, gestión de riesgos y protección de activos de información.",
 
             asesor:false
@@ -6473,9 +6191,6 @@ function obtenerRespuesta(pregunta){
 
     }
 
-
-
-    /* LOPDP */
 
     if(
         t.includes("lopdp") ||
@@ -6486,7 +6201,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "La LOPDP está relacionada con la protección y gestión responsable de datos personales. Grupo ASINEC puede brindar orientación general y acompañamiento en este ámbito. Para situaciones legales específicas puede ser necesario un análisis especializado.",
 
             asesor:false
@@ -6496,15 +6210,11 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* BASC */
-
     if(t.includes("basc")){
 
         return{
 
             texto:
-
             "BASC está relacionado con sistemas de gestión de control y seguridad aplicables a organizaciones y cadenas logísticas.",
 
             asesor:false
@@ -6514,9 +6224,6 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* AUDITORÍA */
-
     if(
         t.includes("auditoria") ||
         t.includes("auditar")
@@ -6525,7 +6232,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "Una auditoría permite evaluar un sistema de gestión, detectar hallazgos e identificar oportunidades de mejora. Grupo ASINEC puede brindar acompañamiento relacionado con procesos de auditoría.",
 
             asesor:false
@@ -6535,9 +6241,6 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* IMPLEMENTACIÓN */
-
     if(
         t.includes("implementacion") ||
         t.includes("implementar")
@@ -6546,7 +6249,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "Grupo ASINEC puede acompañar procesos de implementación y fortalecimiento de sistemas de gestión. El alcance depende de la norma y las características de cada organización.",
 
             asesor:false
@@ -6555,9 +6257,6 @@ function obtenerRespuesta(pregunta){
 
     }
 
-
-
-    /* CAPACITACIÓN */
 
     if(
         t.includes("capacitacion") ||
@@ -6568,7 +6267,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "Grupo ASINEC contempla servicios de capacitación relacionados con sistemas de gestión, cumplimiento y fortalecimiento organizacional.",
 
             asesor:false
@@ -6577,9 +6275,6 @@ function obtenerRespuesta(pregunta){
 
     }
 
-
-
-    /* SERVICIOS */
 
     if(
         t.includes("servicio") ||
@@ -6590,7 +6285,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "Grupo ASINEC trabaja en consultoría, implementación, auditoría, capacitación y fortalecimiento de sistemas de gestión, incluyendo ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP y BASC.",
 
             asesor:false
@@ -6599,9 +6293,6 @@ function obtenerRespuesta(pregunta){
 
     }
 
-
-
-    /* COMPRA */
 
     if(
         t.includes("comprar") ||
@@ -6614,7 +6305,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "Puedes adquirir un paquete directamente desde la sección de la norma correspondiente. Allí encontrarás las opciones PayPhone y transferencia bancaria.",
 
             asesor:false
@@ -6624,9 +6314,6 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* PRECIO */
-
     if(
         t.includes("precio") ||
         t.includes("costo")
@@ -6635,7 +6322,6 @@ function obtenerRespuesta(pregunta){
         return{
 
             texto:
-
             "El precio de cada paquete aparecerá dentro de la sección correspondiente cuando la información comercial definitiva haya sido configurada.",
 
             asesor:false
@@ -6645,13 +6331,9 @@ function obtenerRespuesta(pregunta){
     }
 
 
-
-    /* NO SABE */
-
     return{
 
         texto:
-
         "No tengo información suficiente para responder esa consulta con seguridad. Prefiero no darte una respuesta incorrecta. Puedo conectarte directamente con un asesor de Grupo ASINEC.",
 
         asesor:true
@@ -6661,31 +6343,19 @@ function obtenerRespuesta(pregunta){
 }
 
 
-
-/* ==========================================================
-   ENVIAR MENSAJE
-========================================================== */
-
 function enviarMensaje(){
-
 
     const pregunta =
     chatInput.value.trim();
 
-
     if(!pregunta){
-
         return;
-
     }
 
 
     agregarMensaje(
-
         pregunta,
-
         "user-message"
-
     );
 
 
@@ -6707,9 +6377,6 @@ function enviarMensaje(){
     chatMessages.scrollHeight;
 
 
-
-    /* PEDIDO DIRECTO DE ASESOR */
-
     if(
         requiereAsesor(
             pregunta
@@ -6718,36 +6385,34 @@ function enviarMensaje(){
 
         setTimeout(
 
-            function(){
+        function(){
+
+            typing.style.display =
+            "none";
 
 
-                typing.style.display =
-                "none";
+            agregarMensaje(
+
+                "Esta consulta requiere atención personalizada. Puedes comunicarte directamente con un asesor de Grupo ASINEC utilizando el botón que aparece a continuación.",
+
+                "ai-message"
+
+            );
 
 
-                agregarMensaje(
-
-                    "Esta consulta requiere atención personalizada. Puedes comunicarte directamente con un asesor de Grupo ASINEC utilizando el botón que aparece a continuación.",
-
-                    "ai-message"
-
-                );
+            humanContact
+            .classList
+            .add(
+                "show"
+            );
 
 
-                humanContact
-                .classList
-                .add(
-                    "show"
-                );
+            chatMessages.scrollTop =
+            chatMessages.scrollHeight;
 
+        },
 
-                chatMessages.scrollTop =
-                chatMessages.scrollHeight;
-
-            },
-
-            600
-
+        600
         );
 
 
@@ -6755,9 +6420,6 @@ function enviarMensaje(){
 
     }
 
-
-
-    /* RESPUESTA NORMAL */
 
     const respuesta =
     obtenerRespuesta(
@@ -6767,42 +6429,40 @@ function enviarMensaje(){
 
     setTimeout(
 
-        function(){
+    function(){
+
+        typing.style.display =
+        "none";
 
 
-            typing.style.display =
-            "none";
+        agregarMensaje(
+
+            respuesta.texto,
+
+            "ai-message"
+
+        );
 
 
-            agregarMensaje(
+        if(
+            respuesta.asesor
+        ){
 
-                respuesta.texto,
-
-                "ai-message"
-
+            humanContact
+            .classList
+            .add(
+                "show"
             );
 
-
-            if(
-                respuesta.asesor
-            ){
-
-                humanContact
-                .classList
-                .add(
-                    "show"
-                );
-
-            }
+        }
 
 
-            chatMessages.scrollTop =
-            chatMessages.scrollHeight;
+        chatMessages.scrollTop =
+        chatMessages.scrollHeight;
 
-        },
+    },
 
-        600
-
+    600
     );
 
 }

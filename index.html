@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Grupo ASINEC</title>
+<title>Grupo ASINEC | Gestión Empresarial</title>
 
 <style>
 
-/* =========================
+/* ========================================
    CONFIGURACIÓN GENERAL
-========================= */
+======================================== */
 
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
 }
 
@@ -21,472 +26,767 @@ html{
 }
 
 body{
-    margin:0;
     font-family:Arial, Helvetica, sans-serif;
     background:#ffffff;
     color:#10213b;
 }
 
 
-/* =========================
+/* ========================================
    ENCABEZADO
-========================= */
+======================================== */
 
 header{
-    background:white;
-    padding:10px 6%;
+
+    width:100%;
+
+    background:#ffffff;
+
+    padding:12px 7%;
+
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
     position:sticky;
+
     top:0;
+
     z-index:1000;
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* LOGO PRINCIPAL */
 
 .logo{
-    width:220px;
+
+    width:230px;
+
     height:auto;
+
     object-fit:contain;
+
     display:block;
 }
 
+
 nav{
+
     display:flex;
+
     align-items:center;
+
+    gap:30px;
 }
+
 
 nav a{
-    text-decoration:none;
+
     color:#10213b;
-    font-weight:bold;
-    margin-left:25px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
     font-size:15px;
-    transition:.3s;
+
+    transition:0.3s;
 }
 
+
 nav a:hover{
+
     color:#087cff;
 }
 
 
-/* =========================
+/* ========================================
    PORTADA
-========================= */
+======================================== */
 
 .hero{
-    min-height:610px;
-    background:
-    radial-gradient(circle at 80% 40%, rgba(20,130,255,.35), transparent 35%),
-    linear-gradient(135deg,#031a3d,#074f9e);
+
+    min-height:620px;
+
+    padding:70px 8%;
 
     display:flex;
+
     align-items:center;
-    justify-content:center;
-    padding:70px 7%;
+
+    justify-content:space-between;
+
     gap:60px;
-    color:white;
+
     overflow:hidden;
+
+    color:white;
+
+    background:
+
+    radial-gradient(
+        circle at 80% 45%,
+        rgba(0,153,255,0.30),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #02162f,
+        #063f82,
+        #0874ce
+    );
 }
+
 
 .hero-texto{
-    max-width:620px;
+
+    width:58%;
+
+    max-width:680px;
 }
 
-.hero-texto small{
-    color:#53b5ff;
+
+.hero-etiqueta{
+
+    color:#49adff;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
     font-weight:bold;
-    font-size:17px;
-    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+    display:block;
 }
+
 
 .hero h1{
+
     font-size:52px;
-    line-height:1.05;
-    margin:15px 0;
+
+    line-height:1.1;
+
+    margin-bottom:22px;
 }
+
 
 .hero h1 span{
-    color:#48a9ff;
+
+    color:#50b4ff;
 }
+
 
 .hero p{
+
+    max-width:650px;
+
     font-size:18px;
-    line-height:1.7;
-    color:#e1ecfa;
+
+    line-height:1.8;
+
+    color:#e0ecfa;
 }
+
+
+/* BOTONES */
 
 .botones{
-    margin-top:30px;
+
+    margin-top:32px;
+
     display:flex;
-    gap:15px;
+
     flex-wrap:wrap;
+
+    gap:15px;
 }
+
 
 .boton{
+
     display:inline-block;
+
     padding:15px 25px;
-    border-radius:9px;
+
     background:#1688ff;
+
     color:white;
+
     text-decoration:none;
+
     font-weight:bold;
-    transition:.3s;
-    box-shadow:0 8px 20px rgba(0,102,255,.25);
+
+    border-radius:9px;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 25px rgba(0,119,255,0.30);
 }
+
 
 .boton:hover{
-    transform:translateY(-3px);
-    background:#0578ec;
+
+    transform:translateY(-4px);
+
+    background:#0577e7;
 }
 
+
 .boton-secundario{
+
     background:transparent;
+
     border:2px solid white;
+
     box-shadow:none;
 }
 
+
 .boton-secundario:hover{
+
     background:white;
+
     color:#074f9e;
 }
 
 
-/* ASISTENTE PORTADA */
+/* ========================================
+   ROBOT DE PORTADA
+======================================== */
 
-.robot{
-    width:330px;
+.hero-robot{
+
+    width:340px;
+
     max-width:38%;
+
     height:auto;
+
+    display:block;
+
     object-fit:contain;
 
     filter:
-    drop-shadow(0 25px 30px rgba(0,0,0,.30))
-    drop-shadow(0 0 30px rgba(0,140,255,.25));
+    drop-shadow(0 25px 30px rgba(0,0,0,0.35))
+    drop-shadow(0 0 30px rgba(0,153,255,0.25));
 
-    animation:flotar 4s ease-in-out infinite;
+    animation:robotFlotante 4s ease-in-out infinite;
 }
 
-@keyframes flotar{
+
+@keyframes robotFlotante{
 
     0%{
         transform:translateY(0);
     }
 
     50%{
-        transform:translateY(-12px);
+        transform:translateY(-14px);
     }
 
     100%{
         transform:translateY(0);
     }
+
 }
 
 
-/* =========================
+/* ========================================
    SERVICIOS
-========================= */
+======================================== */
 
-.seccion{
-    padding:80px 7%;
-    max-width:1300px;
+.servicios{
+
+    max-width:1350px;
+
     margin:auto;
+
+    padding:85px 7%;
 }
+
 
 .titulo{
+
     text-align:center;
+
     margin-bottom:50px;
 }
 
+
 .titulo span{
+
     color:#087cff;
+
     font-size:14px;
+
+    letter-spacing:2px;
+
     font-weight:bold;
-    letter-spacing:1.5px;
 }
+
 
 .titulo h2{
-    font-size:38px;
-    margin:10px 0;
+
+    margin-top:10px;
+
+    font-size:40px;
+
     color:#08244a;
 }
+
 
 .titulo p{
+
+    max-width:700px;
+
+    margin:15px auto 0;
+
     color:#64748b;
+
+    line-height:1.7;
+
     font-size:17px;
-    max-width:650px;
-    margin:auto;
-    line-height:1.6;
 }
 
 
-/* GRID SERVICIOS */
+/* ========================================
+   CUADRÍCULA DE SERVICIOS
+======================================== */
 
 .grid{
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+
+    gap:28px;
 }
 
 
-/* TARJETAS */
+/* ========================================
+   TARJETAS
+======================================== */
 
 .card{
+
+    min-height:390px;
+
     background:white;
-    border:1px solid #e5eaf2;
-    border-radius:18px;
-    padding:28px 24px;
+
+    border-radius:20px;
+
+    border:1px solid #e2e8f0;
+
+    padding:28px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
     text-align:center;
 
-    box-shadow:
-    0 10px 30px rgba(16,33,59,.08);
+    transition:0.35s;
 
-    transition:.3s;
+    box-shadow:
+    0 12px 35px rgba(16,33,59,0.09);
 }
+
 
 .card:hover{
-    transform:translateY(-8px);
+
+    transform:translateY(-10px);
+
+    border-color:#8ac8ff;
 
     box-shadow:
-    0 18px 38px rgba(16,33,59,.15);
+    0 22px 45px rgba(16,74,140,0.17);
 }
 
 
-/* LOGOS ISO */
+/* IMÁGENES DE LAS CERTIFICACIONES */
 
 .card img{
-    width:145px;
-    height:145px;
+
+    width:190px;
+
+    height:190px;
+
     object-fit:contain;
-    margin-bottom:18px;
+
+    display:block;
+
+    margin:0 auto 20px;
 }
+
 
 .card h3{
-    font-size:22px;
-    margin:5px 0 10px;
+
     color:#08244a;
+
+    font-size:24px;
+
+    margin-bottom:12px;
 }
+
 
 .card p{
+
     color:#64748b;
+
+    font-size:16px;
+
     line-height:1.6;
-    margin:0;
+
+    max-width:320px;
 }
 
 
-/* =========================
+/* ========================================
    ASISTENTE INTELIGENTE
-========================= */
+======================================== */
 
 .ia{
-    background:
-    radial-gradient(circle at 20% 50%, rgba(0,140,255,.13), transparent 35%),
-    linear-gradient(135deg,#eef7ff,#ffffff);
 
-    padding:80px 7%;
+    padding:90px 7%;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 50%,
+        rgba(0,153,255,0.13),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #edf7ff,
+        #ffffff
+    );
 }
 
+
 .ia-contenido{
+
     max-width:1200px;
+
     margin:auto;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    gap:80px;
+
+    gap:90px;
 }
 
 
-/* ROBOT ASISTENTE */
+.ia-robot{
 
-.ia img{
-    width:300px;
-    max-width:38%;
+    width:320px;
+
+    max-width:40%;
+
     height:auto;
+
     object-fit:contain;
 
+    display:block;
+
     filter:
-    drop-shadow(0 20px 28px rgba(0,68,130,.20))
-    drop-shadow(0 0 25px rgba(0,148,255,.18));
+    drop-shadow(0 22px 28px rgba(0,59,120,0.20))
+    drop-shadow(0 0 30px rgba(0,153,255,0.15));
 }
+
 
 .ia-texto{
-    max-width:570px;
+
+    max-width:600px;
 }
+
 
 .ia-texto h2{
-    font-size:40px;
+
+    font-size:42px;
+
     color:#08244a;
-    margin-bottom:15px;
+
+    margin-bottom:20px;
 }
 
+
 .ia-texto h2 span{
+
     color:#087cff;
 }
 
+
 .ia-texto p{
-    font-size:18px;
-    line-height:1.7;
+
     color:#53657d;
+
+    font-size:18px;
+
+    line-height:1.8;
 }
+
 
 .ia-lista{
-    margin:25px 0;
+
+    margin:25px 0 30px;
 }
 
+
 .ia-lista div{
-    margin:12px 0;
+
+    margin:14px 0;
+
     font-weight:bold;
+
+    font-size:16px;
+
     color:#16375f;
 }
 
 
-/* =========================
+/* ========================================
    CONTACTO
-========================= */
+======================================== */
 
 .contacto{
-    background:
-    linear-gradient(135deg,#06234a,#074f9e);
+
+    padding:80px 20px;
+
+    text-align:center;
 
     color:white;
-    text-align:center;
-    padding:75px 20px;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        rgba(0,140,255,0.20),
+        transparent 45%
+    ),
+
+    linear-gradient(
+        135deg,
+        #031a3d,
+        #07509c
+    );
 }
+
 
 .contacto h2{
-    font-size:38px;
-    margin-bottom:15px;
+
+    font-size:40px;
+
+    margin-bottom:20px;
 }
 
+
 .contacto p{
-    font-size:18px;
-    color:#d4e4f8;
-    max-width:700px;
+
+    max-width:720px;
+
     margin:0 auto 30px;
+
+    color:#d4e4f8;
+
+    font-size:18px;
+
     line-height:1.7;
 }
 
 
-/* =========================
+/* ========================================
    FOOTER
-========================= */
+======================================== */
 
 footer{
-    background:#03162f;
-    color:white;
+
+    background:#021329;
+
+    color:#cbd5e1;
+
     text-align:center;
-    padding:25px;
+
+    padding:28px 15px;
+
     font-size:14px;
 }
 
 
-/* =========================
-   TABLET / CELULAR
-========================= */
+/* ========================================
+   CELULAR Y TABLET
+======================================== */
 
-@media(max-width:900px){
+@media(max-width:950px){
 
     header{
+
         justify-content:center;
     }
 
+
     .logo{
-        width:190px;
+
+        width:200px;
     }
 
+
     nav{
+
         display:none;
     }
 
+
     .hero{
+
         flex-direction:column;
+
         text-align:center;
+
         padding:60px 7%;
-        gap:30px;
     }
+
+
+    .hero-texto{
+
+        width:100%;
+    }
+
 
     .hero h1{
-        font-size:38px;
+
+        font-size:40px;
     }
 
-    .hero p{
-        font-size:17px;
-    }
-
-    .robot{
-        max-width:80%;
-        width:270px;
-    }
 
     .botones{
+
         justify-content:center;
     }
 
-    .grid{
-        grid-template-columns:1fr;
+
+    .hero-robot{
+
+        width:280px;
+
+        max-width:80%;
     }
 
-    .card img{
-        width:135px;
-        height:135px;
+
+    .grid{
+
+        grid-template-columns:repeat(2,1fr);
     }
+
 
     .ia-contenido{
+
         flex-direction:column;
+
         text-align:center;
-        gap:35px;
+
+        gap:40px;
     }
 
-    .ia img{
+
+    .ia-robot{
+
+        width:270px;
+
         max-width:80%;
-        width:260px;
-    }
-
-    .ia-texto h2{
-        font-size:34px;
     }
 
 }
 
 
-@media(max-width:500px){
+@media(max-width:650px){
 
     .logo{
-        width:170px;
+
+        width:175px;
     }
 
+
     .hero h1{
+
+        font-size:33px;
+    }
+
+
+    .hero p{
+
+        font-size:16px;
+    }
+
+
+    .grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .card{
+
+        min-height:360px;
+    }
+
+
+    .card img{
+
+        width:180px;
+
+        height:180px;
+    }
+
+
+    .titulo h2{
+
         font-size:32px;
     }
 
-    .titulo h2{
-        font-size:30px;
+
+    .ia-texto h2{
+
+        font-size:34px;
     }
 
+
     .contacto h2{
-        font-size:30px;
+
+        font-size:32px;
     }
 
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- ======================================
      ENCABEZADO
-========================= -->
+======================================= -->
 
 <header>
 
 <img
-src="GRUPO ASINEC LOGO.png"
+src="./GRUPO ASINEC LOGO.png"
 class="logo"
 alt="Grupo ASINEC">
 
@@ -514,35 +814,45 @@ Contacto
 
 
 
-<!-- =========================
+<!-- ======================================
      PORTADA
-========================= -->
+======================================= -->
 
-<section class="hero" id="inicio">
+<section
+class="hero"
+id="inicio">
 
 
 <div class="hero-texto">
 
-<small>
+<span class="hero-etiqueta">
 GRUPO ASINEC
-</small>
+</span>
+
 
 <h1>
+
 Gestión empresarial,
+
 <span>
 cumplimiento y mejora continua.
 </span>
+
 </h1>
 
+
 <p>
+
 Acompañamos a organizaciones en la implementación,
 auditoría, capacitación y fortalecimiento de sistemas
 de gestión, ayudándolas a alcanzar mayores niveles
 de calidad, seguridad y confianza.
+
 </p>
 
 
 <div class="botones">
+
 
 <a
 href="#servicios"
@@ -561,16 +871,15 @@ Habla con ASINEC IA
 
 </a>
 
-</div>
-
 
 </div>
 
+</div>
 
 
 <img
-src="ASISTENTE.png"
-class="robot"
+src="./ASISTENTE.png"
+class="hero-robot"
 alt="Asistente inteligente de Grupo ASINEC">
 
 
@@ -578,12 +887,12 @@ alt="Asistente inteligente de Grupo ASINEC">
 
 
 
-<!-- =========================
+<!-- ======================================
      SERVICIOS
-========================= -->
+======================================= -->
 
 <section
-class="seccion"
+class="servicios"
 id="servicios">
 
 
@@ -598,8 +907,11 @@ NUESTROS SERVICIOS
 </h2>
 
 <p>
-Soluciones especializadas para fortalecer el cumplimiento,
-la seguridad y los sistemas de gestión de tu organización.
+
+Soluciones especializadas para fortalecer
+el cumplimiento, la seguridad, la calidad
+y los sistemas de gestión de tu organización.
+
 </p>
 
 </div>
@@ -615,7 +927,7 @@ la seguridad y los sistemas de gestión de tu organización.
 <div class="card">
 
 <img
-src="ISO 9001.png"
+src="./ISO 9001.png"
 alt="ISO 9001">
 
 <h3>
@@ -623,8 +935,10 @@ ISO 9001
 </h3>
 
 <p>
-Implementación, auditoría y mejora del Sistema de
-Gestión de la Calidad y de los procesos empresariales.
+
+Sistema de Gestión de la Calidad,
+optimización de procesos y mejora continua.
+
 </p>
 
 </div>
@@ -636,7 +950,7 @@ Gestión de la Calidad y de los procesos empresariales.
 <div class="card">
 
 <img
-src="ISO 18788.png"
+src="./ISO 18788.png"
 alt="ISO 18788">
 
 <h3>
@@ -644,8 +958,10 @@ ISO 18788
 </h3>
 
 <p>
-Sistema de gestión para operaciones de seguridad privada,
-control operacional y mejora continua.
+
+Sistema de gestión para operaciones
+de seguridad privada y control operacional.
+
 </p>
 
 </div>
@@ -657,7 +973,7 @@ control operacional y mejora continua.
 <div class="card">
 
 <img
-src="ISO 45001.png"
+src="./ISO 45001.png"
 alt="ISO 45001">
 
 <h3>
@@ -665,8 +981,10 @@ ISO 45001
 </h3>
 
 <p>
-Gestión de seguridad y salud en el trabajo para
-prevenir riesgos y fortalecer ambientes laborales seguros.
+
+Gestión de seguridad y salud en el trabajo
+para prevenir riesgos laborales.
+
 </p>
 
 </div>
@@ -678,7 +996,7 @@ prevenir riesgos y fortalecer ambientes laborales seguros.
 <div class="card">
 
 <img
-src="ISO 27001.png"
+src="./ISO 27001.png"
 alt="ISO 27001">
 
 <h3>
@@ -686,8 +1004,10 @@ ISO 27001
 </h3>
 
 <p>
-Gestión de seguridad de la información y protección
-de los activos y datos de las organizaciones.
+
+Gestión de seguridad de la información
+y protección de los activos empresariales.
+
 </p>
 
 </div>
@@ -699,16 +1019,19 @@ de los activos y datos de las organizaciones.
 <div class="card">
 
 <img
-src="LOPDP.png"
-alt="LOPDP Ecuador">
+src="./LOPDP.png"
+alt="Ley Orgánica de Protección de Datos Personales">
 
 <h3>
 LOPDP
 </h3>
 
 <p>
-Asesoría para el cumplimiento de la Ley Orgánica
-de Protección de Datos Personales del Ecuador.
+
+Asesoría para el cumplimiento de la
+Ley Orgánica de Protección de Datos
+Personales del Ecuador.
+
 </p>
 
 </div>
@@ -720,7 +1043,7 @@ de Protección de Datos Personales del Ecuador.
 <div class="card">
 
 <img
-src="BASC.png"
+src="./BASC.png"
 alt="BASC">
 
 <h3>
@@ -728,8 +1051,10 @@ BASC
 </h3>
 
 <p>
-Gestión de control y seguridad para organizaciones,
-comercio internacional y cadenas logísticas.
+
+Gestión de control y seguridad
+para organizaciones y cadenas logísticas.
+
 </p>
 
 </div>
@@ -741,9 +1066,9 @@ comercio internacional y cadenas logísticas.
 
 
 
-<!-- =========================
+<!-- ======================================
      ASISTENTE INTELIGENTE
-========================= -->
+======================================= -->
 
 <section
 class="ia"
@@ -754,24 +1079,32 @@ id="asistente">
 
 
 <img
-src="ASISTENTE.png"
+src="./ASISTENTE.png"
+class="ia-robot"
 alt="ASINEC Inteligencia Artificial">
 
 
 <div class="ia-texto">
 
+
 <h2>
+
 Conoce a
+
 <span>
 ASINEC IA
 </span>
+
 </h2>
 
 
 <p>
-Nuestro asistente inteligente está diseñado para orientar
-a empresas y usuarios sobre normas ISO, sistemas de gestión,
-protección de datos, seguridad y los servicios de Grupo ASINEC.
+
+Nuestro asistente inteligente estará disponible
+para orientar a empresas y usuarios sobre normas ISO,
+sistemas de gestión, seguridad, protección de datos
+y los servicios ofrecidos por Grupo ASINEC.
+
 </p>
 
 
@@ -817,9 +1150,9 @@ Quiero hablar con ASINEC IA
 
 
 
-<!-- =========================
+<!-- ======================================
      CONTACTO
-========================= -->
+======================================= -->
 
 <section
 class="contacto"
@@ -832,9 +1165,12 @@ id="contacto">
 
 
 <p>
-Nuestro equipo está preparado para ayudarte en
-implementación, auditoría, capacitación, consultoría,
-cumplimiento normativo y sistemas de gestión.
+
+Nuestro equipo está preparado para ayudarte
+en implementación, auditoría, capacitación,
+consultoría, cumplimiento normativo
+y sistemas de gestión.
+
 </p>
 
 
@@ -851,9 +1187,9 @@ Contactar a Grupo ASINEC
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- ======================================
+     PIE DE PÁGINA
+======================================= -->
 
 <footer>
 
@@ -863,4 +1199,5 @@ Contactar a Grupo ASINEC
 
 
 </body>
+
 </html>

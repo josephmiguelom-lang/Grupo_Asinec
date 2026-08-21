@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Grupo ASINEC | Gestión · Cumplimiento · Evolución</title>
 
+<meta
+name="description"
+content="Grupo ASINEC. Consultoría, auditoría, capacitación, sistemas de gestión, ISO, LOPDP y BASC."
+>
+
 <style>
 
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
 :root{
-    --navy:#031426;
-    --navy2:#072d54;
+    --dark:#031426;
+    --dark2:#072d54;
+    --dark3:#0a4f8d;
+
     --blue:#087cff;
-    --blue2:#20a4ff;
-    --green:#16964b;
+    --blue2:#22a7ff;
+
+    --green:#15964a;
     --red:#d62c39;
+
     --white:#ffffff;
+
     --text:#123653;
-    --muted:#65788c;
+    --muted:#64788c;
+
     --soft:#f5f9fc;
     --line:#dce7f0;
-    --shadow:0 28px 75px rgba(5,35,70,.14);
+
+    --shadow:
+    0 28px 75px rgba(5,35,70,.14);
 }
+
+
+/* ==========================================================
+   RESET
+========================================================== */
 
 *{
     margin:0;
@@ -35,25 +56,41 @@ html{
 }
 
 body{
-    font-family:"Segoe UI",Arial,sans-serif;
+    font-family:
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
     color:var(--text);
     background:#fff;
+
     overflow-x:hidden;
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
 }
 
-button,input{
+button,
+input{
     font:inherit;
 }
 
-img{
-    max-width:100%;
-    display:block;
+button{
+    border:none;
 }
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+
+/* ==========================================================
+   GENERAL
+========================================================== */
 
 .container{
     width:min(1320px,88%);
@@ -66,41 +103,60 @@ img{
 
 .kicker{
     display:inline-block;
+
     margin-bottom:14px;
+
     color:var(--blue);
+
     font-size:11px;
     font-weight:900;
+
     letter-spacing:2px;
 }
 
 .title{
     max-width:820px;
+
     color:#08294d;
-    font-size:clamp(36px,4.8vw,59px);
+
+    font-size:
+    clamp(36px,4.8vw,59px);
+
     line-height:1.06;
+
     letter-spacing:-2px;
 }
 
 .description{
     max-width:700px;
+
     margin-top:19px;
+
     color:var(--muted);
+
     font-size:17px;
+
     line-height:1.8;
 }
 
 .btn{
     min-height:52px;
+
     display:inline-flex;
     align-items:center;
     justify-content:center;
+
     gap:8px;
+
     padding:14px 24px;
-    border:none;
+
     border-radius:999px;
+
     cursor:pointer;
+
     font-size:14px;
     font-weight:800;
+
     transition:.3s;
 }
 
@@ -110,51 +166,77 @@ img{
 
 .btn-blue{
     color:#fff;
-    background:linear-gradient(135deg,#1598ff,#075fc0);
-    box-shadow:0 15px 35px rgba(0,105,220,.28);
+
+    background:
+    linear-gradient(
+        135deg,
+        #1598ff,
+        #075fc0
+    );
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,105,220,.28);
 }
 
-.btn-ghost{
+.btn-outline{
     color:#fff;
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.35);
+
+    border:
+    1px solid
+    rgba(255,255,255,.35);
+
+    background:
+    rgba(255,255,255,.07);
 }
 
 
-/* =====================================================
+/* ==========================================================
    HEADER
-===================================================== */
+========================================================== */
 
 .main-header{
     position:fixed;
+
     top:0;
     left:0;
     right:0;
+
     z-index:5000;
 
     min-height:88px;
 
-    padding:13px 6%;
+    padding:
+    13px 6%;
 
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 
-    background:rgba(3,20,38,.90);
-    backdrop-filter:blur(18px);
+    background:
+    rgba(3,20,38,.90);
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    backdrop-filter:
+    blur(18px);
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
 }
 
 .main-header::before{
     content:"";
+
     position:absolute;
-    left:0;
+
     top:0;
+    left:0;
     right:0;
+
     height:3px;
 
-    background:linear-gradient(
+    background:
+    linear-gradient(
         90deg,
         var(--green),
         var(--blue),
@@ -164,10 +246,17 @@ img{
 
 .logo{
     width:220px;
-    padding:6px 14px;
+
+    padding:
+    6px 14px;
+
     border-radius:14px;
+
     background:#fff;
-    box-shadow:0 10px 30px rgba(0,0,0,.16);
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.16);
 }
 
 .main-nav{
@@ -176,28 +265,41 @@ img{
 }
 
 .main-nav a{
-    padding:10px 15px;
+    padding:
+    10px 15px;
+
     border-radius:999px;
+
     color:#dceaf6;
+
     font-size:13px;
     font-weight:700;
+
     transition:.25s;
 }
 
 .main-nav a:hover{
     color:#fff;
-    background:rgba(255,255,255,.10);
+
+    background:
+    rgba(255,255,255,.10);
 }
 
 .main-nav .nav-contact{
     color:#fff;
-    background:linear-gradient(135deg,#118cff,#075db9);
+
+    background:
+    linear-gradient(
+        135deg,
+        #118cff,
+        #075db9
+    );
 }
 
 
-/* =====================================================
+/* ==========================================================
    HERO
-===================================================== */
+========================================================== */
 
 .hero{
     position:relative;
@@ -207,18 +309,27 @@ img{
     display:flex;
     align-items:center;
 
-    padding:145px 6% 80px;
+    padding:
+    145px 6% 80px;
 
     overflow:hidden;
 
     color:#fff;
 
     background:
+
     radial-gradient(
         circle at 77% 45%,
         rgba(48,183,255,.42),
         transparent 28%
     ),
+
+    radial-gradient(
+        circle at 10% 10%,
+        rgba(28,150,78,.12),
+        transparent 24%
+    ),
+
     linear-gradient(
         120deg,
         #031326,
@@ -229,114 +340,172 @@ img{
 
 .hero::before{
     content:"";
+
     position:absolute;
+
     inset:0;
-    opacity:.19;
+
+    opacity:.18;
 
     background-image:
+
     linear-gradient(
         rgba(255,255,255,.04) 1px,
         transparent 1px
     ),
+
     linear-gradient(
         90deg,
         rgba(255,255,255,.04) 1px,
         transparent 1px
     );
 
-    background-size:70px 70px;
+    background-size:
+    70px 70px;
 }
 
 .hero-grid{
     position:relative;
+
     z-index:2;
 
     width:100%;
     max-width:1400px;
+
     margin:auto;
 
     display:grid;
-    grid-template-columns:1.1fr .9fr;
-    align-items:center;
+
+    grid-template-columns:
+    1.1fr .9fr;
+
     gap:70px;
+
+    align-items:center;
 }
 
 .hero-kicker{
     margin-bottom:26px;
+
     color:#87d4ff;
+
     font-size:11px;
     font-weight:900;
+
     letter-spacing:2px;
 }
 
 .hero h1{
     max-width:850px;
-    font-size:clamp(50px,6vw,87px);
+
+    font-size:
+    clamp(50px,6vw,87px);
+
     line-height:.98;
+
     letter-spacing:-4px;
 }
 
 .hero h1 span{
     display:block;
+
     color:#68c8ff;
+
     font-weight:500;
 }
 
 .hero p{
     max-width:700px;
+
     margin-top:27px;
+
     color:#d9e8f5;
+
     font-size:18px;
+
     line-height:1.8;
 }
 
 .hero-actions{
     margin-top:35px;
+
     display:flex;
-    gap:13px;
+
     flex-wrap:wrap;
+
+    gap:13px;
 }
 
 .hero-art{
     position:relative;
+
     min-height:580px;
+
     display:flex;
+
     justify-content:center;
     align-items:center;
 }
 
 .hero-art::before{
     content:"";
+
     position:absolute;
+
     width:455px;
     height:455px;
+
     border-radius:50%;
-    border:1px solid rgba(255,255,255,.13);
+
+    border:
+    1px solid
+    rgba(255,255,255,.13);
 
     box-shadow:
-    0 0 0 50px rgba(255,255,255,.022),
-    0 0 0 100px rgba(255,255,255,.011);
+
+    0 0 0 50px
+    rgba(255,255,255,.022),
+
+    0 0 0 100px
+    rgba(255,255,255,.011);
 }
 
 .hero-robot{
     position:relative;
-    width:min(495px,100%);
+
     z-index:2;
 
-    animation:robotFloat 5s ease-in-out infinite;
+    width:
+    min(495px,100%);
 
-    filter:drop-shadow(0 38px 35px rgba(0,0,0,.28));
+    animation:
+    robotFloat
+    5s ease-in-out infinite;
+
+    filter:
+    drop-shadow(
+        0 38px 35px
+        rgba(0,0,0,.28)
+    );
 }
 
 @keyframes robotFloat{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-16px);}
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-16px);
+    }
+
 }
 
 
-/* =====================================================
-   MISIÓN VISIÓN
-===================================================== */
+/* ==========================================================
+   IDENTIDAD
+========================================================== */
 
 .identity{
     background:#f5f9fc;
@@ -344,9 +513,14 @@ img{
 
 .identity-head{
     display:grid;
-    grid-template-columns:.9fr 1.1fr;
+
+    grid-template-columns:
+    .9fr 1.1fr;
+
     align-items:end;
+
     gap:70px;
+
     margin-bottom:55px;
 }
 
@@ -356,21 +530,36 @@ img{
 
 .identity-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     overflow:hidden;
+
     border-radius:29px;
-    border:1px solid var(--line);
-    box-shadow:var(--shadow);
+
+    border:
+    1px solid var(--line);
+
+    box-shadow:
+    var(--shadow);
 }
 
 .identity-card{
     min-height:405px;
+
     padding:48px;
 }
 
 .identity-card:first-child{
     color:#fff;
-    background:linear-gradient(145deg,#051a33,#0a4d88);
+
+    background:
+    linear-gradient(
+        145deg,
+        #051a33,
+        #0a4d88
+    );
 }
 
 .identity-card:last-child{
@@ -379,15 +568,22 @@ img{
 
 .identity-card small{
     display:block;
+
     margin-bottom:43px;
+
     color:#65c9ff;
+
     font-weight:900;
+
     letter-spacing:2px;
 }
 
 .identity-card h3{
     margin-bottom:18px;
-    font-size:clamp(34px,4vw,48px);
+
+    font-size:
+    clamp(34px,4vw,48px);
+
     line-height:1.08;
 }
 
@@ -397,6 +593,7 @@ img{
 
 .identity-card p{
     font-size:16px;
+
     line-height:1.85;
 }
 
@@ -409,80 +606,88 @@ img{
 }
 
 
-/* =====================================================
+/* ==========================================================
    SERVICIOS
-===================================================== */
+========================================================== */
 
 .services-head{
     display:flex;
+
     align-items:flex-end;
     justify-content:space-between;
+
     gap:50px;
+
     margin-bottom:58px;
 }
 
 .services-head .description{
     max-width:470px;
+
     margin:0;
 }
 
 .services-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+    repeat(3,1fr);
+
     gap:20px;
 }
 
-/* IMPORTANTE:
-   LA TARJETA AHORA ES UN ENLACE REAL
-*/
-
 .service-link{
     display:block;
-    height:100%;
 }
 
 .service-card{
     position:relative;
 
-    height:100%;
     min-height:410px;
 
     padding:29px;
 
     overflow:hidden;
 
-    cursor:pointer;
-
     border-radius:25px;
-    border:1px solid #dfe8f1;
+
+    border:
+    1px solid #dfe8f1;
 
     background:
+
     radial-gradient(
         circle at 50% 0%,
         rgba(8,124,255,.07),
         transparent 35%
     ),
+
     linear-gradient(
         145deg,
-        #ffffff,
+        #fff,
         #f7faff
     );
 
     box-shadow:
-    0 15px 40px rgba(10,40,75,.07);
+    0 15px 40px
+    rgba(10,40,75,.07);
 
     transition:.32s;
 }
 
 .service-card::before{
     content:"";
+
     position:absolute;
-    top:0;
+
     left:0;
+    top:0;
     right:0;
+
     height:4px;
 
-    background:linear-gradient(
+    background:
+    linear-gradient(
         90deg,
         var(--green),
         var(--blue),
@@ -491,15 +696,22 @@ img{
 }
 
 .service-card:hover{
-    transform:translateY(-9px);
-    border-color:rgba(8,124,255,.30);
-    box-shadow:0 28px 65px rgba(10,45,80,.15);
+    transform:
+    translateY(-9px);
+
+    border-color:
+    rgba(8,124,255,.30);
+
+    box-shadow:
+    0 28px 65px
+    rgba(10,45,80,.15);
 }
 
 .service-image{
     height:220px;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 }
@@ -507,49 +719,68 @@ img{
 .service-image img{
     width:190px;
     height:190px;
+
     object-fit:contain;
+
     transition:.3s;
 }
 
 .service-card:hover img{
-    transform:scale(1.06);
+    transform:
+    scale(1.06);
 }
 
 .service-category{
     color:#087cff;
+
     font-size:10px;
     font-weight:900;
+
     letter-spacing:1.5px;
 }
 
 .service-card h3{
-    margin:8px 0 10px;
+    margin:
+    8px 0 10px;
+
     color:#082d54;
+
     font-size:25px;
 }
 
 .service-card p{
     color:#687a8e;
+
     font-size:14px;
+
     line-height:1.7;
 }
 
 .service-more{
     display:inline-block;
+
     margin-top:18px;
+
     color:#087cff;
+
     font-size:13px;
     font-weight:900;
 }
 
 
-/* =====================================================
+/* ==========================================================
    PROCESO
-===================================================== */
+========================================================== */
 
 .process{
     color:#fff;
-    background:linear-gradient(130deg,#03162d,#073e75);
+
+    background:
+    linear-gradient(
+        130deg,
+        #03162d,
+        #073e75
+    );
 }
 
 .process .title{
@@ -562,37 +793,51 @@ img{
 
 .process-grid{
     margin-top:55px;
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+    repeat(3,1fr);
+
     gap:18px;
 }
 
 .process-card{
     padding:27px;
+
     border-radius:19px;
-    border:1px solid rgba(255,255,255,.13);
-    background:rgba(255,255,255,.07);
+
+    border:
+    1px solid
+    rgba(255,255,255,.13);
+
+    background:
+    rgba(255,255,255,.07);
 }
 
 .process-card small{
     color:#67c9ff;
+
     font-weight:900;
 }
 
 .process-card h3{
-    margin:10px 0 8px;
+    margin:
+    10px 0 8px;
 }
 
 .process-card p{
     color:#cfdfef;
+
     font-size:14px;
+
     line-height:1.65;
 }
 
 
-/* =====================================================
+/* ==========================================================
    IA
-===================================================== */
+========================================================== */
 
 .ai-section{
     background:#f5f9fc;
@@ -600,34 +845,49 @@ img{
 
 .ai-box{
     display:grid;
-    grid-template-columns:1fr 1.1fr;
+
+    grid-template-columns:
+    1fr 1.1fr;
 
     overflow:hidden;
 
     border-radius:32px;
-    border:1px solid var(--line);
+
+    border:
+    1px solid var(--line);
 
     background:#fff;
 
-    box-shadow:var(--shadow);
+    box-shadow:
+    var(--shadow);
 }
 
 .ai-visual{
     position:relative;
+
     min-height:570px;
 
     display:flex;
+
     justify-content:center;
     align-items:center;
 
-    background:linear-gradient(145deg,#05172d,#0a518e);
+    background:
+    linear-gradient(
+        145deg,
+        #05172d,
+        #0a518e
+    );
 }
 
 .ai-visual::before{
     content:"";
+
     position:absolute;
+
     width:410px;
     height:410px;
+
     border-radius:50%;
 
     background:
@@ -640,95 +900,139 @@ img{
 
 .ai-image{
     position:relative;
+
     width:385px;
-    filter:drop-shadow(0 28px 28px rgba(0,0,0,.27));
+
+    filter:
+    drop-shadow(
+        0 28px 28px
+        rgba(0,0,0,.27)
+    );
 }
 
 .ai-content{
-    padding:clamp(40px,6vw,75px);
+    padding:
+    clamp(40px,6vw,75px);
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
 }
 
 .ai-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:11px;
-    margin:26px 0 30px;
+
+    margin:
+    26px 0 30px;
 }
 
 .ai-item{
     padding:12px;
+
     border-radius:12px;
-    border:1px solid #dfe8f1;
+
+    border:
+    1px solid #dfe8f1;
+
     background:#f8fbfd;
+
     font-size:13px;
     font-weight:700;
 }
 
 
-/* =====================================================
+/* ==========================================================
    CONTACTO
-===================================================== */
+========================================================== */
 
 .contact{
-    padding:100px 6%;
+    padding:
+    100px 6%;
+
     color:#fff;
-    background:linear-gradient(120deg,#061d38,#0a5797);
+
+    background:
+    linear-gradient(
+        120deg,
+        #061d38,
+        #0a5797
+    );
 }
 
 .contact-grid{
     max-width:1220px;
+
     margin:auto;
+
     display:grid;
-    grid-template-columns:1fr auto;
+
+    grid-template-columns:
+    1fr auto;
+
     align-items:center;
+
     gap:50px;
 }
 
 .contact h2{
     max-width:800px;
-    font-size:clamp(38px,5vw,63px);
+
+    font-size:
+    clamp(38px,5vw,63px);
+
     line-height:1.04;
+
     letter-spacing:-2px;
 }
 
 .contact p{
     max-width:650px;
+
     margin-top:17px;
+
     color:#d3e5f4;
+
     line-height:1.75;
 }
 
-.whatsapp{
-    color:#fff;
-    background:linear-gradient(135deg,#28ce68,#169d48);
-}
 
-
-/* =====================================================
+/* ==========================================================
    FOOTER
-===================================================== */
+========================================================== */
 
 footer{
     padding:29px 6%;
+
     text-align:center;
+
     color:#95aabe;
+
     background:#020f1e;
+
     font-size:12px;
 }
 
 
-/* =====================================================
-   PÁGINAS INTERNAS
-   NO USAN JAVASCRIPT
-===================================================== */
+/* ==========================================================
+   VISTAS DE SERVICIO
+
+   IMPORTANTE:
+   ESTAS ABREN CON CSS :target.
+   NO DEPENDEN DEL JAVASCRIPT.
+========================================================== */
 
 .service-page{
     position:fixed;
+
     inset:0;
+
     z-index:9000;
 
     display:none;
@@ -738,79 +1042,98 @@ footer{
     background:#fff;
 }
 
-/*
-ESTA ES LA CLAVE:
-cuando el enlace es #iso9001,
-la sección con id="iso9001"
-se abre automáticamente.
-*/
-
 .service-page:target{
     display:block;
 }
 
 
-/* HEADER INTERNO */
+/* HEADER DE NORMA */
 
 .service-page-header{
     position:sticky;
+
     top:0;
+
     z-index:50;
 
     min-height:82px;
 
-    padding:11px 6%;
+    padding:
+    11px 6%;
 
     display:flex;
+
     align-items:center;
     justify-content:space-between;
 
-    background:rgba(3,20,38,.96);
-    backdrop-filter:blur(18px);
+    background:
+    rgba(3,20,38,.97);
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    backdrop-filter:
+    blur(18px);
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
 }
 
 .service-page-logo{
     width:190px;
-    padding:5px 12px;
+
+    padding:
+    5px 12px;
+
     border-radius:12px;
+
     background:#fff;
 }
 
 .back-button{
-    padding:11px 17px;
+    padding:
+    11px 17px;
+
     border-radius:999px;
+
     color:#fff;
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.20);
+
+    border:
+    1px solid
+    rgba(255,255,255,.20);
+
+    background:
+    rgba(255,255,255,.07);
+
     font-size:13px;
     font-weight:800;
 }
 
 
-/* HERO INTERNO */
+/* HERO NORMA */
 
 .service-inner-hero{
     position:relative;
 
-    min-height:620px;
+    min-height:610px;
 
-    padding:75px 7%;
+    padding:
+    70px 7%;
 
     display:flex;
-    align-items:center;
 
-    overflow:hidden;
+    align-items:center;
 
     color:#fff;
 
+    overflow:hidden;
+
     background:
+
     radial-gradient(
         circle at 78% 47%,
         rgba(48,184,255,.40),
         transparent 28%
     ),
+
     linear-gradient(
         120deg,
         #031326,
@@ -821,69 +1144,97 @@ se abre automáticamente.
 
 .service-inner-grid{
     width:100%;
+
     max-width:1300px;
+
     margin:auto;
 
     display:grid;
-    grid-template-columns:1.1fr .9fr;
+
+    grid-template-columns:
+    1.1fr .9fr;
+
     align-items:center;
+
     gap:70px;
 }
 
 .breadcrumb{
     margin-bottom:21px;
+
     color:#8cd5ff;
+
     font-size:10px;
     font-weight:900;
+
     letter-spacing:1.7px;
 }
 
 .service-tag{
     display:inline-block;
+
     margin-bottom:17px;
-    padding:7px 11px;
+
+    padding:
+    7px 11px;
 
     border-radius:999px;
 
     color:#a2ddff;
 
-    border:1px solid rgba(255,255,255,.15);
-    background:rgba(255,255,255,.07);
+    border:
+    1px solid
+    rgba(255,255,255,.15);
+
+    background:
+    rgba(255,255,255,.07);
 
     font-size:10px;
     font-weight:900;
+
     letter-spacing:1.4px;
 }
 
 .service-inner-hero h1{
-    font-size:clamp(52px,6vw,84px);
+    font-size:
+    clamp(52px,6vw,84px);
+
     line-height:1;
+
     letter-spacing:-3px;
 }
 
 .service-inner-hero p{
     max-width:650px;
+
     margin-top:22px;
+
     color:#d8e8f5;
+
     font-size:18px;
+
     line-height:1.8;
 }
 
 .service-inner-image{
     position:relative;
 
-    min-height:420px;
+    min-height:410px;
 
     display:flex;
-    justify-content:center;
+
     align-items:center;
+    justify-content:center;
 }
 
 .service-inner-image::before{
     content:"";
+
     position:absolute;
-    width:410px;
-    height:410px;
+
+    width:400px;
+    height:400px;
+
     border-radius:50%;
 
     background:
@@ -896,22 +1247,30 @@ se abre automáticamente.
 
 .service-inner-image img{
     position:relative;
-    width:345px;
-    height:345px;
+
+    width:340px;
+    height:340px;
+
     object-fit:contain;
 
-    filter:drop-shadow(0 30px 30px rgba(0,0,0,.28));
+    filter:
+    drop-shadow(
+        0 30px 30px
+        rgba(0,0,0,.28)
+    );
 }
 
 
-/* CONTENIDO */
+/* INFORMACIÓN */
 
 .inner-info{
-    padding:95px 7%;
+    padding:
+    95px 7%;
 }
 
 .inner-container{
     max-width:1150px;
+
     margin:auto;
 }
 
@@ -919,247 +1278,521 @@ se abre automáticamente.
     margin-top:50px;
 
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:20px;
 }
 
 .info-card{
     padding:30px;
+
     border-radius:20px;
-    border:1px solid var(--line);
+
+    border:
+    1px solid var(--line);
+
     background:#f7fafd;
 }
 
 .info-card small{
     color:#087cff;
+
     font-size:10px;
     font-weight:900;
+
     letter-spacing:1.4px;
 }
 
 .info-card h3{
-    margin:10px 0;
+    margin:
+    10px 0;
+
     color:#082c51;
+
     font-size:21px;
 }
 
 .info-card p{
     color:#66798c;
+
     font-size:15px;
+
     line-height:1.75;
 }
 
 
-/* INCLUYE */
+/* ==========================================================
+   COMPRA
+========================================================== */
 
-.includes{
-    padding:90px 7%;
+.purchase{
+    padding:
+    95px 7%;
+
     background:#f5f9fc;
 }
 
-.includes-list{
-    margin-top:42px;
+.purchase-card{
+    max-width:1080px;
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:13px;
-}
-
-.include{
-    padding:16px;
-    display:flex;
-    gap:11px;
-    align-items:center;
-
-    border-radius:14px;
-    border:1px solid var(--line);
-
-    background:#fff;
-
-    color:#385a79;
-    font-size:14px;
-    font-weight:700;
-}
-
-.check{
-    width:29px;
-    height:29px;
-
-    flex:none;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:50%;
-
-    color:#fff;
-    background:#087cff;
-}
-
-
-/* PROCESO INTERNO */
-
-.inner-process{
-    padding:95px 7%;
-    color:#fff;
-    background:linear-gradient(130deg,#04172e,#07437c);
-}
-
-.inner-process .title{
-    color:#fff;
-}
-
-.inner-process .description{
-    color:#ccdeef;
-}
-
-.inner-steps{
-    margin-top:48px;
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.inner-step{
-    padding:24px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,.13);
-    background:rgba(255,255,255,.07);
-}
-
-.inner-step small{
-    color:#68c8ff;
-    font-weight:900;
-}
-
-.inner-step h3{
-    margin:10px 0 7px;
-}
-
-.inner-step p{
-    color:#ccdeee;
-    font-size:13px;
-    line-height:1.6;
-}
-
-
-/* PAQUETE */
-
-.package{
-    padding:100px 7%;
-    background:#f5f9fc;
-}
-
-.package-card{
-    max-width:1050px;
     margin:auto;
-    padding:53px;
 
-    display:grid;
-    grid-template-columns:1fr auto;
-
-    align-items:center;
-    gap:50px;
+    overflow:hidden;
 
     border-radius:30px;
 
     background:#fff;
 
-    border:1px solid var(--line);
+    border:
+    1px solid var(--line);
 
-    box-shadow:var(--shadow);
+    box-shadow:
+    var(--shadow);
 }
 
-.package-card h2{
-    max-width:650px;
-    margin-top:10px;
+.purchase-top{
+    padding:
+    48px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr auto;
+
+    align-items:center;
+
+    gap:45px;
+}
+
+.purchase-title{
+    margin-top:9px;
+
     color:#08294e;
-    font-size:clamp(34px,4vw,49px);
+
+    font-size:
+    clamp(32px,4vw,48px);
+
     line-height:1.08;
+
+    letter-spacing:-1.5px;
 }
 
-.package-card p{
-    max-width:630px;
-    margin-top:15px;
+.purchase-description{
+    max-width:620px;
+
+    margin-top:14px;
+
     color:#65788c;
-    line-height:1.75;
+
+    line-height:1.7;
 }
 
-.package-button{
-    display:inline-flex;
+.price-box{
+    min-width:180px;
+
+    padding:22px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #f3f9ff,
+        #e8f4ff
+    );
+
+    border:
+    1px solid #d6e9fa;
+}
+
+.price-box small{
+    display:block;
+
+    color:#65798c;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+
+    font-weight:800;
+}
+
+.price{
+    display:block;
+
+    margin-top:5px;
+
+    color:#0873d1;
+
+    font-size:27px;
+
+    font-weight:900;
+}
+
+.payment-options{
+    padding:
+    30px 48px 45px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:16px;
+}
+
+.payment-option{
+    padding:26px;
+
+    border-radius:20px;
+
+    border:
+    1px solid #dce7f0;
+
+    background:#f8fbfd;
+}
+
+.payment-icon{
+    width:46px;
+    height:46px;
+
+    margin-bottom:17px;
+
+    display:flex;
+
     align-items:center;
     justify-content:center;
 
-    padding:16px 25px;
-
-    border-radius:999px;
+    border-radius:14px;
 
     color:#fff;
 
-    white-space:nowrap;
+    background:
+    linear-gradient(
+        135deg,
+        #087cff,
+        #075bb7
+    );
 
-    font-size:14px;
+    font-size:21px;
+}
+
+.payment-option h3{
+    color:#092d53;
+
+    font-size:21px;
+}
+
+.payment-option p{
+    min-height:48px;
+
+    margin-top:8px;
+
+    color:#66798c;
+
+    font-size:13px;
+
+    line-height:1.65;
+}
+
+.payphone-button,
+.transfer-button{
+    width:100%;
+
+    margin-top:19px;
+
+    padding:
+    14px 18px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
     font-weight:900;
 
-    background:linear-gradient(135deg,#28ce68,#169d48);
+    font-size:13px;
+}
 
-    box-shadow:0 14px 30px rgba(20,170,75,.22);
+.payphone-button{
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #097cff,
+        #0655aa
+    );
+}
+
+.transfer-button{
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #18a657,
+        #118344
+    );
 }
 
 
-/* =====================================================
-   CHAT
-===================================================== */
+/* ==========================================================
+   MODAL TRANSFERENCIA
+========================================================== */
 
-.chat-launcher{
+.payment-modal{
     position:fixed;
-    right:22px;
-    bottom:22px;
 
-    z-index:12000;
+    inset:0;
+
+    z-index:20000;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+
+    background:
+    rgba(2,12,25,.78);
+
+    backdrop-filter:
+    blur(10px);
+}
+
+.payment-modal.open{
+    display:flex;
+}
+
+.payment-modal-card{
+    width:min(510px,100%);
+
+    max-height:
+    calc(100vh - 40px);
+
+    overflow-y:auto;
+
+    border-radius:26px;
+
+    background:#fff;
+
+    box-shadow:
+    0 40px 100px
+    rgba(0,0,0,.35);
+}
+
+.payment-modal-head{
+    padding:24px 25px;
 
     display:flex;
+
     align-items:center;
+    justify-content:space-between;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #04172e,
+        #0871c8
+    );
+}
+
+.payment-modal-head h3{
+    font-size:18px;
+}
+
+.modal-close{
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:
+    rgba(255,255,255,.12);
+
+    font-size:20px;
+}
+
+.modal-body{
+    padding:27px;
+}
+
+.transfer-service{
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:14px;
+
+    color:#16446b;
+
+    background:#edf7ff;
+
+    font-weight:800;
+}
+
+.bank-grid{
+    display:grid;
+
     gap:10px;
+}
 
-    padding:8px 16px 8px 8px;
+.bank-row{
+    padding:13px 14px;
 
-    border:none;
+    border-radius:12px;
+
+    border:
+    1px solid #dfe8f1;
+
+    background:#f8fafc;
+}
+
+.bank-row small{
+    display:block;
+
+    color:#718397;
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.8px;
+
+    font-weight:800;
+}
+
+.bank-row strong{
+    display:block;
+
+    margin-top:4px;
+
+    color:#173d60;
+}
+
+.bank-warning{
+    margin-top:20px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    color:#725b1e;
+
+    background:#fff8df;
+
+    border:
+    1px solid #f0dfa7;
+
+    font-size:12px;
+
+    line-height:1.6;
+}
+
+.copy-button{
+    width:100%;
+
+    margin-top:18px;
+
+    padding:14px;
+
     border-radius:999px;
 
     cursor:pointer;
 
     color:#fff;
 
-    background:linear-gradient(135deg,#087cff,#054c98);
+    background:#087cff;
 
-    box-shadow:0 18px 45px rgba(0,75,165,.35);
+    font-weight:900;
+}
+
+
+/* ==========================================================
+   CHAT
+========================================================== */
+
+.chat-launcher{
+    position:fixed;
+
+    right:22px;
+    bottom:22px;
+
+    z-index:12000;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:
+    8px 16px 8px 8px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #087cff,
+        #054c98
+    );
+
+    box-shadow:
+    0 18px 45px
+    rgba(0,75,165,.35);
 }
 
 .chat-launcher img{
     width:44px;
     height:44px;
+
     object-fit:contain;
+
     padding:2px;
+
     border-radius:50%;
+
     background:#fff;
 }
 
 .chat-launcher strong{
     display:block;
+
     font-size:12px;
 }
 
 .chat-launcher small{
     display:block;
+
     color:#d8ebfb;
+
     font-size:10px;
 }
 
 .chat-window{
     position:fixed;
+
     right:22px;
     bottom:22px;
 
@@ -1168,10 +1801,14 @@ se abre automáticamente.
     width:400px;
     height:600px;
 
-    max-width:calc(100vw - 30px);
-    max-height:calc(100vh - 45px);
+    max-width:
+    calc(100vw - 30px);
+
+    max-height:
+    calc(100vh - 45px);
 
     display:none;
+
     flex-direction:column;
 
     overflow:hidden;
@@ -1180,7 +1817,9 @@ se abre automáticamente.
 
     background:#fff;
 
-    box-shadow:0 35px 100px rgba(0,0,0,.31);
+    box-shadow:
+    0 35px 100px
+    rgba(0,0,0,.31);
 }
 
 .chat-window.open{
@@ -1189,98 +1828,135 @@ se abre automáticamente.
 
 .chat-head{
     padding:15px;
+
     display:flex;
+
     align-items:center;
     justify-content:space-between;
+
     color:#fff;
 
-    background:linear-gradient(135deg,#05172d,#0872ca);
+    background:
+    linear-gradient(
+        135deg,
+        #05172d,
+        #0872ca
+    );
 }
 
 .chat-profile{
     display:flex;
     align-items:center;
+
     gap:10px;
 }
 
 .chat-profile img{
     width:50px;
     height:50px;
-    object-fit:contain;
-    padding:2px;
-    border-radius:50%;
-    background:#fff;
-}
 
-.chat-profile small{
-    color:#bbe0f7;
+    object-fit:contain;
+
+    padding:2px;
+
+    border-radius:50%;
+
+    background:#fff;
 }
 
 .chat-close{
     width:35px;
     height:35px;
-    border:none;
+
     border-radius:50%;
+
     color:#fff;
+
     cursor:pointer;
-    background:rgba(255,255,255,.10);
+
+    background:
+    rgba(255,255,255,.10);
 }
 
 .chat-messages{
     flex:1;
+
     overflow-y:auto;
+
     padding:17px;
+
     background:#eff6fb;
 }
 
 .message{
     max-width:86%;
+
     margin-bottom:11px;
-    padding:11px 13px;
+
+    padding:
+    11px 13px;
+
     border-radius:15px;
+
     white-space:pre-line;
+
     font-size:13px;
+
     line-height:1.55;
 }
 
 .ai-message{
     color:#173a5d;
+
     background:#fff;
-    border:1px solid #dce7f0;
+
+    border:
+    1px solid #dce7f0;
 }
 
 .user-message{
     margin-left:auto;
+
     color:#fff;
+
     background:#087cff;
 }
 
 .chat-input{
     min-height:60px;
+
     display:flex;
+
     background:#fff;
 }
 
 .chat-input input{
     flex:1;
+
     min-width:0;
+
     border:none;
+
     outline:none;
-    padding:0 15px;
+
+    padding:
+    0 15px;
 }
 
 .chat-input button{
     width:60px;
-    border:none;
-    cursor:pointer;
+
     color:#fff;
+
+    cursor:pointer;
+
     background:#087cff;
 }
 
 
-/* =====================================================
+/* ==========================================================
    RESPONSIVE
-===================================================== */
+========================================================== */
 
 @media(max-width:950px){
 
@@ -1342,27 +2018,17 @@ se abre automáticamente.
         margin-right:auto;
     }
 
-    .inner-steps{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .package-card{
+    .purchase-top{
         grid-template-columns:1fr;
-        text-align:center;
     }
 
-    .package-card p{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .package-button{
-        justify-self:center;
+    .price-box{
+        max-width:230px;
     }
 
 }
 
-@media(max-width:620px){
+@media(max-width:650px){
 
     .main-header{
         justify-content:center;
@@ -1374,7 +2040,9 @@ se abre automáticamente.
 
     .hero{
         min-height:auto;
-        padding:125px 20px 65px;
+
+        padding:
+        125px 20px 65px;
     }
 
     .hero h1{
@@ -1395,6 +2063,7 @@ se abre automáticamente.
 
     .identity-card{
         min-height:auto;
+
         padding:30px;
     }
 
@@ -1409,8 +2078,7 @@ se abre automáticamente.
     .services-grid,
     .process-grid,
     .inner-grid,
-    .includes-list,
-    .inner-steps{
+    .payment-options{
         grid-template-columns:1fr;
     }
 
@@ -1440,7 +2108,8 @@ se abre automáticamente.
     }
 
     .service-page-header{
-        padding:10px 14px;
+        padding:
+        10px 14px;
     }
 
     .service-page-logo{
@@ -1448,13 +2117,17 @@ se abre automáticamente.
     }
 
     .back-button{
-        padding:9px 12px;
+        padding:
+        9px 12px;
+
         font-size:11px;
     }
 
     .service-inner-hero{
         min-height:auto;
-        padding:60px 20px;
+
+        padding:
+        60px 20px;
     }
 
     .service-inner-image{
@@ -1467,35 +2140,42 @@ se abre automáticamente.
     }
 
     .inner-info,
-    .includes,
-    .inner-process,
-    .package{
-        padding:70px 20px;
+    .purchase{
+        padding:
+        70px 20px;
     }
 
-    .package-card{
-        padding:30px 22px;
+    .purchase-top{
+        padding:
+        30px 23px 15px;
+    }
+
+    .payment-options{
+        padding:
+        20px 23px 30px;
     }
 
     .chat-window{
         right:10px;
         bottom:10px;
-        width:calc(100vw - 20px);
+
+        width:
+        calc(100vw - 20px);
+
         height:78vh;
     }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
 
-<!-- =====================================================
-     HEADER PRINCIPAL
-===================================================== -->
+<!-- ==========================================================
+     HEADER
+========================================================== -->
 
 <header class="main-header">
 
@@ -1531,13 +2211,8 @@ se abre automáticamente.
 
         </a>
 
-        <a
-        href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20deseo%20realizar%20una%20consulta."
-        target="_blank"
-        class="nav-contact">
-
+        <a href="#contacto">
             Contacto
-
         </a>
 
     </nav>
@@ -1546,9 +2221,9 @@ se abre automáticamente.
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      HERO
-===================================================== -->
+========================================================== -->
 
 <section
 class="hero"
@@ -1601,7 +2276,7 @@ Explorar servicios →
 
 
 <button
-class="btn btn-ghost"
+class="btn btn-outline"
 onclick="abrirChat()">
 
 ✦ Hablar con ASINEC IA
@@ -1629,9 +2304,9 @@ alt="ASINEC IA">
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      MISIÓN / VISIÓN
-===================================================== -->
+========================================================== -->
 
 <section
 class="section identity"
@@ -1740,9 +2415,9 @@ de nuestros clientes.
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      SERVICIOS
-===================================================== -->
+========================================================== -->
 
 <section
 class="section"
@@ -1761,8 +2436,8 @@ NUESTROS SERVICIOS
 
 <h2 class="title">
 
-Selecciona una solución
-y conoce todos sus detalles.
+Conoce la solución
+que necesita tu organización.
 
 </h2>
 
@@ -1771,11 +2446,10 @@ y conoce todos sus detalles.
 
 <p class="description">
 
-Pulsa sobre cualquier norma.
-Se abrirá una vista completa
-con información, alcance,
-acompañamiento y el botón
-del paquete correspondiente.
+Selecciona una norma para conocer
+su enfoque, aplicación,
+acompañamiento y opciones
+de adquisición.
 
 </p>
 
@@ -1788,9 +2462,7 @@ del paquete correspondiente.
 
 <!-- ISO 9001 -->
 
-<a
-href="#iso9001"
-class="service-link">
+<a href="#iso9001" class="service-link">
 
 <article class="service-card">
 
@@ -1811,13 +2483,15 @@ ISO 9001
 </h3>
 
 <p>
+
 Gestión de calidad,
 procesos, satisfacción
 del cliente y mejora continua.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -1828,9 +2502,7 @@ Conocer el servicio →
 
 <!-- ISO 18788 -->
 
-<a
-href="#iso18788"
-class="service-link">
+<a href="#iso18788" class="service-link">
 
 <article class="service-card">
 
@@ -1851,13 +2523,15 @@ ISO 18788
 </h3>
 
 <p>
+
 Gestión para operaciones
 de seguridad privada
 y control operacional.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -1868,9 +2542,7 @@ Conocer el servicio →
 
 <!-- ISO 45001 -->
 
-<a
-href="#iso45001"
-class="service-link">
+<a href="#iso45001" class="service-link">
 
 <article class="service-card">
 
@@ -1891,13 +2563,15 @@ ISO 45001
 </h3>
 
 <p>
-Gestión de seguridad
-y salud en el trabajo
+
+Seguridad y salud
+en el trabajo
 y prevención de riesgos.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -1908,9 +2582,7 @@ Conocer el servicio →
 
 <!-- ISO 27001 -->
 
-<a
-href="#iso27001"
-class="service-link">
+<a href="#iso27001" class="service-link">
 
 <article class="service-card">
 
@@ -1931,13 +2603,15 @@ ISO 27001
 </h3>
 
 <p>
+
 Gestión de seguridad
 de la información
 y protección de activos.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -1948,9 +2622,7 @@ Conocer el servicio →
 
 <!-- LOPDP -->
 
-<a
-href="#lopdp"
-class="service-link">
+<a href="#lopdp" class="service-link">
 
 <article class="service-card">
 
@@ -1971,13 +2643,15 @@ LOPDP
 </h3>
 
 <p>
+
 Protección y gestión
 responsable de
 datos personales.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -1988,9 +2662,7 @@ Conocer el servicio →
 
 <!-- BASC -->
 
-<a
-href="#basc"
-class="service-link">
+<a href="#basc" class="service-link">
 
 <article class="service-card">
 
@@ -2011,13 +2683,15 @@ BASC
 </h3>
 
 <p>
+
 Gestión de control
-y seguridad para
-organizaciones y cadenas logísticas.
+y seguridad para organizaciones
+y cadenas logísticas.
+
 </p>
 
 <span class="service-more">
-Conocer el servicio →
+Conocer y adquirir →
 </span>
 
 </article>
@@ -2033,9 +2707,9 @@ Conocer el servicio →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      PROCESO
-===================================================== -->
+========================================================== -->
 
 <section class="section process">
 
@@ -2065,41 +2739,41 @@ de cada organización.
 
 <div class="process-grid">
 
-<article class="process-card">
+<div class="process-card">
 <small>01 / DIAGNÓSTICO</small>
 <h3>Evaluamos</h3>
 <p>Identificamos necesidades, brechas y oportunidades.</p>
-</article>
+</div>
 
-<article class="process-card">
+<div class="process-card">
 <small>02 / PLANIFICACIÓN</small>
 <h3>Diseñamos</h3>
 <p>Definimos alcance, prioridades y metodología.</p>
-</article>
+</div>
 
-<article class="process-card">
+<div class="process-card">
 <small>03 / IMPLEMENTACIÓN</small>
 <h3>Construimos</h3>
 <p>Fortalecemos procesos, documentación y controles.</p>
-</article>
+</div>
 
-<article class="process-card">
+<div class="process-card">
 <small>04 / CAPACITACIÓN</small>
 <h3>Desarrollamos</h3>
 <p>Fortalecemos conocimientos y capacidades.</p>
-</article>
+</div>
 
-<article class="process-card">
+<div class="process-card">
 <small>05 / AUDITORÍA</small>
 <h3>Evaluamos resultados</h3>
 <p>Identificamos hallazgos y oportunidades de mejora.</p>
-</article>
+</div>
 
-<article class="process-card">
+<div class="process-card">
 <small>06 / MEJORA</small>
 <h3>Evolucionamos</h3>
 <p>Realizamos seguimiento y fortalecimiento continuo.</p>
-</article>
+</div>
 
 </div>
 
@@ -2109,16 +2783,15 @@ de cada organización.
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      ASINEC IA
-===================================================== -->
+========================================================== -->
 
 <section
 class="section ai-section"
 id="asistente">
 
 <div class="container">
-
 
 <div class="ai-box">
 
@@ -2149,11 +2822,10 @@ sin hacerte esperar.
 
 <p class="description">
 
-ASINEC IA puede brindarte
-orientación inicial sobre normas,
-auditorías, implementación,
-capacitación, LOPDP, BASC
-y nuestros servicios.
+ASINEC IA brinda orientación inicial
+sobre normas, auditorías,
+implementación, capacitación,
+LOPDP, BASC y nuestros servicios.
 
 </p>
 
@@ -2189,9 +2861,9 @@ onclick="abrirChat()">
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      CONTACTO
-===================================================== -->
+========================================================== -->
 
 <section
 class="contact"
@@ -2199,20 +2871,20 @@ id="contacto">
 
 <div class="contact-grid">
 
-
 <div>
 
 <h2>
-¿Hablamos sobre
-tu organización?
+Soluciones para
+hacer avanzar tu organización.
 </h2>
 
 <p>
 
-Para una cotización,
-propuesta o atención personalizada,
-comunícate directamente
-con Grupo ASINEC.
+Explora nuestros servicios
+y adquiere directamente
+el paquete que necesitas
+mediante PayPhone
+o transferencia bancaria.
 
 </p>
 
@@ -2220,15 +2892,12 @@ con Grupo ASINEC.
 
 
 <a
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20deseo%20recibir%20información%20sobre%20sus%20servicios."
-target="_blank"
-rel="noopener"
-class="btn whatsapp">
+href="#servicios"
+class="btn btn-outline">
 
-Contactar a Grupo ASINEC →
+Ver servicios →
 
 </a>
-
 
 </div>
 
@@ -2246,13 +2915,11 @@ Seguridad · Mejora Continua
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      ISO 9001
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="iso9001">
+<section class="service-page" id="iso9001">
 
 <header class="service-page-header">
 
@@ -2261,12 +2928,8 @@ src="./GRUPO ASINEC LOGO.png"
 class="service-page-logo"
 alt="Grupo ASINEC">
 
-<a
-href="#servicios"
-class="back-button">
-
+<a href="#servicios" class="back-button">
 ← Volver a servicios
-
 </a>
 
 </header>
@@ -2292,10 +2955,9 @@ ISO 9001
 
 <p>
 
-Sistema de gestión orientado
-a la calidad, los procesos,
-la satisfacción del cliente
-y la mejora continua.
+Gestión de calidad,
+procesos, satisfacción del cliente
+y mejora continua.
 
 </p>
 
@@ -2324,18 +2986,16 @@ CONOCE ISO 9001
 </span>
 
 <h2 class="title">
-¿Qué puede aportar
-a tu organización?
+Gestión de calidad
+con visión integral.
 </h2>
 
 <p class="description">
 
 ISO 9001 está relacionada
-con sistemas de gestión de calidad.
-Busca fortalecer procesos,
-resultados consistentes,
-orientación al cliente
-y mejora continua.
+con los sistemas de gestión
+de la calidad y el fortalecimiento
+de procesos y mejora continua.
 
 </p>
 
@@ -2346,9 +3006,9 @@ y mejora continua.
 <small>01 / PROPÓSITO</small>
 <h3>¿Qué busca?</h3>
 <p>
-Fortalecer la gestión de calidad,
-la consistencia de los procesos
-y el enfoque hacia clientes
+Fortalecer procesos,
+desempeño y orientación
+hacia clientes
 y partes interesadas.
 </p>
 </div>
@@ -2357,10 +3017,9 @@ y partes interesadas.
 <small>02 / APLICACIÓN</small>
 <h3>¿Para quién?</h3>
 <p>
-Puede ser considerada por organizaciones
-de diferentes tamaños y actividades
-que busquen estructurar
-su sistema de gestión.
+Organizaciones de distintos tamaños
+y actividades que busquen fortalecer
+su gestión de calidad.
 </p>
 </div>
 
@@ -2370,8 +3029,7 @@ su sistema de gestión.
 <p>
 Procesos, responsabilidades,
 objetivos, riesgos, documentación,
-indicadores, seguimiento
-y mejora continua.
+indicadores y mejora.
 </p>
 </div>
 
@@ -2381,8 +3039,7 @@ y mejora continua.
 <p>
 Diagnóstico, implementación,
 capacitación, auditoría
-y acompañamiento
-del sistema de gestión.
+y acompañamiento.
 </p>
 </div>
 
@@ -2393,112 +3050,108 @@ del sistema de gestión.
 </section>
 
 
-<section class="includes">
+<section class="purchase">
 
-<div class="inner-container">
+<div class="purchase-card">
+
+<div class="purchase-top">
+
+<div>
 
 <span class="kicker">
 PAQUETE ISO 9001
 </span>
 
-<h2 class="title">
-¿Qué puede incluir?
+<h2 class="purchase-title">
+Adquiere el paquete ISO 9001
 </h2>
 
+<p class="purchase-description">
 
-<div class="includes-list">
+Selecciona el método de pago
+que prefieras.
 
-<div class="include"><span class="check">✓</span>Diagnóstico inicial</div>
-<div class="include"><span class="check">✓</span>Análisis de brechas</div>
-<div class="include"><span class="check">✓</span>Orientación de procesos</div>
-<div class="include"><span class="check">✓</span>Acompañamiento documental</div>
-<div class="include"><span class="check">✓</span>Capacitación</div>
-<div class="include"><span class="check">✓</span>Seguimiento y mejora</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="inner-process">
-
-<div class="inner-container">
-
-<span class="kicker">
-METODOLOGÍA
-</span>
-
-<h2 class="title">
-Un proceso organizado
-para avanzar.
-</h2>
-
-<div class="inner-steps">
-
-<div class="inner-step">
-<small>01</small>
-<h3>Diagnóstico</h3>
-<p>Revisión inicial de la situación actual.</p>
-</div>
-
-<div class="inner-step">
-<small>02</small>
-<h3>Planificación</h3>
-<p>Definición del alcance y prioridades.</p>
-</div>
-
-<div class="inner-step">
-<small>03</small>
-<h3>Implementación</h3>
-<p>Fortalecimiento del sistema.</p>
-</div>
-
-<div class="inner-step">
-<small>04</small>
-<h3>Seguimiento</h3>
-<p>Evaluación y mejora continua.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="package">
-
-<div class="package-card">
-
-<div>
-
-<span class="kicker">
-GRUPO ASINEC
-</span>
-
-<h2>
-¿Quieres el paquete ISO 9001?
-</h2>
-
-<p>
-Solicita información sobre alcance,
-metodología y condiciones
-del acompañamiento.
 </p>
 
 </div>
 
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%209001."
-target="_blank">
+<div class="price-box">
 
-Quiero este paquete →
+<small>
+INVERSIÓN
+</small>
 
-</a>
+<span
+class="price"
+data-price="iso9001">
+
+Configurar
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="payment-options">
+
+
+<div class="payment-option">
+
+<div class="payment-icon">
+P
+</div>
+
+<h3>
+PayPhone
+</h3>
+
+<p>
+Realiza el pago mediante
+el checkout seguro de PayPhone.
+</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('iso9001')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">
+⇄
+</div>
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<p>
+Consulta los datos bancarios
+de Grupo ASINEC
+para realizar tu transferencia.
+</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('iso9001')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
+
+</div>
 
 </div>
 
@@ -2508,13 +3161,11 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      ISO 18788
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="iso18788">
+<section class="service-page" id="iso18788">
 
 <header class="service-page-header">
 
@@ -2541,7 +3192,7 @@ INICIO / SERVICIOS / ISO 18788
 </div>
 
 <span class="service-tag">
-OPERACIONES DE SEGURIDAD PRIVADA
+SEGURIDAD PRIVADA
 </span>
 
 <h1>
@@ -2550,9 +3201,9 @@ ISO 18788
 
 <p>
 
-Gestión de operaciones
-de seguridad privada,
-riesgos y control operacional.
+Gestión para operaciones
+de seguridad privada
+y control operacional.
 
 </p>
 
@@ -2589,8 +3240,8 @@ de operaciones de seguridad.
 
 ISO 18788 está relacionada
 con sistemas de gestión
-para operaciones de seguridad privada
-y fortalecimiento del control operacional.
+aplicables a operaciones
+de seguridad privada.
 
 </p>
 
@@ -2601,9 +3252,9 @@ y fortalecimiento del control operacional.
 <small>01 / PROPÓSITO</small>
 <h3>¿Qué busca?</h3>
 <p>
-Promover una gestión organizada,
-responsable y controlada
-de las operaciones de seguridad.
+Fortalecer la planificación,
+gestión y control responsable
+de operaciones de seguridad.
 </p>
 </div>
 
@@ -2621,10 +3272,9 @@ de seguridad privada.
 <small>03 / GESTIÓN</small>
 <h3>¿Qué puede involucrar?</h3>
 <p>
-Riesgos operacionales,
-responsabilidades,
-planificación, controles,
-competencias y seguimiento.
+Riesgos, planificación,
+controles, responsabilidades
+y seguimiento operacional.
 </p>
 </div>
 
@@ -2632,9 +3282,9 @@ competencias y seguimiento.
 <small>04 / ASINEC</small>
 <h3>¿Cómo podemos apoyar?</h3>
 <p>
-Diagnóstico, estructuración,
-implementación, capacitación,
-auditoría y fortalecimiento.
+Diagnóstico, implementación,
+capacitación y fortalecimiento
+del sistema.
 </p>
 </div>
 
@@ -2645,36 +3295,91 @@ auditoría y fortalecimiento.
 </section>
 
 
-<section class="package">
+<section class="purchase">
 
-<div class="package-card">
+<div class="purchase-card">
+
+<div class="purchase-top">
 
 <div>
 
 <span class="kicker">
-GRUPO ASINEC
+PAQUETE ISO 18788
 </span>
 
-<h2>
-¿Quieres el paquete ISO 18788?
+<h2 class="purchase-title">
+Adquiere el paquete ISO 18788
 </h2>
 
-<p>
-Solicita información personalizada
-para tu organización.
+<p class="purchase-description">
+Selecciona tu método de pago.
 </p>
 
 </div>
 
+<div class="price-box">
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2018788."
-target="_blank">
+<small>INVERSIÓN</small>
 
-Quiero este paquete →
+<span
+class="price"
+data-price="iso18788">
 
-</a>
+Configurar
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="payment-options">
+
+<div class="payment-option">
+
+<div class="payment-icon">P</div>
+
+<h3>PayPhone</h3>
+
+<p>
+Paga mediante el checkout
+seguro de PayPhone.
+</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('iso18788')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">⇄</div>
+
+<h3>Transferencia bancaria</h3>
+
+<p>
+Realiza una transferencia
+directamente a Grupo ASINEC.
+</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('iso18788')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
+</div>
 
 </div>
 
@@ -2684,13 +3389,11 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      ISO 45001
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="iso45001">
+<section class="service-page" id="iso45001">
 
 <header class="service-page-header">
 
@@ -2757,14 +3460,14 @@ CONOCE ISO 45001
 </span>
 
 <h2 class="title">
-Una gestión enfocada
+Gestión enfocada
 en trabajo seguro.
 </h2>
 
 <p class="description">
 
-ISO 45001 está orientada
-a fortalecer la gestión
+ISO 45001 está enfocada
+en sistemas de gestión
 de seguridad y salud
 en el trabajo.
 
@@ -2777,10 +3480,9 @@ en el trabajo.
 <small>01 / PROPÓSITO</small>
 <h3>¿Qué busca?</h3>
 <p>
-Fortalecer la prevención
-de riesgos laborales
-y promover condiciones
-de trabajo más seguras.
+Prevenir riesgos
+y fortalecer condiciones
+de trabajo seguras.
 </p>
 </div>
 
@@ -2788,7 +3490,7 @@ de trabajo más seguras.
 <small>02 / APLICACIÓN</small>
 <h3>¿Para quién?</h3>
 <p>
-Organizaciones que buscan
+Organizaciones que busquen
 fortalecer la seguridad
 y salud de sus trabajadores.
 </p>
@@ -2799,9 +3501,8 @@ y salud de sus trabajadores.
 <h3>¿Qué puede involucrar?</h3>
 <p>
 Peligros, riesgos,
-controles, responsabilidades,
-objetivos, incidentes
-y seguimiento.
+controles, objetivos,
+responsabilidades e incidentes.
 </p>
 </div>
 
@@ -2810,8 +3511,7 @@ y seguimiento.
 <h3>¿Cómo podemos apoyar?</h3>
 <p>
 Diagnóstico, implementación,
-capacitación, auditoría
-y acompañamiento.
+capacitación y auditoría.
 </p>
 </div>
 
@@ -2822,36 +3522,62 @@ y acompañamiento.
 </section>
 
 
-<section class="package">
+<section class="purchase">
 
-<div class="package-card">
+<div class="purchase-card">
+
+<div class="purchase-top">
 
 <div>
+<span class="kicker">PAQUETE ISO 45001</span>
+<h2 class="purchase-title">Adquiere el paquete ISO 45001</h2>
+<p class="purchase-description">Selecciona tu método de pago.</p>
+</div>
 
-<span class="kicker">
-GRUPO ASINEC
-</span>
-
-<h2>
-¿Quieres el paquete ISO 45001?
-</h2>
-
-<p>
-Solicita información personalizada
-sobre nuestro acompañamiento.
-</p>
+<div class="price-box">
+<small>INVERSIÓN</small>
+<span class="price" data-price="iso45001">Configurar</span>
+</div>
 
 </div>
 
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2045001."
-target="_blank">
+<div class="payment-options">
 
-Quiero este paquete →
+<div class="payment-option">
 
-</a>
+<div class="payment-icon">P</div>
+<h3>PayPhone</h3>
+<p>Paga mediante el checkout seguro de PayPhone.</p>
+
+<button
+class="payphone-button"
+onclick="pagarPayPhone('iso45001')">
+
+Pagar con PayPhone →
+
+</button>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-icon">⇄</div>
+<h3>Transferencia bancaria</h3>
+<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
+
+<button
+class="transfer-button"
+onclick="abrirTransferencia('iso45001')">
+
+Pagar por transferencia →
+
+</button>
+
+</div>
+
+</div>
 
 </div>
 
@@ -2861,13 +3587,11 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      ISO 27001
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="iso27001">
+<section class="service-page" id="iso27001">
 
 <header class="service-page-header">
 
@@ -2904,9 +3628,8 @@ ISO 27001
 <p>
 
 Gestión de seguridad
-de la información,
-riesgos y protección
-de activos críticos.
+de la información
+y protección de activos.
 
 </p>
 
@@ -2955,9 +3678,8 @@ de seguridad de la información.
 <h3>¿Qué busca?</h3>
 <p>
 Fortalecer la protección
-de la información
-y gestionar riesgos
-de forma organizada.
+y gestión de información
+relevante para la organización.
 </p>
 </div>
 
@@ -2966,8 +3688,8 @@ de forma organizada.
 <h3>¿Para quién?</h3>
 <p>
 Organizaciones que manejan
-información, datos,
-tecnología o activos críticos.
+datos, tecnología
+e información crítica.
 </p>
 </div>
 
@@ -2975,10 +3697,9 @@ tecnología o activos críticos.
 <small>03 / GESTIÓN</small>
 <h3>¿Qué puede involucrar?</h3>
 <p>
-Activos de información,
-riesgos, controles,
-accesos, incidentes
-y seguimiento.
+Activos, riesgos,
+controles, accesos,
+incidentes y seguimiento.
 </p>
 </div>
 
@@ -2986,9 +3707,8 @@ y seguimiento.
 <small>04 / ASINEC</small>
 <h3>¿Cómo podemos apoyar?</h3>
 <p>
-Orientación, diagnóstico,
-implementación, capacitación
-y fortalecimiento del sistema.
+Diagnóstico, implementación,
+capacitación y acompañamiento.
 </p>
 </div>
 
@@ -2999,36 +3719,47 @@ y fortalecimiento del sistema.
 </section>
 
 
-<section class="package">
+<section class="purchase">
 
-<div class="package-card">
+<div class="purchase-card">
+
+<div class="purchase-top">
 
 <div>
+<span class="kicker">PAQUETE ISO 27001</span>
+<h2 class="purchase-title">Adquiere el paquete ISO 27001</h2>
+<p class="purchase-description">Selecciona tu método de pago.</p>
+</div>
 
-<span class="kicker">
-GRUPO ASINEC
-</span>
-
-<h2>
-¿Quieres el paquete ISO 27001?
-</h2>
-
-<p>
-Solicita información personalizada
-sobre nuestro acompañamiento.
-</p>
+<div class="price-box">
+<small>INVERSIÓN</small>
+<span class="price" data-price="iso27001">Configurar</span>
+</div>
 
 </div>
 
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2027001."
-target="_blank">
+<div class="payment-options">
 
-Quiero este paquete →
+<div class="payment-option">
+<div class="payment-icon">P</div>
+<h3>PayPhone</h3>
+<p>Paga mediante el checkout seguro de PayPhone.</p>
+<button class="payphone-button" onclick="pagarPayPhone('iso27001')">
+Pagar con PayPhone →
+</button>
+</div>
 
-</a>
+<div class="payment-option">
+<div class="payment-icon">⇄</div>
+<h3>Transferencia bancaria</h3>
+<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
+<button class="transfer-button" onclick="abrirTransferencia('iso27001')">
+Pagar por transferencia →
+</button>
+</div>
+
+</div>
 
 </div>
 
@@ -3038,13 +3769,11 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      LOPDP
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="lopdp">
+<section class="service-page" id="lopdp">
 
 <header class="service-page-header">
 
@@ -3080,7 +3809,7 @@ LOPDP
 
 <p>
 
-Gestión y protección
+Protección y gestión
 responsable de datos personales.
 
 </p>
@@ -3119,8 +3848,8 @@ de datos personales.
 La Ley Orgánica de Protección
 de Datos Personales establece
 un marco relacionado
-con el tratamiento y protección
-de información personal.
+con el tratamiento
+y protección de información personal.
 
 </p>
 
@@ -3132,8 +3861,8 @@ de información personal.
 <h3>¿Qué busca?</h3>
 <p>
 Fortalecer prácticas responsables
-de tratamiento y protección
-de datos personales.
+de tratamiento
+y protección de datos.
 </p>
 </div>
 
@@ -3142,8 +3871,8 @@ de datos personales.
 <h3>¿Para quién?</h3>
 <p>
 Organizaciones que recopilan,
-usan, almacenan
-o gestionan datos personales.
+usan o administran
+datos personales.
 </p>
 </div>
 
@@ -3152,8 +3881,7 @@ o gestionan datos personales.
 <h3>¿Qué puede involucrar?</h3>
 <p>
 Procesos, responsabilidades,
-documentación, controles
-y gestión de datos.
+documentación y controles.
 </p>
 </div>
 
@@ -3162,8 +3890,8 @@ y gestión de datos.
 <h3>¿Cómo podemos apoyar?</h3>
 <p>
 Orientación y acompañamiento
-general para fortalecer
-la gestión de protección de datos.
+para fortalecer
+la gestión de datos.
 </p>
 </div>
 
@@ -3174,36 +3902,47 @@ la gestión de protección de datos.
 </section>
 
 
-<section class="package">
+<section class="purchase">
 
-<div class="package-card">
+<div class="purchase-card">
+
+<div class="purchase-top">
 
 <div>
+<span class="kicker">PAQUETE LOPDP</span>
+<h2 class="purchase-title">Adquiere el paquete LOPDP</h2>
+<p class="purchase-description">Selecciona tu método de pago.</p>
+</div>
 
-<span class="kicker">
-GRUPO ASINEC
-</span>
-
-<h2>
-¿Quieres el paquete LOPDP?
-</h2>
-
-<p>
-Solicita información personalizada
-sobre nuestro acompañamiento.
-</p>
+<div class="price-box">
+<small>INVERSIÓN</small>
+<span class="price" data-price="lopdp">Configurar</span>
+</div>
 
 </div>
 
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20LOPDP."
-target="_blank">
+<div class="payment-options">
 
-Quiero este paquete →
+<div class="payment-option">
+<div class="payment-icon">P</div>
+<h3>PayPhone</h3>
+<p>Paga mediante el checkout seguro de PayPhone.</p>
+<button class="payphone-button" onclick="pagarPayPhone('lopdp')">
+Pagar con PayPhone →
+</button>
+</div>
 
-</a>
+<div class="payment-option">
+<div class="payment-icon">⇄</div>
+<h3>Transferencia bancaria</h3>
+<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
+<button class="transfer-button" onclick="abrirTransferencia('lopdp')">
+Pagar por transferencia →
+</button>
+</div>
+
+</div>
 
 </div>
 
@@ -3213,13 +3952,11 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
      BASC
-===================================================== -->
+========================================================== -->
 
-<section
-class="service-page"
-id="basc">
+<section class="service-page" id="basc">
 
 <header class="service-page-header">
 
@@ -3309,8 +4046,7 @@ y cadenas logísticas.
 <p>
 Fortalecer controles,
 gestión de riesgos
-y prácticas de seguridad
-en las operaciones.
+y prácticas de seguridad.
 </p>
 </div>
 
@@ -3319,9 +4055,8 @@ en las operaciones.
 <h3>¿Para quién?</h3>
 <p>
 Organizaciones vinculadas
-con comercio, logística,
-transporte y cadenas
-de suministro.
+con comercio, logística
+y cadenas de suministro.
 </p>
 </div>
 
@@ -3330,8 +4065,8 @@ de suministro.
 <h3>¿Qué puede involucrar?</h3>
 <p>
 Riesgos, controles,
-seguridad, proveedores,
-procesos y seguimiento.
+proveedores, procesos
+y seguridad operacional.
 </p>
 </div>
 
@@ -3340,8 +4075,7 @@ procesos y seguimiento.
 <h3>¿Cómo podemos apoyar?</h3>
 <p>
 Diagnóstico, implementación,
-capacitación y fortalecimiento
-del sistema de control y seguridad.
+capacitación y fortalecimiento.
 </p>
 </div>
 
@@ -3352,36 +4086,47 @@ del sistema de control y seguridad.
 </section>
 
 
-<section class="package">
+<section class="purchase">
 
-<div class="package-card">
+<div class="purchase-card">
+
+<div class="purchase-top">
 
 <div>
+<span class="kicker">PAQUETE BASC</span>
+<h2 class="purchase-title">Adquiere el paquete BASC</h2>
+<p class="purchase-description">Selecciona tu método de pago.</p>
+</div>
 
-<span class="kicker">
-GRUPO ASINEC
-</span>
-
-<h2>
-¿Quieres el paquete BASC?
-</h2>
-
-<p>
-Solicita información personalizada
-sobre nuestro acompañamiento.
-</p>
+<div class="price-box">
+<small>INVERSIÓN</small>
+<span class="price" data-price="basc">Configurar</span>
+</div>
 
 </div>
 
 
-<a
-class="package-button"
-href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20BASC."
-target="_blank">
+<div class="payment-options">
 
-Quiero este paquete →
+<div class="payment-option">
+<div class="payment-icon">P</div>
+<h3>PayPhone</h3>
+<p>Paga mediante el checkout seguro de PayPhone.</p>
+<button class="payphone-button" onclick="pagarPayPhone('basc')">
+Pagar con PayPhone →
+</button>
+</div>
 
-</a>
+<div class="payment-option">
+<div class="payment-icon">⇄</div>
+<h3>Transferencia bancaria</h3>
+<p>Realiza una transferencia directamente a Grupo ASINEC.</p>
+<button class="transfer-button" onclick="abrirTransferencia('basc')">
+Pagar por transferencia →
+</button>
+</div>
+
+</div>
 
 </div>
 
@@ -3391,9 +4136,160 @@ Quiero este paquete →
 
 
 
-<!-- =====================================================
+<!-- ==========================================================
+     MODAL TRANSFERENCIA
+========================================================== -->
+
+<div
+class="payment-modal"
+id="transferModal">
+
+<div class="payment-modal-card">
+
+
+<div class="payment-modal-head">
+
+<h3>
+Transferencia bancaria
+</h3>
+
+<button
+class="modal-close"
+onclick="cerrarTransferencia()">
+
+×
+
+</button>
+
+</div>
+
+
+<div class="modal-body">
+
+
+<div
+class="transfer-service"
+id="transferService">
+
+Paquete
+
+</div>
+
+
+<div class="bank-grid">
+
+
+<div class="bank-row">
+
+<small>
+Banco
+</small>
+
+<strong id="bankName">
+PENDIENTE
+</strong>
+
+</div>
+
+
+<div class="bank-row">
+
+<small>
+Titular
+</small>
+
+<strong id="bankHolder">
+PENDIENTE
+</strong>
+
+</div>
+
+
+<div class="bank-row">
+
+<small>
+Tipo de cuenta
+</small>
+
+<strong id="bankType">
+PENDIENTE
+</strong>
+
+</div>
+
+
+<div class="bank-row">
+
+<small>
+Número de cuenta
+</small>
+
+<strong id="bankAccount">
+PENDIENTE
+</strong>
+
+</div>
+
+
+<div class="bank-row">
+
+<small>
+Identificación
+</small>
+
+<strong id="bankId">
+PENDIENTE
+</strong>
+
+</div>
+
+
+<div class="bank-row">
+
+<small>
+Valor
+</small>
+
+<strong id="bankAmount">
+PENDIENTE
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="bank-warning">
+
+La transferencia se realiza directamente
+a la cuenta bancaria de Grupo ASINEC.
+No ingreses datos de tu tarjeta
+dentro de esta página.
+
+</div>
+
+
+<button
+class="copy-button"
+onclick="copiarDatosTransferencia()">
+
+Copiar datos de transferencia
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ==========================================================
      ASINEC IA
-===================================================== -->
+========================================================== -->
 
 <button
 class="chat-launcher"
@@ -3424,7 +4320,6 @@ Consulta rápida
 class="chat-window"
 id="chatWindow">
 
-
 <div class="chat-head">
 
 <div class="chat-profile">
@@ -3434,32 +4329,20 @@ src="./ASISTENTE.png"
 alt="ASINEC IA">
 
 <div>
-
-<strong>
-ASINEC IA
-</strong>
-
+<strong>ASINEC IA</strong>
 <br>
-
-<small>
-Asistente disponible
-</small>
-
+<small>Asistente disponible</small>
 </div>
 
 </div>
-
 
 <button
 class="chat-close"
 onclick="cerrarChat()">
-
 ×
-
 </button>
 
 </div>
-
 
 
 <div
@@ -3470,17 +4353,17 @@ id="chatMessages">
 
 ¡Hola! 👋 Soy ASINEC IA.
 
-Puedo orientarte inicialmente sobre
-ISO 9001, ISO 18788, ISO 45001,
-ISO 27001, LOPDP, BASC,
-auditorías e implementación.
+Puedo brindarte una orientación inicial
+sobre ISO 9001, ISO 18788,
+ISO 45001, ISO 27001,
+LOPDP, BASC y los servicios
+de Grupo ASINEC.
 
 ¿En qué puedo ayudarte?
 
 </div>
 
 </div>
-
 
 
 <div class="chat-input">
@@ -3491,13 +4374,10 @@ placeholder="Escribe tu consulta..."
 autocomplete="off">
 
 <button onclick="enviarMensaje()">
-
 ➤
-
 </button>
 
 </div>
-
 
 </div>
 
@@ -3505,48 +4385,519 @@ autocomplete="off">
 
 <script>
 
-/* =====================================================
-   CHAT
-   LAS NORMAS NO DEPENDEN DE ESTE SCRIPT
-===================================================== */
+/* ==========================================================
+   CONFIGURACIÓN DE PAGOS
 
-const chatWindow =
-document.getElementById("chatWindow");
-
-const chatLauncher =
-document.getElementById("chatLauncher");
-
-const chatMessages =
-document.getElementById("chatMessages");
-
-const chatInput =
-document.getElementById("chatInput");
+   ESTA ES LA ÚNICA PARTE QUE TENDREMOS
+   QUE COMPLETAR CON TUS DATOS REALES.
+========================================================== */
 
 
-function abrirChat(){
+/*
+NO COLOQUES AQUÍ CONTRASEÑAS,
+TOKENS NI CLAVES PRIVADAS DE PAYPHONE.
 
-    chatWindow.classList.add("open");
+Aquí solamente se colocan
+LINKS PÚBLICOS DE COBRO/CHECKOUT.
+*/
 
-    chatLauncher.style.display =
-    "none";
 
-    setTimeout(function(){
+const pagos = {
 
-        chatInput.focus();
 
-    },150);
+    banco:{
+
+        nombre:
+        "",
+
+        titular:
+        "",
+
+        tipo:
+        "",
+
+        cuenta:
+        "",
+
+        identificacion:
+        ""
+
+    },
+
+
+    paquetes:{
+
+
+        iso9001:{
+
+            nombre:
+            "ISO 9001",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        },
+
+
+        iso18788:{
+
+            nombre:
+            "ISO 18788",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        },
+
+
+        iso45001:{
+
+            nombre:
+            "ISO 45001",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        },
+
+
+        iso27001:{
+
+            nombre:
+            "ISO 27001",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        },
+
+
+        lopdp:{
+
+            nombre:
+            "LOPDP",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        },
+
+
+        basc:{
+
+            nombre:
+            "BASC",
+
+            precio:
+            "",
+
+            payphone:
+            ""
+
+        }
+
+    }
+
+};
+
+
+
+/* ==========================================================
+   MOSTRAR PRECIOS
+========================================================== */
+
+document
+.querySelectorAll(
+    "[data-price]"
+)
+.forEach(
+
+    function(elemento){
+
+        const codigo =
+        elemento.dataset.price;
+
+
+        const paquete =
+        pagos.paquetes[codigo];
+
+
+        if(
+            paquete &&
+            paquete.precio
+        ){
+
+            elemento.textContent =
+            "$" +
+            paquete.precio;
+
+        }
+
+        else{
+
+            elemento.textContent =
+            "Precio pendiente";
+
+        }
+
+    }
+
+);
+
+
+
+/* ==========================================================
+   PAYPHONE
+========================================================== */
+
+function pagarPayPhone(codigo){
+
+
+    const paquete =
+    pagos.paquetes[codigo];
+
+
+    if(!paquete){
+
+        alert(
+            "No se encontró este paquete."
+        );
+
+        return;
+
+    }
+
+
+    /*
+    Cuando coloques el link público
+    de cobro de PayPhone,
+    esta función enviará al cliente
+    directamente al checkout.
+    */
+
+
+    if(
+        paquete.payphone &&
+        paquete.payphone.trim() !== ""
+    ){
+
+        window.open(
+
+            paquete.payphone,
+
+            "_blank",
+
+            "noopener"
+
+        );
+
+
+        return;
+
+    }
+
+
+    alert(
+
+        "Este pago con PayPhone todavía necesita el enlace de cobro de " +
+        paquete.nombre +
+        "."
+
+    );
 
 }
 
 
+
+/* ==========================================================
+   TRANSFERENCIA
+========================================================== */
+
+let paqueteTransferencia =
+null;
+
+
+function abrirTransferencia(codigo){
+
+
+    const paquete =
+    pagos.paquetes[codigo];
+
+
+    if(!paquete){
+
+        return;
+
+    }
+
+
+    paqueteTransferencia =
+    paquete;
+
+
+    document
+    .getElementById(
+        "transferService"
+    )
+    .textContent =
+
+    "Compra: " +
+    paquete.nombre;
+
+
+
+    document
+    .getElementById(
+        "bankName"
+    )
+    .textContent =
+
+    pagos.banco.nombre ||
+    "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "bankHolder"
+    )
+    .textContent =
+
+    pagos.banco.titular ||
+    "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "bankType"
+    )
+    .textContent =
+
+    pagos.banco.tipo ||
+    "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "bankAccount"
+    )
+    .textContent =
+
+    pagos.banco.cuenta ||
+    "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "bankId"
+    )
+    .textContent =
+
+    pagos.banco.identificacion ||
+    "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "bankAmount"
+    )
+    .textContent =
+
+    paquete.precio
+    ? "$" + paquete.precio
+    : "Pendiente de configurar";
+
+
+
+    document
+    .getElementById(
+        "transferModal"
+    )
+    .classList
+    .add(
+        "open"
+    );
+
+}
+
+
+
+function cerrarTransferencia(){
+
+
+    document
+    .getElementById(
+        "transferModal"
+    )
+    .classList
+    .remove(
+        "open"
+    );
+
+}
+
+
+
+/* ==========================================================
+   COPIAR DATOS
+========================================================== */
+
+function copiarDatosTransferencia(){
+
+
+    if(
+        !pagos.banco.nombre ||
+        !pagos.banco.cuenta
+    ){
+
+        alert(
+            "Primero debes configurar los datos bancarios reales."
+        );
+
+        return;
+
+    }
+
+
+    const paquete =
+    paqueteTransferencia;
+
+
+    const texto =
+
+`GRUPO ASINEC
+
+Paquete:
+${paquete.nombre}
+
+Valor:
+$${paquete.precio}
+
+Banco:
+${pagos.banco.nombre}
+
+Titular:
+${pagos.banco.titular}
+
+Tipo de cuenta:
+${pagos.banco.tipo}
+
+Número de cuenta:
+${pagos.banco.cuenta}
+
+Identificación:
+${pagos.banco.identificacion}`;
+
+
+
+    navigator
+    .clipboard
+    .writeText(texto)
+    .then(
+
+        function(){
+
+            alert(
+                "Datos de transferencia copiados."
+            );
+
+        }
+
+    )
+    .catch(
+
+        function(){
+
+            alert(
+                "No fue posible copiar automáticamente."
+            );
+
+        }
+
+    );
+
+}
+
+
+
+/* ==========================================================
+   CHAT
+========================================================== */
+
+const chatWindow =
+document.getElementById(
+    "chatWindow"
+);
+
+const chatLauncher =
+document.getElementById(
+    "chatLauncher"
+);
+
+const chatMessages =
+document.getElementById(
+    "chatMessages"
+);
+
+const chatInput =
+document.getElementById(
+    "chatInput"
+);
+
+
+
+function abrirChat(){
+
+    chatWindow.classList.add(
+        "open"
+    );
+
+    chatLauncher.style.display =
+    "none";
+
+    setTimeout(
+        function(){
+
+            chatInput.focus();
+
+        },
+        150
+    );
+
+}
+
+
+
 function cerrarChat(){
 
-    chatWindow.classList.remove("open");
+    chatWindow.classList.remove(
+        "open"
+    );
 
     chatLauncher.style.display =
     "flex";
 
 }
+
 
 
 chatInput.addEventListener(
@@ -3564,23 +4915,32 @@ function(event){
 });
 
 
-function agregarMensaje(texto,tipo){
+
+function agregarMensaje(
+    texto,
+    clase
+){
 
     const div =
-    document.createElement("div");
+    document.createElement(
+        "div"
+    );
 
     div.className =
-    "message " + tipo;
+    "message " + clase;
 
     div.textContent =
     texto;
 
-    chatMessages.appendChild(div);
+    chatMessages.appendChild(
+        div
+    );
 
     chatMessages.scrollTop =
     chatMessages.scrollHeight;
 
 }
+
 
 
 function normalizar(texto){
@@ -3596,13 +4956,18 @@ function normalizar(texto){
 }
 
 
+
 function enviarMensaje(){
+
 
     const pregunta =
     chatInput.value.trim();
 
+
     if(!pregunta){
+
         return;
+
     }
 
 
@@ -3611,23 +4976,29 @@ function enviarMensaje(){
         "user-message"
     );
 
+
     chatInput.value = "";
 
 
     const t =
-    normalizar(pregunta);
+    normalizar(
+        pregunta
+    );
 
 
     let respuesta =
-    "No tengo suficiente información para responder esa consulta con seguridad. Para atención especializada puedes comunicarte directamente con Grupo ASINEC.";
+
+    "Puedo brindarte orientación inicial sobre los servicios de Grupo ASINEC. Para información específica, selecciona la norma correspondiente en nuestra página.";
+
 
 
     if(t.includes("9001")){
 
         respuesta =
-        "ISO 9001 está relacionada con gestión de calidad, procesos y mejora continua. También puedes abrir la tarjeta ISO 9001 para conocer el servicio completo.";
+        "ISO 9001 está relacionada con sistemas de gestión de calidad, procesos y mejora continua.";
 
     }
+
 
     else if(t.includes("18788")){
 
@@ -3636,12 +5007,14 @@ function enviarMensaje(){
 
     }
 
+
     else if(t.includes("45001")){
 
         respuesta =
-        "ISO 45001 está enfocada en seguridad y salud en el trabajo y prevención de riesgos laborales.";
+        "ISO 45001 está enfocada en seguridad y salud en el trabajo.";
 
     }
+
 
     else if(t.includes("27001")){
 
@@ -3650,32 +5023,40 @@ function enviarMensaje(){
 
     }
 
+
     else if(
         t.includes("lopdp") ||
-        t.includes("datos personales")
+        t.includes(
+            "datos personales"
+        )
     ){
 
         respuesta =
-        "La LOPDP está relacionada con la protección y gestión responsable de datos personales.";
+        "LOPDP está relacionada con la protección y gestión responsable de datos personales.";
 
     }
+
 
     else if(t.includes("basc")){
 
         respuesta =
-        "BASC está relacionado con sistemas de gestión de control y seguridad para organizaciones y cadenas logísticas.";
+        "BASC está relacionado con sistemas de gestión de control y seguridad.";
 
     }
 
 
-    setTimeout(function(){
 
-        agregarMensaje(
-            respuesta,
-            "ai-message"
-        );
+    setTimeout(
+        function(){
 
-    },450);
+            agregarMensaje(
+                respuesta,
+                "ai-message"
+            );
+
+        },
+        450
+    );
 
 }
 

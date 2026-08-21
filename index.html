@@ -7,46 +7,22 @@
 
 <title>Grupo ASINEC | Gestión · Cumplimiento · Evolución</title>
 
-<meta
-name="description"
-content="Grupo ASINEC. Consultoría, auditoría, capacitación, sistemas de gestión, ISO, LOPDP y BASC."
->
-
 <style>
-
-/* =========================================================
-   GRUPO ASINEC
-   SITIO PREMIUM COMPLETO
-========================================================= */
 
 :root{
     --navy:#031426;
     --navy2:#072d54;
-    --navy3:#0a4f8d;
-
     --blue:#087cff;
-    --blue2:#1aa0ff;
-    --cyan:#6acbff;
-
+    --blue2:#20a4ff;
     --green:#16964b;
     --red:#d62c39;
-
     --white:#ffffff;
-
     --text:#123653;
-    --muted:#64788c;
-
-    --soft:#f4f8fc;
+    --muted:#65788c;
+    --soft:#f5f9fc;
     --line:#dce7f0;
-
-    --shadow:
-    0 25px 70px rgba(5,35,70,.13);
+    --shadow:0 28px 75px rgba(5,35,70,.14);
 }
-
-
-/* =========================================================
-   RESET
-========================================================= */
 
 *{
     margin:0;
@@ -59,34 +35,19 @@ html{
 }
 
 body{
-    font-family:
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-
+    font-family:"Segoe UI",Arial,sans-serif;
     color:var(--text);
-    background:#ffffff;
-
+    background:#fff;
     overflow-x:hidden;
 }
 
-body.service-open{
-    overflow:hidden;
-}
-
 a{
-    color:inherit;
     text-decoration:none;
+    color:inherit;
 }
 
-button,
-input{
+button,input{
     font:inherit;
-}
-
-button{
-    border:none;
 }
 
 img{
@@ -94,79 +55,53 @@ img{
     display:block;
 }
 
-
-/* =========================================================
-   UTILIDADES
-========================================================= */
-
 .container{
     width:min(1320px,88%);
     margin:auto;
 }
 
 .section{
-    padding:110px 0;
+    padding:105px 0;
 }
 
 .kicker{
     display:inline-block;
-
     margin-bottom:14px;
-
     color:var(--blue);
-
     font-size:11px;
     font-weight:900;
-
-    letter-spacing:2.2px;
+    letter-spacing:2px;
 }
 
 .title{
-    max-width:830px;
-
+    max-width:820px;
     color:#08294d;
-
-    font-size:
-    clamp(37px,4.8vw,60px);
-
-    line-height:1.05;
-
+    font-size:clamp(36px,4.8vw,59px);
+    line-height:1.06;
     letter-spacing:-2px;
 }
 
 .description{
     max-width:700px;
-
-    margin-top:20px;
-
+    margin-top:19px;
     color:var(--muted);
-
     font-size:17px;
-    line-height:1.82;
+    line-height:1.8;
 }
 
 .btn{
     min-height:52px;
-
     display:inline-flex;
     align-items:center;
     justify-content:center;
-
     gap:8px;
-
     padding:14px 24px;
-
+    border:none;
     border-radius:999px;
-
     cursor:pointer;
-
     font-size:14px;
     font-weight:800;
-
-    transition:
-    transform .28s ease,
-    box-shadow .28s ease,
-    background .28s ease;
+    transition:.3s;
 }
 
 .btn:hover{
@@ -175,107 +110,51 @@ img{
 
 .btn-blue{
     color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #1598ff,
-        #075fc0
-    );
-
-    box-shadow:
-    0 15px 35px
-    rgba(0,105,220,.28);
-}
-
-.btn-blue:hover{
-    box-shadow:
-    0 22px 45px
-    rgba(0,105,220,.38);
+    background:linear-gradient(135deg,#1598ff,#075fc0);
+    box-shadow:0 15px 35px rgba(0,105,220,.28);
 }
 
 .btn-ghost{
     color:#fff;
-
-    border:
-    1px solid
-    rgba(255,255,255,.38);
-
-    background:
-    rgba(255,255,255,.07);
-
-    backdrop-filter:
-    blur(10px);
-}
-
-.btn-ghost:hover{
-    color:#07528f;
-    background:#fff;
-}
-
-.reveal{
-    opacity:0;
-    transform:translateY(28px);
-
-    transition:
-    opacity .7s ease,
-    transform .7s ease;
-}
-
-.reveal.visible{
-    opacity:1;
-    transform:none;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.35);
 }
 
 
-/* =========================================================
+/* =====================================================
    HEADER
-========================================================= */
+===================================================== */
 
 .main-header{
     position:fixed;
-
     top:0;
     left:0;
     right:0;
-
     z-index:5000;
 
     min-height:88px;
 
-    padding:
-    13px 6%;
+    padding:13px 6%;
 
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 
-    gap:30px;
+    background:rgba(3,20,38,.90);
+    backdrop-filter:blur(18px);
 
-    background:
-    rgba(3,20,38,.88);
-
-    backdrop-filter:
-    blur(18px);
-
-    border-bottom:
-    1px solid
-    rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .main-header::before{
     content:"";
-
     position:absolute;
-
-    top:0;
     left:0;
+    top:0;
     right:0;
-
     height:3px;
 
-    background:
-    linear-gradient(
+    background:linear-gradient(
         90deg,
         var(--green),
         var(--blue),
@@ -283,108 +162,42 @@ img{
     );
 }
 
-.brand{
-    display:flex;
-    align-items:center;
-
-    gap:15px;
-}
-
 .logo{
     width:220px;
-
-    padding:
-    6px 14px;
-
+    padding:6px 14px;
     border-radius:14px;
-
     background:#fff;
-
-    box-shadow:
-    0 10px 30px
-    rgba(0,0,0,.16);
-}
-
-.brand-divider{
-    width:1px;
-    height:35px;
-
-    background:
-    rgba(255,255,255,.20);
-}
-
-.brand-small{
-    color:#c7daea;
-
-    font-size:10px;
-    line-height:1.55;
-
-    letter-spacing:1px;
+    box-shadow:0 10px 30px rgba(0,0,0,.16);
 }
 
 .main-nav{
     display:flex;
-    align-items:center;
-
-    gap:4px;
+    gap:5px;
 }
 
 .main-nav a{
-    padding:
-    10px 15px;
-
+    padding:10px 15px;
     border-radius:999px;
-
     color:#dceaf6;
-
     font-size:13px;
-    font-weight:750;
-
+    font-weight:700;
     transition:.25s;
 }
 
 .main-nav a:hover{
     color:#fff;
-
-    background:
-    rgba(255,255,255,.10);
+    background:rgba(255,255,255,.10);
 }
 
 .main-nav .nav-contact{
     color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #118cff,
-        #075db9
-    );
-}
-
-.mobile-menu{
-    display:none;
-
-    width:44px;
-    height:44px;
-
-    border-radius:50%;
-
-    color:#fff;
-
-    cursor:pointer;
-
-    background:
-    rgba(255,255,255,.09);
-
-    border:
-    1px solid
-    rgba(255,255,255,.15);
+    background:linear-gradient(135deg,#118cff,#075db9);
 }
 
 
-/* =========================================================
+/* =====================================================
    HERO
-========================================================= */
+===================================================== */
 
 .hero{
     position:relative;
@@ -394,58 +207,44 @@ img{
     display:flex;
     align-items:center;
 
-    padding:
-    145px 6% 80px;
+    padding:145px 6% 80px;
 
     overflow:hidden;
 
     color:#fff;
 
     background:
-
     radial-gradient(
         circle at 77% 45%,
         rgba(48,183,255,.42),
-        transparent 27%
+        transparent 28%
     ),
-
-    radial-gradient(
-        circle at 6% 12%,
-        rgba(24,151,75,.13),
-        transparent 23%
-    ),
-
     linear-gradient(
         120deg,
-        #031326 0%,
+        #031326,
         #082c51 52%,
-        #0867b4 100%
+        #0867b4
     );
 }
 
 .hero::before{
     content:"";
-
     position:absolute;
     inset:0;
-
-    opacity:.20;
+    opacity:.19;
 
     background-image:
-
     linear-gradient(
         rgba(255,255,255,.04) 1px,
         transparent 1px
     ),
-
     linear-gradient(
         90deg,
         rgba(255,255,255,.04) 1px,
         transparent 1px
     );
 
-    background-size:
-    70px 70px;
+    background-size:70px 70px;
 }
 
 .hero-grid{
@@ -454,291 +253,101 @@ img{
 
     width:100%;
     max-width:1400px;
-
     margin:auto;
 
     display:grid;
-
-    grid-template-columns:
-    1.1fr .9fr;
-
+    grid-template-columns:1.1fr .9fr;
     align-items:center;
-
     gap:70px;
 }
 
 .hero-kicker{
-    display:flex;
-    align-items:center;
-
-    gap:12px;
-
-    margin-bottom:27px;
-
-    color:#88d4ff;
-
+    margin-bottom:26px;
+    color:#87d4ff;
     font-size:11px;
     font-weight:900;
-
     letter-spacing:2px;
-}
-
-.hero-kicker::before{
-    content:"";
-
-    width:42px;
-    height:1px;
-
-    background:
-    linear-gradient(
-        90deg,
-        #3bd37c,
-        #65c9ff
-    );
 }
 
 .hero h1{
     max-width:850px;
-
-    font-size:
-    clamp(51px,6vw,88px);
-
+    font-size:clamp(50px,6vw,87px);
     line-height:.98;
-
     letter-spacing:-4px;
 }
 
 .hero h1 span{
     display:block;
-
     color:#68c8ff;
-
     font-weight:500;
 }
 
-.hero-description{
+.hero p{
     max-width:700px;
-
     margin-top:27px;
-
     color:#d9e8f5;
-
     font-size:18px;
-    line-height:1.82;
+    line-height:1.8;
 }
 
 .hero-actions{
     margin-top:35px;
-
     display:flex;
-    flex-wrap:wrap;
-
     gap:13px;
+    flex-wrap:wrap;
 }
 
 .hero-art{
     position:relative;
-
-    min-height:585px;
-
+    min-height:580px;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 }
 
-.hero-orbit{
+.hero-art::before{
+    content:"";
     position:absolute;
-
     width:455px;
     height:455px;
-
     border-radius:50%;
-
-    border:
-    1px solid
-    rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.13);
 
     box-shadow:
-
-    0 0 0 50px
-    rgba(255,255,255,.022),
-
-    0 0 0 100px
-    rgba(255,255,255,.011);
+    0 0 0 50px rgba(255,255,255,.022),
+    0 0 0 100px rgba(255,255,255,.011);
 }
 
 .hero-robot{
     position:relative;
+    width:min(495px,100%);
     z-index:2;
 
-    width:min(495px,100%);
+    animation:robotFloat 5s ease-in-out infinite;
 
-    animation:
-    robotFloat 5s ease-in-out infinite;
-
-    filter:
-
-    drop-shadow(
-        0 38px 35px
-        rgba(0,0,0,.28)
-    )
-
-    drop-shadow(
-        0 0 35px
-        rgba(50,180,255,.16)
-    );
+    filter:drop-shadow(0 38px 35px rgba(0,0,0,.28));
 }
 
 @keyframes robotFloat{
-
-    0%,
-    100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-16px);
-    }
-
-}
-
-.hero-info{
-    position:absolute;
-
-    z-index:3;
-
-    width:215px;
-
-    padding:16px;
-
-    border-radius:17px;
-
-    background:
-    rgba(3,24,48,.72);
-
-    border:
-    1px solid
-    rgba(255,255,255,.14);
-
-    backdrop-filter:
-    blur(18px);
-
-    box-shadow:
-    0 20px 50px
-    rgba(0,0,0,.20);
-}
-
-.hero-info strong{
-    display:block;
-
-    margin-bottom:5px;
-
-    font-size:13px;
-}
-
-.hero-info small{
-    color:#c6dff3;
-
-    font-size:11px;
-    line-height:1.5;
-}
-
-.hero-info-one{
-    left:-15px;
-    top:120px;
-}
-
-.hero-info-two{
-    right:-10px;
-    bottom:90px;
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-16px);}
 }
 
 
-/* =========================================================
-   INTRO STRIP
-========================================================= */
-
-.trust-strip{
-    position:relative;
-    z-index:10;
-
-    width:min(1100px,90%);
-
-    margin:-44px auto 0;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
-    overflow:hidden;
-
-    border-radius:22px;
-
-    background:#fff;
-
-    box-shadow:
-    0 25px 65px
-    rgba(5,35,70,.18);
-}
-
-.trust-item{
-    padding:27px 20px;
-
-    text-align:center;
-
-    border-right:
-    1px solid #e3ecf4;
-}
-
-.trust-item:last-child{
-    border-right:none;
-}
-
-.trust-item strong{
-    display:block;
-
-    color:#0874d3;
-
-    font-size:22px;
-}
-
-.trust-item span{
-    display:block;
-
-    margin-top:5px;
-
-    color:#6d8093;
-
-    font-size:11px;
-    font-weight:750;
-}
-
-
-/* =========================================================
-   MISIÓN Y VISIÓN
-========================================================= */
+/* =====================================================
+   MISIÓN VISIÓN
+===================================================== */
 
 .identity{
-    background:
-    linear-gradient(
-        180deg,
-        #ffffff,
-        #f5f9fc
-    );
+    background:#f5f9fc;
 }
 
 .identity-head{
     display:grid;
-
-    grid-template-columns:
-    .9fr 1.1fr;
-
+    grid-template-columns:.9fr 1.1fr;
     align-items:end;
-
     gap:70px;
-
-    margin-bottom:60px;
+    margin-bottom:55px;
 }
 
 .identity-head .description{
@@ -747,68 +356,39 @@ img{
 
 .identity-grid{
     display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     overflow:hidden;
-
-    border:
-    1px solid var(--line);
-
-    border-radius:30px;
-
-    box-shadow:
-    var(--shadow);
+    border-radius:29px;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
 }
 
 .identity-card{
-    position:relative;
-
-    min-height:420px;
-
-    padding:50px;
-
-    overflow:hidden;
+    min-height:405px;
+    padding:48px;
 }
 
 .identity-card:first-child{
     color:#fff;
-
-    background:
-    linear-gradient(
-        145deg,
-        #051a33,
-        #0a4c87
-    );
+    background:linear-gradient(145deg,#051a33,#0a4d88);
 }
 
 .identity-card:last-child{
     background:#fff;
 }
 
-.identity-index{
-    margin-bottom:48px;
-
-    color:#64c8ff;
-
-    font-size:11px;
+.identity-card small{
+    display:block;
+    margin-bottom:43px;
+    color:#65c9ff;
     font-weight:900;
-
     letter-spacing:2px;
 }
 
 .identity-card h3{
-    max-width:520px;
-
-    margin-bottom:20px;
-
-    font-size:
-    clamp(35px,4vw,50px);
-
+    margin-bottom:18px;
+    font-size:clamp(34px,4vw,48px);
     line-height:1.08;
-
-    letter-spacing:-1.5px;
 }
 
 .identity-card:last-child h3{
@@ -816,10 +396,8 @@ img{
 }
 
 .identity-card p{
-    max-width:540px;
-
     font-size:16px;
-    line-height:1.86;
+    line-height:1.85;
 }
 
 .identity-card:first-child p{
@@ -827,41 +405,20 @@ img{
 }
 
 .identity-card:last-child p{
-    color:#65788c;
-}
-
-.identity-letter{
-    position:absolute;
-
-    right:-35px;
-    bottom:-80px;
-
-    font-size:280px;
-    font-weight:900;
-
-    line-height:1;
-
-    opacity:.035;
+    color:#66788c;
 }
 
 
-/* =========================================================
+/* =====================================================
    SERVICIOS
-========================================================= */
-
-.services{
-    background:#fff;
-}
+===================================================== */
 
 .services-head{
     display:flex;
-
-    justify-content:space-between;
     align-items:flex-end;
-
+    justify-content:space-between;
     gap:50px;
-
-    margin-bottom:60px;
+    margin-bottom:58px;
 }
 
 .services-head .description{
@@ -871,37 +428,40 @@ img{
 
 .services-grid{
     display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:20px;
+}
+
+/* IMPORTANTE:
+   LA TARJETA AHORA ES UN ENLACE REAL
+*/
+
+.service-link{
+    display:block;
+    height:100%;
 }
 
 .service-card{
     position:relative;
 
+    height:100%;
     min-height:410px;
 
     padding:29px;
 
     overflow:hidden;
 
-    border-radius:25px;
-
-    border:
-    1px solid #dfe8f1;
-
     cursor:pointer;
 
-    background:
+    border-radius:25px;
+    border:1px solid #dfe8f1;
 
+    background:
     radial-gradient(
         circle at 50% 0%,
         rgba(8,124,255,.07),
         transparent 35%
     ),
-
     linear-gradient(
         145deg,
         #ffffff,
@@ -909,28 +469,20 @@ img{
     );
 
     box-shadow:
-    0 15px 40px
-    rgba(10,40,75,.07);
+    0 15px 40px rgba(10,40,75,.07);
 
-    transition:
-    transform .32s ease,
-    box-shadow .32s ease,
-    border-color .32s ease;
+    transition:.32s;
 }
 
 .service-card::before{
     content:"";
-
     position:absolute;
-
-    left:0;
     top:0;
+    left:0;
     right:0;
-
     height:4px;
 
-    background:
-    linear-gradient(
+    background:linear-gradient(
         90deg,
         var(--green),
         var(--blue),
@@ -940,13 +492,8 @@ img{
 
 .service-card:hover{
     transform:translateY(-9px);
-
-    border-color:
-    rgba(8,124,255,.30);
-
-    box-shadow:
-    0 28px 65px
-    rgba(10,45,80,.15);
+    border-color:rgba(8,124,255,.30);
+    box-shadow:0 28px 65px rgba(10,45,80,.15);
 }
 
 .service-image{
@@ -960,11 +507,8 @@ img{
 .service-image img{
     width:190px;
     height:190px;
-
     object-fit:contain;
-
-    transition:
-    transform .35s ease;
+    transition:.3s;
 }
 
 .service-card:hover img{
@@ -973,65 +517,39 @@ img{
 
 .service-category{
     color:#087cff;
-
     font-size:10px;
     font-weight:900;
-
-    letter-spacing:1.6px;
+    letter-spacing:1.5px;
 }
 
 .service-card h3{
-    margin:
-    8px 0 10px;
-
+    margin:8px 0 10px;
     color:#082d54;
-
     font-size:25px;
 }
 
 .service-card p{
     color:#687a8e;
-
     font-size:14px;
     line-height:1.7;
 }
 
 .service-more{
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:6px;
-
+    display:inline-block;
     margin-top:18px;
-
     color:#087cff;
-
     font-size:13px;
     font-weight:900;
 }
 
 
-/* =========================================================
-   PROCESO PRINCIPAL
-========================================================= */
+/* =====================================================
+   PROCESO
+===================================================== */
 
 .process{
     color:#fff;
-
-    background:
-
-    radial-gradient(
-        circle at 90% 10%,
-        rgba(40,175,255,.15),
-        transparent 27%
-    ),
-
-    linear-gradient(
-        130deg,
-        #03162d,
-        #073e75
-    );
+    background:linear-gradient(130deg,#03162d,#073e75);
 }
 
 .process .title{
@@ -1039,124 +557,77 @@ img{
 }
 
 .process .description{
-    color:#c8dced;
+    color:#c9dced;
 }
 
 .process-grid{
-    margin-top:60px;
-
+    margin-top:55px;
     display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:18px;
 }
 
 .process-card{
-    padding:28px;
-
-    border-radius:20px;
-
-    border:
-    1px solid
-    rgba(255,255,255,.13);
-
-    background:
-    rgba(255,255,255,.065);
-
-    backdrop-filter:
-    blur(12px);
-
-    transition:.3s;
-}
-
-.process-card:hover{
-    transform:translateY(-6px);
-
-    background:
-    rgba(255,255,255,.10);
+    padding:27px;
+    border-radius:19px;
+    border:1px solid rgba(255,255,255,.13);
+    background:rgba(255,255,255,.07);
 }
 
 .process-card small{
-    color:#68c9ff;
-
-    font-size:10px;
+    color:#67c9ff;
     font-weight:900;
-
-    letter-spacing:1.2px;
 }
 
 .process-card h3{
-    margin:
-    11px 0 8px;
-
-    font-size:19px;
+    margin:10px 0 8px;
 }
 
 .process-card p{
-    color:#d0e0ef;
-
-    font-size:13px;
+    color:#cfdfef;
+    font-size:14px;
     line-height:1.65;
 }
 
 
-/* =========================================================
-   ASINEC IA
-========================================================= */
+/* =====================================================
+   IA
+===================================================== */
 
 .ai-section{
     background:#f5f9fc;
 }
 
-.ai-shell{
+.ai-box{
     display:grid;
-
-    grid-template-columns:
-    1fr 1.1fr;
+    grid-template-columns:1fr 1.1fr;
 
     overflow:hidden;
 
-    border-radius:34px;
-
-    border:
-    1px solid #dce7f0;
+    border-radius:32px;
+    border:1px solid var(--line);
 
     background:#fff;
 
-    box-shadow:
-    0 35px 90px
-    rgba(5,40,80,.14);
+    box-shadow:var(--shadow);
 }
 
 .ai-visual{
     position:relative;
-
-    min-height:590px;
+    min-height:570px;
 
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
-    overflow:hidden;
-
-    background:
-    linear-gradient(
-        145deg,
-        #05172d,
-        #0a518e
-    );
+    background:linear-gradient(145deg,#05172d,#0a518e);
 }
 
 .ai-visual::before{
     content:"";
-
     position:absolute;
-
-    width:420px;
-    height:420px;
-
+    width:410px;
+    height:410px;
     border-radius:50%;
 
     background:
@@ -1167,218 +638,97 @@ img{
     );
 }
 
-.ai-img{
+.ai-image{
     position:relative;
-    z-index:2;
-
-    width:390px;
-
-    filter:
-    drop-shadow(
-        0 28px 28px
-        rgba(0,0,0,.27)
-    );
-}
-
-.ai-preview{
-    position:absolute;
-
-    z-index:3;
-
-    right:25px;
-    bottom:28px;
-
-    width:240px;
-
-    padding:16px;
-
-    border-radius:17px;
-
-    background:
-    rgba(255,255,255,.95);
-
-    box-shadow:
-    0 20px 50px
-    rgba(0,0,0,.20);
-}
-
-.ai-preview strong{
-    color:#082f57;
-
-    font-size:12px;
-}
-
-.ai-preview p{
-    margin-top:7px;
-
-    color:#64788b;
-
-    font-size:11px;
-    line-height:1.55;
+    width:385px;
+    filter:drop-shadow(0 28px 28px rgba(0,0,0,.27));
 }
 
 .ai-content{
-    padding:
-    clamp(42px,6vw,75px);
+    padding:clamp(40px,6vw,75px);
 
     display:flex;
     flex-direction:column;
     justify-content:center;
 }
 
-.ai-points{
-    margin:
-    27px 0 31px;
-
+.ai-grid{
     display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     gap:11px;
+    margin:26px 0 30px;
 }
 
-.ai-point{
+.ai-item{
     padding:12px;
-
-    display:flex;
-    align-items:center;
-
-    gap:9px;
-
-    border-radius:13px;
-
-    border:
-    1px solid #dfe8f1;
-
+    border-radius:12px;
+    border:1px solid #dfe8f1;
     background:#f8fbfd;
-
     font-size:13px;
-    font-weight:750;
-}
-
-.ai-point span{
-    width:25px;
-    height:25px;
-
-    flex:none;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    color:#fff;
-    background:#087cff;
-
-    font-size:11px;
+    font-weight:700;
 }
 
 
-/* =========================================================
+/* =====================================================
    CONTACTO
-========================================================= */
+===================================================== */
 
 .contact{
-    padding:
-    105px 6%;
-
+    padding:100px 6%;
     color:#fff;
-
-    background:
-    linear-gradient(
-        120deg,
-        #061d38,
-        #0a5797
-    );
+    background:linear-gradient(120deg,#061d38,#0a5797);
 }
 
 .contact-grid{
-    width:min(1220px,100%);
-
+    max-width:1220px;
     margin:auto;
-
     display:grid;
-
-    grid-template-columns:
-    1fr auto;
-
+    grid-template-columns:1fr auto;
     align-items:center;
-
-    gap:55px;
+    gap:50px;
 }
 
 .contact h2{
     max-width:800px;
-
-    font-size:
-    clamp(38px,5vw,63px);
-
+    font-size:clamp(38px,5vw,63px);
     line-height:1.04;
-
     letter-spacing:-2px;
 }
 
 .contact p{
     max-width:650px;
-
-    margin-top:18px;
-
+    margin-top:17px;
     color:#d3e5f4;
-
-    font-size:16px;
     line-height:1.75;
 }
 
 .whatsapp{
     color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #28ce68,
-        #169d48
-    );
-
-    box-shadow:
-    0 15px 35px
-    rgba(20,170,75,.23);
+    background:linear-gradient(135deg,#28ce68,#169d48);
 }
 
 
-/* =========================================================
+/* =====================================================
    FOOTER
-========================================================= */
+===================================================== */
 
 footer{
     padding:29px 6%;
-
-    display:flex;
-    justify-content:space-between;
-
-    gap:30px;
-
-    color:#92a9bf;
+    text-align:center;
+    color:#95aabe;
     background:#020f1e;
-
     font-size:12px;
 }
 
-footer strong{
-    color:#d6e2ed;
-}
 
-
-/* =========================================================
-   PÁGINA INTERNA DE SERVICIO
-========================================================= */
+/* =====================================================
+   PÁGINAS INTERNAS
+   NO USAN JAVASCRIPT
+===================================================== */
 
 .service-page{
     position:fixed;
-
     inset:0;
-
     z-index:9000;
 
     display:none;
@@ -1388,101 +738,65 @@ footer strong{
     background:#fff;
 }
 
-.service-page.open{
+/*
+ESTA ES LA CLAVE:
+cuando el enlace es #iso9001,
+la sección con id="iso9001"
+se abre automáticamente.
+*/
+
+.service-page:target{
     display:block;
-
-    animation:
-    serviceEnter .32s ease;
-}
-
-@keyframes serviceEnter{
-
-    from{
-        opacity:0;
-        transform:translateY(15px);
-    }
-
-    to{
-        opacity:1;
-        transform:none;
-    }
-
 }
 
 
-/* HEADER SERVICIO */
+/* HEADER INTERNO */
 
 .service-page-header{
     position:sticky;
-
     top:0;
-
     z-index:50;
 
     min-height:82px;
 
-    padding:
-    11px 6%;
+    padding:11px 6%;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    gap:20px;
+    background:rgba(3,20,38,.96);
+    backdrop-filter:blur(18px);
 
-    background:
-    rgba(3,20,38,.95);
-
-    backdrop-filter:
-    blur(18px);
-
-    border-bottom:
-    1px solid
-    rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .service-page-logo{
     width:190px;
-
-    padding:
-    5px 12px;
-
+    padding:5px 12px;
     border-radius:12px;
-
     background:#fff;
 }
 
-.back-btn{
-    padding:
-    11px 17px;
-
+.back-button{
+    padding:11px 17px;
     border-radius:999px;
-
     color:#fff;
-
-    cursor:pointer;
-
-    border:
-    1px solid
-    rgba(255,255,255,.22);
-
-    background:
-    rgba(255,255,255,.07);
-
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.20);
     font-size:13px;
     font-weight:800;
 }
 
 
-/* HERO SERVICIO */
+/* HERO INTERNO */
 
-.service-hero{
+.service-inner-hero{
     position:relative;
 
-    min-height:630px;
+    min-height:620px;
 
-    padding:
-    75px 7%;
+    padding:75px 7%;
 
     display:flex;
     align-items:center;
@@ -1492,13 +806,11 @@ footer strong{
     color:#fff;
 
     background:
-
     radial-gradient(
-        circle at 79% 48%,
+        circle at 78% 47%,
         rgba(48,184,255,.40),
         transparent 28%
     ),
-
     linear-gradient(
         120deg,
         #031326,
@@ -1507,133 +819,71 @@ footer strong{
     );
 }
 
-.service-hero::before{
-    content:"";
-
-    position:absolute;
-    inset:0;
-
-    opacity:.17;
-
-    background-image:
-
-    linear-gradient(
-        rgba(255,255,255,.04) 1px,
-        transparent 1px
-    ),
-
-    linear-gradient(
-        90deg,
-        rgba(255,255,255,.04) 1px,
-        transparent 1px
-    );
-
-    background-size:
-    70px 70px;
-}
-
-.service-hero-grid{
-    position:relative;
-    z-index:2;
-
+.service-inner-grid{
     width:100%;
     max-width:1300px;
-
     margin:auto;
 
     display:grid;
-
-    grid-template-columns:
-    1.1fr .9fr;
-
+    grid-template-columns:1.1fr .9fr;
     align-items:center;
-
     gap:70px;
 }
 
-.service-breadcrumb{
-    margin-bottom:22px;
-
+.breadcrumb{
+    margin-bottom:21px;
     color:#8cd5ff;
-
     font-size:10px;
     font-weight:900;
-
-    letter-spacing:1.6px;
+    letter-spacing:1.7px;
 }
 
-.service-category-large{
+.service-tag{
     display:inline-block;
-
     margin-bottom:17px;
-
-    padding:
-    7px 11px;
+    padding:7px 11px;
 
     border-radius:999px;
 
-    color:#9bdcff;
+    color:#a2ddff;
 
-    border:
-    1px solid
-    rgba(255,255,255,.15);
-
-    background:
-    rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.07);
 
     font-size:10px;
     font-weight:900;
-
     letter-spacing:1.4px;
 }
 
-.service-title{
-    font-size:
-    clamp(52px,6vw,84px);
-
+.service-inner-hero h1{
+    font-size:clamp(52px,6vw,84px);
     line-height:1;
-
     letter-spacing:-3px;
 }
 
-.service-subtitle{
+.service-inner-hero p{
     max-width:650px;
-
-    margin-top:23px;
-
+    margin-top:22px;
     color:#d8e8f5;
-
     font-size:18px;
     line-height:1.8;
 }
 
-.service-hero-actions{
-    margin-top:30px;
-
-    display:flex;
-    flex-wrap:wrap;
-
-    gap:12px;
-}
-
-.service-hero-image{
-    min-height:430px;
-
+.service-inner-image{
     position:relative;
 
+    min-height:420px;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 }
 
-.service-hero-image::before{
+.service-inner-image::before{
     content:"";
-
     position:absolute;
-
     width:410px;
     height:410px;
-
     border-radius:50%;
 
     background:
@@ -1644,630 +894,351 @@ footer strong{
     );
 }
 
-.service-hero-image img{
+.service-inner-image img{
     position:relative;
-
     width:345px;
     height:345px;
-
     object-fit:contain;
 
-    filter:
-    drop-shadow(
-        0 30px 30px
-        rgba(0,0,0,.28)
-    );
+    filter:drop-shadow(0 30px 30px rgba(0,0,0,.28));
 }
 
 
-/* INFORMACIÓN SERVICIO */
+/* CONTENIDO */
 
-.service-info{
-    padding:
-    100px 7%;
-
-    background:#fff;
+.inner-info{
+    padding:95px 7%;
 }
 
-.service-info-container{
-    max-width:1160px;
+.inner-container{
+    max-width:1150px;
     margin:auto;
 }
 
-.service-intro{
-    max-width:850px;
-
-    margin-top:20px;
-
-    color:#65798c;
-
-    font-size:17px;
-    line-height:1.86;
-}
-
-.service-detail-grid{
-    margin-top:55px;
+.inner-grid{
+    margin-top:50px;
 
     display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
-.service-detail-card{
-    padding:31px;
-
-    border-radius:21px;
-
-    border:
-    1px solid #dfe8f1;
-
-    background:
-    linear-gradient(
-        145deg,
-        #f9fbfd,
-        #f4f8fc
-    );
+.info-card{
+    padding:30px;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:#f7fafd;
 }
 
-.service-detail-card small{
+.info-card small{
     color:#087cff;
-
     font-size:10px;
     font-weight:900;
-
     letter-spacing:1.4px;
 }
 
-.service-detail-card h3{
-    margin:
-    11px 0 10px;
-
-    color:#092c51;
-
+.info-card h3{
+    margin:10px 0;
+    color:#082c51;
     font-size:21px;
 }
 
-.service-detail-card p{
+.info-card p{
     color:#66798c;
-
     font-size:15px;
-    line-height:1.77;
+    line-height:1.75;
 }
 
 
-/* QUÉ INCLUYE */
+/* INCLUYE */
 
 .includes{
-    padding:
-    95px 7%;
-
+    padding:90px 7%;
     background:#f5f9fc;
 }
 
-.includes-container{
-    max-width:1160px;
-    margin:auto;
-}
-
-.includes-grid{
-    margin-top:45px;
+.includes-list{
+    margin-top:42px;
 
     display:grid;
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-    gap:14px;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
 }
 
-.include-item{
-    min-height:68px;
-
-    padding:
-    15px 17px;
-
+.include{
+    padding:16px;
     display:flex;
+    gap:11px;
     align-items:center;
 
-    gap:12px;
-
-    border-radius:15px;
-
-    border:
-    1px solid #dce7f0;
+    border-radius:14px;
+    border:1px solid var(--line);
 
     background:#fff;
 
-    color:#365877;
-
+    color:#385a79;
     font-size:14px;
     font-weight:700;
 }
 
-.include-check{
-    width:30px;
-    height:30px;
+.check{
+    width:29px;
+    height:29px;
 
     flex:none;
 
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
     border-radius:50%;
 
     color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #087cff,
-        #075bb8
-    );
-
-    font-size:12px;
+    background:#087cff;
 }
 
 
-/* PROCESO SERVICIO */
+/* PROCESO INTERNO */
 
-.service-process{
-    padding:
-    100px 7%;
-
+.inner-process{
+    padding:95px 7%;
     color:#fff;
-
-    background:
-
-    radial-gradient(
-        circle at 90% 10%,
-        rgba(43,177,255,.16),
-        transparent 28%
-    ),
-
-    linear-gradient(
-        130deg,
-        #04172e,
-        #07437c
-    );
+    background:linear-gradient(130deg,#04172e,#07437c);
 }
 
-.service-process .title{
+.inner-process .title{
     color:#fff;
 }
 
-.service-process .description{
+.inner-process .description{
     color:#ccdeef;
 }
 
-.service-steps{
-    margin-top:52px;
+.inner-steps{
+    margin-top:48px;
 
     display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
+    grid-template-columns:repeat(4,1fr);
     gap:15px;
 }
 
-.service-step{
-    padding:25px;
-
+.inner-step{
+    padding:24px;
     border-radius:18px;
-
-    border:
-    1px solid
-    rgba(255,255,255,.13);
-
-    background:
-    rgba(255,255,255,.065);
+    border:1px solid rgba(255,255,255,.13);
+    background:rgba(255,255,255,.07);
 }
 
-.service-step small{
+.inner-step small{
     color:#68c8ff;
-
     font-weight:900;
 }
 
-.service-step h3{
-    margin:
-    10px 0 7px;
+.inner-step h3{
+    margin:10px 0 7px;
 }
 
-.service-step p{
+.inner-step p{
     color:#ccdeee;
-
     font-size:13px;
-    line-height:1.63;
+    line-height:1.6;
 }
 
 
 /* PAQUETE */
 
 .package{
-    padding:
-    105px 7%;
-
+    padding:100px 7%;
     background:#f5f9fc;
 }
 
 .package-card{
     max-width:1050px;
-
     margin:auto;
-
-    padding:55px;
+    padding:53px;
 
     display:grid;
-
-    grid-template-columns:
-    1fr auto;
+    grid-template-columns:1fr auto;
 
     align-items:center;
+    gap:50px;
 
-    gap:55px;
-
-    border-radius:31px;
+    border-radius:30px;
 
     background:#fff;
 
-    border:
-    1px solid #dce7f0;
+    border:1px solid var(--line);
 
-    box-shadow:
-    0 30px 80px
-    rgba(5,35,70,.13);
+    box-shadow:var(--shadow);
 }
 
 .package-card h2{
-    max-width:680px;
-
-    margin-top:11px;
-
+    max-width:650px;
+    margin-top:10px;
     color:#08294e;
-
-    font-size:
-    clamp(34px,4vw,50px);
-
+    font-size:clamp(34px,4vw,49px);
     line-height:1.08;
-
-    letter-spacing:-1.5px;
 }
 
 .package-card p{
-    max-width:650px;
-
-    margin-top:16px;
-
-    color:#64788c;
-
-    font-size:15px;
+    max-width:630px;
+    margin-top:15px;
+    color:#65788c;
     line-height:1.75;
 }
 
-.package-actions{
-    display:flex;
-    flex-direction:column;
-
-    gap:10px;
-}
-
-.package-btn{
-    padding:
-    16px 25px;
-
+.package-button{
     display:inline-flex;
     align-items:center;
     justify-content:center;
 
+    padding:16px 25px;
+
     border-radius:999px;
 
-    white-space:nowrap;
-
     color:#fff;
+
+    white-space:nowrap;
 
     font-size:14px;
     font-weight:900;
 
-    background:
-    linear-gradient(
-        135deg,
-        #28ce68,
-        #169d48
-    );
+    background:linear-gradient(135deg,#28ce68,#169d48);
 
-    box-shadow:
-    0 14px 30px
-    rgba(20,170,75,.22);
-}
-
-.package-note{
-    max-width:220px;
-
-    text-align:center;
-
-    color:#748597;
-
-    font-size:10px;
-    line-height:1.5;
+    box-shadow:0 14px 30px rgba(20,170,75,.22);
 }
 
 
-/* =========================================================
-   CHAT LAUNCHER
-========================================================= */
+/* =====================================================
+   CHAT
+===================================================== */
 
 .chat-launcher{
     position:fixed;
-
-    right:22px;
-    bottom:22px;
-
-    z-index:10000;
-
-    display:flex;
-    align-items:center;
-
-    gap:10px;
-
-    padding:
-    8px 16px 8px 8px;
-
-    border-radius:999px;
-
-    color:#fff;
-
-    cursor:pointer;
-
-    background:
-    linear-gradient(
-        135deg,
-        #087cff,
-        #054c98
-    );
-
-    box-shadow:
-    0 18px 45px
-    rgba(0,75,165,.35);
-}
-
-.chat-launcher img{
-    width:44px;
-    height:44px;
-
-    object-fit:contain;
-
-    padding:2px;
-
-    border-radius:50%;
-
-    background:#fff;
-}
-
-.chat-launcher strong{
-    display:block;
-
-    font-size:12px;
-}
-
-.chat-launcher small{
-    display:block;
-
-    margin-top:2px;
-
-    color:#d8ebfb;
-
-    font-size:10px;
-}
-
-
-/* =========================================================
-   CHAT
-========================================================= */
-
-.chat-window{
-    position:fixed;
-
     right:22px;
     bottom:22px;
 
     z-index:12000;
 
-    width:405px;
-    height:620px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 
-    max-width:
-    calc(100vw - 30px);
+    padding:8px 16px 8px 8px;
 
-    max-height:
-    calc(100vh - 45px);
+    border:none;
+    border-radius:999px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#087cff,#054c98);
+
+    box-shadow:0 18px 45px rgba(0,75,165,.35);
+}
+
+.chat-launcher img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+    padding:2px;
+    border-radius:50%;
+    background:#fff;
+}
+
+.chat-launcher strong{
+    display:block;
+    font-size:12px;
+}
+
+.chat-launcher small{
+    display:block;
+    color:#d8ebfb;
+    font-size:10px;
+}
+
+.chat-window{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+
+    z-index:13000;
+
+    width:400px;
+    height:600px;
+
+    max-width:calc(100vw - 30px);
+    max-height:calc(100vh - 45px);
 
     display:none;
-
     flex-direction:column;
 
     overflow:hidden;
 
-    border-radius:25px;
+    border-radius:24px;
 
     background:#fff;
 
-    box-shadow:
-    0 35px 100px
-    rgba(0,0,0,.31);
+    box-shadow:0 35px 100px rgba(0,0,0,.31);
 }
 
 .chat-window.open{
     display:flex;
-
-    animation:
-    chatOpen .28s ease;
-}
-
-@keyframes chatOpen{
-
-    from{
-        opacity:0;
-
-        transform:
-        translateY(22px)
-        scale(.96);
-    }
-
-    to{
-        opacity:1;
-        transform:none;
-    }
-
 }
 
 .chat-head{
     padding:15px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     color:#fff;
 
-    background:
-    linear-gradient(
-        135deg,
-        #05172d,
-        #0872ca
-    );
+    background:linear-gradient(135deg,#05172d,#0872ca);
 }
 
 .chat-profile{
     display:flex;
     align-items:center;
-
     gap:10px;
 }
 
 .chat-profile img{
-    width:51px;
-    height:51px;
-
+    width:50px;
+    height:50px;
     object-fit:contain;
-
     padding:2px;
-
     border-radius:50%;
-
     background:#fff;
 }
 
-.chat-profile strong{
-    font-size:15px;
-}
-
-.chat-status{
-    display:flex;
-    align-items:center;
-
-    gap:5px;
-
-    margin-top:3px;
-
+.chat-profile small{
     color:#bbe0f7;
-
-    font-size:10px;
-}
-
-.online{
-    width:7px;
-    height:7px;
-
-    border-radius:50%;
-
-    background:#48dd79;
-
-    box-shadow:
-    0 0 8px #48dd79;
 }
 
 .chat-close{
     width:35px;
     height:35px;
-
+    border:none;
     border-radius:50%;
-
     color:#fff;
-
     cursor:pointer;
-
-    background:
-    rgba(255,255,255,.10);
-
-    font-size:20px;
-}
-
-.quick-questions{
-    display:flex;
-
-    gap:6px;
-
-    overflow-x:auto;
-
-    padding:10px;
-
-    background:#edf5fb;
-
-    border-bottom:
-    1px solid #dce7f0;
-}
-
-.quick-questions button{
-    flex:none;
-
-    padding:
-    7px 10px;
-
-    border-radius:999px;
-
-    cursor:pointer;
-
-    color:#345a79;
-    background:#fff;
-
-    border:
-    1px solid #d3e2ef;
-
-    font-size:10px;
+    background:rgba(255,255,255,.10);
 }
 
 .chat-messages{
     flex:1;
-
     overflow-y:auto;
-
     padding:17px;
-
-    background:
-    linear-gradient(
-        180deg,
-        #f6fafd,
-        #edf5fb
-    );
+    background:#eff6fb;
 }
 
 .message{
     max-width:86%;
-
     margin-bottom:11px;
-
-    padding:
-    11px 13px;
-
+    padding:11px 13px;
     border-radius:15px;
-
     white-space:pre-line;
-
     font-size:13px;
     line-height:1.55;
 }
@@ -2275,183 +1246,70 @@ footer strong{
 .ai-message{
     color:#173a5d;
     background:#fff;
-
-    border:
-    1px solid #dce7f0;
-
-    border-bottom-left-radius:4px;
+    border:1px solid #dce7f0;
 }
 
 .user-message{
     margin-left:auto;
-
     color:#fff;
     background:#087cff;
-
-    border-bottom-right-radius:4px;
-}
-
-.typing{
-    display:none;
-
-    padding:
-    7px 17px;
-
-    color:#66788a;
-
-    background:#edf5fb;
-
-    font-size:10px;
-}
-
-.human-contact{
-    display:none;
-
-    padding:13px;
-
-    text-align:center;
-
-    color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #27ce67,
-        #18a34b
-    );
-
-    font-size:12px;
-    font-weight:900;
-}
-
-.human-contact.show{
-    display:block;
 }
 
 .chat-input{
     min-height:60px;
-
     display:flex;
-
     background:#fff;
-
-    border-top:
-    1px solid #dce7f0;
 }
 
 .chat-input input{
     flex:1;
-
     min-width:0;
-
-    padding:
-    0 15px;
-
     border:none;
     outline:none;
-
-    color:#173a5d;
+    padding:0 15px;
 }
 
 .chat-input button{
     width:60px;
-
-    color:#fff;
-
+    border:none;
     cursor:pointer;
-
+    color:#fff;
     background:#087cff;
-
-    font-size:19px;
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 
-@media(max-width:1000px){
-
-    .brand-divider,
-    .brand-small{
-        display:none;
-    }
+@media(max-width:950px){
 
     .main-nav{
         display:none;
-
-        position:absolute;
-
-        top:88px;
-        left:20px;
-        right:20px;
-
-        padding:15px;
-
-        flex-direction:column;
-        align-items:stretch;
-
-        border-radius:18px;
-
-        background:#061a31;
-
-        box-shadow:
-        0 22px 55px
-        rgba(0,0,0,.25);
-    }
-
-    .main-nav.open{
-        display:flex;
-    }
-
-    .mobile-menu{
-        display:block;
     }
 
     .hero-grid,
-    .service-hero-grid{
+    .identity-head,
+    .ai-box,
+    .contact-grid,
+    .service-inner-grid{
         grid-template-columns:1fr;
+    }
 
+    .hero{
         text-align:center;
     }
 
-    .hero-kicker{
-        justify-content:center;
-    }
-
-    .hero-description,
-    .service-subtitle{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .hero-actions,
-    .service-hero-actions{
+    .hero-actions{
         justify-content:center;
     }
 
     .hero-art{
-        min-height:450px;
+        min-height:420px;
     }
 
     .hero-robot{
-        width:380px;
-    }
-
-    .hero-info-one{
-        left:
-        calc(50% - 240px);
-    }
-
-    .hero-info-two{
-        right:
-        calc(50% - 250px);
-    }
-
-    .identity-head{
-        grid-template-columns:1fr;
-
-        gap:20px;
+        width:350px;
     }
 
     .identity-grid{
@@ -2459,26 +1317,23 @@ footer strong{
     }
 
     .services-grid{
-        grid-template-columns:
-        repeat(2,1fr);
+        grid-template-columns:1fr 1fr;
     }
 
     .process-grid{
-        grid-template-columns:
-        repeat(2,1fr);
+        grid-template-columns:1fr 1fr;
     }
 
-    .ai-shell{
-        grid-template-columns:1fr;
+    .service-inner-hero{
+        text-align:center;
     }
 
-    .ai-visual{
-        min-height:500px;
+    .service-inner-hero p{
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .contact-grid{
-        grid-template-columns:1fr;
-
         text-align:center;
     }
 
@@ -2487,22 +1342,12 @@ footer strong{
         margin-right:auto;
     }
 
-    .contact .btn{
-        justify-self:center;
-    }
-
-    .service-detail-grid{
-        grid-template-columns:1fr;
-    }
-
-    .service-steps{
-        grid-template-columns:
-        repeat(2,1fr);
+    .inner-steps{
+        grid-template-columns:1fr 1fr;
     }
 
     .package-card{
         grid-template-columns:1fr;
-
         text-align:center;
     }
 
@@ -2511,37 +1356,25 @@ footer strong{
         margin-right:auto;
     }
 
-    .package-actions{
-        align-items:center;
+    .package-button{
+        justify-self:center;
     }
 
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:650px){
+@media(max-width:620px){
 
     .main-header{
-        padding:
-        11px 15px;
+        justify-content:center;
     }
 
     .logo{
-        width:178px;
-    }
-
-    .main-nav{
-        top:78px;
+        width:180px;
     }
 
     .hero{
         min-height:auto;
-
-        padding:
-        125px 19px 65px;
+        padding:125px 20px 65px;
     }
 
     .hero h1{
@@ -2549,51 +1382,20 @@ footer strong{
     }
 
     .hero-art{
-        min-height:350px;
+        min-height:320px;
     }
 
     .hero-robot{
-        width:295px;
-    }
-
-    .hero-info{
-        display:none;
-    }
-
-    .hero-orbit{
-        width:300px;
-        height:300px;
-    }
-
-    .trust-strip{
-        margin-top:-25px;
-
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .trust-item:nth-child(2){
-        border-right:none;
-    }
-
-    .trust-item:nth-child(1),
-    .trust-item:nth-child(2){
-        border-bottom:
-        1px solid #e3ecf4;
+        width:270px;
     }
 
     .section{
-        padding:78px 0;
+        padding:75px 0;
     }
 
     .identity-card{
         min-height:auto;
-
-        padding:31px;
-    }
-
-    .identity-index{
-        margin-bottom:28px;
+        padding:30px;
     }
 
     .services-head{
@@ -2606,108 +1408,80 @@ footer strong{
 
     .services-grid,
     .process-grid,
-    .service-detail-grid,
-    .includes-grid,
-    .service-steps{
+    .inner-grid,
+    .includes-list,
+    .inner-steps{
         grid-template-columns:1fr;
     }
 
     .service-card{
-        min-height:370px;
+        min-height:360px;
     }
 
     .service-image{
-        height:195px;
+        height:190px;
     }
 
     .service-image img{
-        width:175px;
-        height:175px;
+        width:170px;
+        height:170px;
     }
 
     .ai-visual{
-        min-height:430px;
+        min-height:410px;
     }
 
-    .ai-img{
-        width:295px;
+    .ai-image{
+        width:285px;
     }
 
-    .ai-preview{
-        width:215px;
-        right:15px;
-        bottom:18px;
-    }
-
-    .ai-content{
-        padding:35px 25px;
-    }
-
-    .ai-points{
+    .ai-grid{
         grid-template-columns:1fr;
     }
 
-    footer{
-        flex-direction:column;
-
-        text-align:center;
-    }
-
     .service-page-header{
-        padding:
-        10px 14px;
+        padding:10px 14px;
     }
 
     .service-page-logo{
-        width:165px;
+        width:160px;
     }
 
-    .service-hero{
+    .back-button{
+        padding:9px 12px;
+        font-size:11px;
+    }
+
+    .service-inner-hero{
         min-height:auto;
-
-        padding:
-        65px 20px;
+        padding:60px 20px;
     }
 
-    .service-hero-image{
-        min-height:320px;
+    .service-inner-image{
+        min-height:300px;
     }
 
-    .service-hero-image img{
-        width:270px;
-        height:270px;
+    .service-inner-image img{
+        width:250px;
+        height:250px;
     }
 
-    .service-info,
+    .inner-info,
     .includes,
-    .service-process,
+    .inner-process,
     .package{
-        padding:
-        75px 20px;
+        padding:70px 20px;
     }
 
     .package-card{
-        padding:
-        32px 23px;
-    }
-
-    .chat-launcher{
-        right:13px;
-        bottom:14px;
+        padding:30px 22px;
     }
 
     .chat-window{
         right:10px;
         bottom:10px;
-
-        width:
-        calc(100vw - 20px);
-
-        height:79vh;
-
-        max-height:none;
-
-        border-radius:20px;
+        width:calc(100vw - 20px);
+        height:78vh;
     }
 
 }
@@ -2719,44 +1493,23 @@ footer strong{
 <body>
 
 
-<!-- =========================================================
-     PÁGINA PRINCIPAL
-========================================================= -->
-
-<div id="paginaPrincipal">
-
-
-<!-- HEADER -->
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
 
 <header class="main-header">
 
-    <div class="brand">
+    <a href="#inicio">
 
-        <a href="#inicio">
+        <img
+        src="./GRUPO ASINEC LOGO.png"
+        class="logo"
+        alt="Grupo ASINEC">
 
-            <img
-            src="./GRUPO ASINEC LOGO.png"
-            class="logo"
-            alt="Grupo ASINEC">
-
-        </a>
-
-        <div class="brand-divider"></div>
-
-        <div class="brand-small">
-
-            GESTIÓN<br>
-            CUMPLIMIENTO<br>
-            EVOLUCIÓN
-
-        </div>
-
-    </div>
+    </a>
 
 
-    <nav
-    class="main-nav"
-    id="mainNav">
+    <nav class="main-nav">
 
         <a href="#inicio">
             Inicio
@@ -2781,7 +1534,6 @@ footer strong{
         <a
         href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20deseo%20realizar%20una%20consulta."
         target="_blank"
-        rel="noopener"
         class="nav-contact">
 
             Contacto
@@ -2790,1031 +1542,695 @@ footer strong{
 
     </nav>
 
-
-    <button
-    class="mobile-menu"
-    onclick="toggleMenu()"
-    aria-label="Menú">
-
-        ☰
-
-    </button>
-
 </header>
 
 
 
-<!-- HERO -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <section
 class="hero"
 id="inicio">
 
-    <div class="hero-grid">
+<div class="hero-grid">
+
+<div>
+
+<div class="hero-kicker">
+
+GRUPO ASINEC · CONSULTORÍA Y GESTIÓN
+
+</div>
 
 
-        <div>
+<h1>
 
-            <div class="hero-kicker">
+Gestión para organizaciones
 
-                GRUPO ASINEC · CONSULTORÍA Y GESTIÓN
+<span>
+que quieren avanzar.
+</span>
 
-            </div>
-
-
-            <h1>
-
-                Gestión para organizaciones
-
-                <span>
-                    que quieren avanzar.
-                </span>
-
-            </h1>
+</h1>
 
 
-            <p class="hero-description">
+<p>
 
-                Acompañamos a organizaciones en
-                consultoría, implementación, auditoría,
-                capacitación y fortalecimiento de
-                sistemas de gestión, integrando calidad,
-                seguridad, cumplimiento y mejora continua.
+Acompañamos a organizaciones
+en consultoría, implementación,
+auditoría, capacitación
+y fortalecimiento de sistemas
+de gestión, integrando calidad,
+seguridad, cumplimiento
+y mejora continua.
 
-            </p>
-
-
-            <div class="hero-actions">
-
-                <a
-                href="#servicios"
-                class="btn btn-blue">
-
-                    Explorar servicios →
-
-                </a>
+</p>
 
 
-                <button
-                class="btn btn-ghost"
-                onclick="abrirChat()">
+<div class="hero-actions">
 
-                    ✦ Hablar con ASINEC IA
+<a
+href="#servicios"
+class="btn btn-blue">
 
-                </button>
+Explorar servicios →
 
-            </div>
+</a>
 
-        </div>
+
+<button
+class="btn btn-ghost"
+onclick="abrirChat()">
+
+✦ Hablar con ASINEC IA
+
+</button>
+
+</div>
+
+</div>
 
 
 
-        <div class="hero-art">
+<div class="hero-art">
 
-            <div class="hero-orbit"></div>
+<img
+src="./ASISTENTE.png"
+class="hero-robot"
+alt="ASINEC IA">
 
+</div>
 
-            <img
-            src="./ASISTENTE.png"
-            class="hero-robot"
-            alt="ASINEC IA">
-
-
-            <div class="hero-info hero-info-one">
-
-                <strong>
-                    Gestión empresarial
-                </strong>
-
-                <small>
-                    Calidad, cumplimiento,
-                    seguridad y mejora continua.
-                </small>
-
-            </div>
-
-
-            <div class="hero-info hero-info-two">
-
-                <strong>
-                    ✦ ASINEC IA
-                </strong>
-
-                <small>
-                    Orientación inicial
-                    para tus consultas.
-                </small>
-
-            </div>
-
-        </div>
-
-
-    </div>
+</div>
 
 </section>
 
 
 
-<!-- STRIP -->
-
-<section class="trust-strip reveal">
-
-
-    <div class="trust-item">
-
-        <strong>ISO</strong>
-
-        <span>
-            Sistemas de gestión
-        </span>
-
-    </div>
-
-
-    <div class="trust-item">
-
-        <strong>360°</strong>
-
-        <span>
-            Acompañamiento
-        </span>
-
-    </div>
-
-
-    <div class="trust-item">
-
-        <strong>IA</strong>
-
-        <span>
-            Orientación inicial
-        </span>
-
-    </div>
-
-
-    <div class="trust-item">
-
-        <strong>+</strong>
-
-        <span>
-            Mejora continua
-        </span>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     MISIÓN Y VISIÓN
-========================================================= -->
+<!-- =====================================================
+     MISIÓN / VISIÓN
+===================================================== -->
 
 <section
 class="section identity"
 id="nosotros">
 
+<div class="container">
 
-    <div class="container">
 
+<div class="identity-head">
 
-        <div class="identity-head reveal">
+<div>
 
+<span class="kicker">
+QUIÉNES SOMOS
+</span>
 
-            <div>
+<h2 class="title">
 
-                <span class="kicker">
+Gestión construida
+sobre conocimiento
+y confianza.
 
-                    QUIÉNES SOMOS
+</h2>
 
-                </span>
+</div>
 
 
-                <h2 class="title">
+<p class="description">
 
-                    Gestión construida
-                    sobre conocimiento
-                    y confianza.
+Buscamos fortalecer organizaciones
+mediante acompañamiento profesional,
+sistemas de gestión,
+cumplimiento normativo
+y una cultura permanente
+de mejora continua.
 
-                </h2>
+</p>
 
-            </div>
+</div>
 
 
-            <p class="description">
 
-                Buscamos fortalecer organizaciones
-                mediante acompañamiento profesional,
-                sistemas de gestión, cumplimiento
-                normativo y una cultura permanente
-                de mejora continua.
+<div class="identity-grid">
 
-            </p>
 
+<article class="identity-card">
 
-        </div>
+<small>
+01 / MISIÓN
+</small>
 
+<h3>
+Crear valor desde la gestión.
+</h3>
 
+<p>
 
-        <div class="identity-grid reveal">
+Brindar soluciones de consultoría,
+auditoría, capacitación y acompañamiento
+empresarial que fortalezcan
+los sistemas de gestión,
+el cumplimiento normativo
+y la mejora continua
+de las organizaciones,
+mediante un servicio profesional,
+ético y orientado a resultados.
 
+</p>
 
-            <article class="identity-card">
+</article>
 
 
-                <div class="identity-index">
 
-                    01 / MISIÓN
+<article class="identity-card">
 
-                </div>
+<small>
+02 / VISIÓN
+</small>
 
+<h3>
+Avanzar junto a nuestros clientes.
+</h3>
 
-                <h3>
+<p>
 
-                    Crear valor
-                    desde la gestión.
+Consolidarnos como una organización
+referente en consultoría
+y sistemas de gestión,
+reconocida por la calidad
+de nuestros servicios,
+la innovación, la confianza
+y el compromiso con el desarrollo
+sostenible y competitivo
+de nuestros clientes.
 
-                </h3>
+</p>
 
+</article>
 
-                <p>
 
-                    Brindar soluciones de consultoría,
-                    auditoría, capacitación y acompañamiento
-                    empresarial que fortalezcan los sistemas
-                    de gestión, el cumplimiento normativo
-                    y la mejora continua de las organizaciones,
-                    mediante un servicio profesional,
-                    ético y orientado a resultados.
+</div>
 
-                </p>
-
-
-                <div class="identity-letter">
-                    M
-                </div>
-
-
-            </article>
-
-
-
-            <article class="identity-card">
-
-
-                <div class="identity-index">
-
-                    02 / VISIÓN
-
-                </div>
-
-
-                <h3>
-
-                    Avanzar junto
-                    a nuestros clientes.
-
-                </h3>
-
-
-                <p>
-
-                    Consolidarnos como una organización
-                    referente en consultoría y sistemas
-                    de gestión, reconocida por la calidad
-                    de nuestros servicios, la innovación,
-                    la confianza y el compromiso con
-                    el desarrollo sostenible y competitivo
-                    de nuestros clientes.
-
-                </p>
-
-
-                <div class="identity-letter">
-                    V
-                </div>
-
-
-            </article>
-
-
-        </div>
-
-
-    </div>
-
+</div>
 
 </section>
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      SERVICIOS
-========================================================= -->
+===================================================== -->
 
 <section
-class="section services"
+class="section"
 id="servicios">
 
+<div class="container">
 
-    <div class="container">
 
+<div class="services-head">
 
-        <div class="services-head reveal">
+<div>
 
+<span class="kicker">
+NUESTROS SERVICIOS
+</span>
 
-            <div>
+<h2 class="title">
 
-                <span class="kicker">
+Selecciona una solución
+y conoce todos sus detalles.
 
-                    NUESTROS SERVICIOS
+</h2>
 
-                </span>
+</div>
 
 
-                <h2 class="title">
+<p class="description">
 
-                    Selecciona una solución
-                    y conoce todos sus detalles.
+Pulsa sobre cualquier norma.
+Se abrirá una vista completa
+con información, alcance,
+acompañamiento y el botón
+del paquete correspondiente.
 
-                </h2>
+</p>
 
-            </div>
+</div>
 
 
-            <p class="description">
 
-                Pulsa sobre una norma para conocer
-                su significado, propósito, aplicación,
-                áreas de gestión, acompañamiento
-                y el paquete correspondiente.
+<div class="services-grid">
 
-            </p>
 
+<!-- ISO 9001 -->
 
-        </div>
+<a
+href="#iso9001"
+class="service-link">
 
+<article class="service-card">
 
+<div class="service-image">
 
-        <div class="services-grid">
+<img
+src="./ISO 9001.png"
+alt="ISO 9001">
 
+</div>
 
-            <!-- ISO 9001 -->
+<span class="service-category">
+CALIDAD
+</span>
 
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('iso9001')">
+<h3>
+ISO 9001
+</h3>
 
-                <div class="service-image">
+<p>
+Gestión de calidad,
+procesos, satisfacción
+del cliente y mejora continua.
+</p>
 
-                    <img
-                    src="./ISO 9001.png"
-                    alt="ISO 9001">
+<span class="service-more">
+Conocer el servicio →
+</span>
 
-                </div>
+</article>
 
+</a>
 
-                <span class="service-category">
-                    CALIDAD
-                </span>
 
 
-                <h3>
-                    ISO 9001
-                </h3>
+<!-- ISO 18788 -->
 
+<a
+href="#iso18788"
+class="service-link">
 
-                <p>
+<article class="service-card">
 
-                    Gestión de calidad,
-                    procesos, satisfacción
-                    del cliente y mejora continua.
+<div class="service-image">
 
-                </p>
+<img
+src="./ISO 18788.png"
+alt="ISO 18788">
 
+</div>
 
-                <span class="service-more">
+<span class="service-category">
+SEGURIDAD
+</span>
 
-                    Conocer el servicio →
+<h3>
+ISO 18788
+</h3>
 
-                </span>
+<p>
+Gestión para operaciones
+de seguridad privada
+y control operacional.
+</p>
 
-            </article>
+<span class="service-more">
+Conocer el servicio →
+</span>
 
+</article>
 
+</a>
 
-            <!-- ISO 18788 -->
 
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('iso18788')">
 
-                <div class="service-image">
+<!-- ISO 45001 -->
 
-                    <img
-                    src="./ISO 18788.png"
-                    alt="ISO 18788">
+<a
+href="#iso45001"
+class="service-link">
 
-                </div>
+<article class="service-card">
 
+<div class="service-image">
 
-                <span class="service-category">
-                    SEGURIDAD
-                </span>
+<img
+src="./ISO 45001.png"
+alt="ISO 45001">
 
+</div>
 
-                <h3>
-                    ISO 18788
-                </h3>
+<span class="service-category">
+SEGURIDAD Y SALUD
+</span>
 
+<h3>
+ISO 45001
+</h3>
 
-                <p>
+<p>
+Gestión de seguridad
+y salud en el trabajo
+y prevención de riesgos.
+</p>
 
-                    Gestión para operaciones
-                    de seguridad privada
-                    y control operacional.
+<span class="service-more">
+Conocer el servicio →
+</span>
 
-                </p>
+</article>
 
+</a>
 
-                <span class="service-more">
 
-                    Conocer el servicio →
 
-                </span>
+<!-- ISO 27001 -->
 
-            </article>
+<a
+href="#iso27001"
+class="service-link">
 
+<article class="service-card">
 
+<div class="service-image">
 
-            <!-- ISO 45001 -->
+<img
+src="./ISO 27001.png"
+alt="ISO 27001">
 
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('iso45001')">
+</div>
 
-                <div class="service-image">
+<span class="service-category">
+INFORMACIÓN
+</span>
 
-                    <img
-                    src="./ISO 45001.png"
-                    alt="ISO 45001">
+<h3>
+ISO 27001
+</h3>
 
-                </div>
+<p>
+Gestión de seguridad
+de la información
+y protección de activos.
+</p>
 
+<span class="service-more">
+Conocer el servicio →
+</span>
 
-                <span class="service-category">
-                    SEGURIDAD Y SALUD
-                </span>
+</article>
 
+</a>
 
-                <h3>
-                    ISO 45001
-                </h3>
 
 
-                <p>
+<!-- LOPDP -->
 
-                    Gestión de seguridad
-                    y salud en el trabajo
-                    y prevención de riesgos.
+<a
+href="#lopdp"
+class="service-link">
 
-                </p>
+<article class="service-card">
 
+<div class="service-image">
 
-                <span class="service-more">
+<img
+src="./LOPDP.png"
+alt="LOPDP">
 
-                    Conocer el servicio →
+</div>
 
-                </span>
+<span class="service-category">
+DATOS PERSONALES
+</span>
 
-            </article>
+<h3>
+LOPDP
+</h3>
 
+<p>
+Protección y gestión
+responsable de
+datos personales.
+</p>
 
+<span class="service-more">
+Conocer el servicio →
+</span>
 
-            <!-- ISO 27001 -->
+</article>
 
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('iso27001')">
+</a>
 
-                <div class="service-image">
 
-                    <img
-                    src="./ISO 27001.png"
-                    alt="ISO 27001">
 
-                </div>
+<!-- BASC -->
 
+<a
+href="#basc"
+class="service-link">
 
-                <span class="service-category">
-                    INFORMACIÓN
-                </span>
+<article class="service-card">
 
+<div class="service-image">
 
-                <h3>
-                    ISO 27001
-                </h3>
+<img
+src="./BASC.png"
+alt="BASC">
 
+</div>
 
-                <p>
+<span class="service-category">
+CONTROL Y SEGURIDAD
+</span>
 
-                    Gestión de seguridad
-                    de la información
-                    y protección de activos.
+<h3>
+BASC
+</h3>
 
-                </p>
+<p>
+Gestión de control
+y seguridad para
+organizaciones y cadenas logísticas.
+</p>
 
+<span class="service-more">
+Conocer el servicio →
+</span>
 
-                <span class="service-more">
+</article>
 
-                    Conocer el servicio →
+</a>
 
-                </span>
 
-            </article>
+</div>
 
-
-
-            <!-- LOPDP -->
-
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('lopdp')">
-
-                <div class="service-image">
-
-                    <img
-                    src="./LOPDP.png"
-                    alt="LOPDP">
-
-                </div>
-
-
-                <span class="service-category">
-                    DATOS PERSONALES
-                </span>
-
-
-                <h3>
-                    LOPDP
-                </h3>
-
-
-                <p>
-
-                    Protección y gestión
-                    responsable de
-                    datos personales.
-
-                </p>
-
-
-                <span class="service-more">
-
-                    Conocer el servicio →
-
-                </span>
-
-            </article>
-
-
-
-            <!-- BASC -->
-
-            <article
-            class="service-card reveal"
-            onclick="abrirServicio('basc')">
-
-                <div class="service-image">
-
-                    <img
-                    src="./BASC.png"
-                    alt="BASC">
-
-                </div>
-
-
-                <span class="service-category">
-                    CONTROL Y SEGURIDAD
-                </span>
-
-
-                <h3>
-                    BASC
-                </h3>
-
-
-                <p>
-
-                    Gestión de control
-                    y seguridad para
-                    organizaciones y cadenas logísticas.
-
-                </p>
-
-
-                <span class="service-more">
-
-                    Conocer el servicio →
-
-                </span>
-
-            </article>
-
-
-        </div>
-
-
-    </div>
-
+</div>
 
 </section>
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      PROCESO
-========================================================= -->
+===================================================== -->
 
 <section class="section process">
 
+<div class="container">
 
-    <div class="container">
+<span class="kicker">
+NUESTRA FORMA DE TRABAJAR
+</span>
 
+<h2 class="title">
 
-        <span class="kicker">
+Del diagnóstico
+a la mejora continua.
 
-            NUESTRA FORMA DE TRABAJAR
+</h2>
 
-        </span>
+<p class="description">
 
+Nuestro acompañamiento
+puede adaptarse
+a las características,
+necesidades y objetivos
+de cada organización.
 
-        <h2 class="title">
+</p>
 
-            Del diagnóstico
-            a la mejora continua.
 
-        </h2>
+<div class="process-grid">
 
+<article class="process-card">
+<small>01 / DIAGNÓSTICO</small>
+<h3>Evaluamos</h3>
+<p>Identificamos necesidades, brechas y oportunidades.</p>
+</article>
 
-        <p class="description">
+<article class="process-card">
+<small>02 / PLANIFICACIÓN</small>
+<h3>Diseñamos</h3>
+<p>Definimos alcance, prioridades y metodología.</p>
+</article>
 
-            El acompañamiento puede adaptarse
-            a las características, necesidades
-            y objetivos de cada organización.
+<article class="process-card">
+<small>03 / IMPLEMENTACIÓN</small>
+<h3>Construimos</h3>
+<p>Fortalecemos procesos, documentación y controles.</p>
+</article>
 
-        </p>
+<article class="process-card">
+<small>04 / CAPACITACIÓN</small>
+<h3>Desarrollamos</h3>
+<p>Fortalecemos conocimientos y capacidades.</p>
+</article>
 
+<article class="process-card">
+<small>05 / AUDITORÍA</small>
+<h3>Evaluamos resultados</h3>
+<p>Identificamos hallazgos y oportunidades de mejora.</p>
+</article>
 
+<article class="process-card">
+<small>06 / MEJORA</small>
+<h3>Evolucionamos</h3>
+<p>Realizamos seguimiento y fortalecimiento continuo.</p>
+</article>
 
-        <div class="process-grid reveal">
+</div>
 
-
-            <article class="process-card">
-
-                <small>
-                    01 / DIAGNÓSTICO
-                </small>
-
-                <h3>
-                    Evaluamos
-                </h3>
-
-                <p>
-
-                    Identificamos necesidades,
-                    brechas y oportunidades.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="process-card">
-
-                <small>
-                    02 / PLANIFICACIÓN
-                </small>
-
-                <h3>
-                    Diseñamos
-                </h3>
-
-                <p>
-
-                    Definimos alcance,
-                    prioridades y metodología.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="process-card">
-
-                <small>
-                    03 / IMPLEMENTACIÓN
-                </small>
-
-                <h3>
-                    Construimos
-                </h3>
-
-                <p>
-
-                    Fortalecemos procesos,
-                    documentación y controles.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="process-card">
-
-                <small>
-                    04 / CAPACITACIÓN
-                </small>
-
-                <h3>
-                    Desarrollamos
-                </h3>
-
-                <p>
-
-                    Fortalecemos conocimientos
-                    y capacidades.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="process-card">
-
-                <small>
-                    05 / AUDITORÍA
-                </small>
-
-                <h3>
-                    Evaluamos resultados
-                </h3>
-
-                <p>
-
-                    Identificamos hallazgos
-                    y oportunidades de mejora.
-
-                </p>
-
-            </article>
-
-
-
-            <article class="process-card">
-
-                <small>
-                    06 / MEJORA
-                </small>
-
-                <h3>
-                    Evolucionamos
-                </h3>
-
-                <p>
-
-                    Realizamos seguimiento
-                    y fortalecimiento continuo.
-
-                </p>
-
-            </article>
-
-
-        </div>
-
-
-    </div>
-
+</div>
 
 </section>
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      ASINEC IA
-========================================================= -->
+===================================================== -->
 
 <section
 class="section ai-section"
 id="asistente">
 
+<div class="container">
 
-    <div class="container">
 
+<div class="ai-box">
 
-        <div class="ai-shell reveal">
 
+<div class="ai-visual">
 
-            <div class="ai-visual">
+<img
+src="./ASISTENTE.png"
+class="ai-image"
+alt="ASINEC IA">
 
+</div>
 
-                <img
-                src="./ASISTENTE.png"
-                class="ai-img"
-                alt="ASINEC IA">
 
 
-                <div class="ai-preview">
+<div class="ai-content">
 
-                    <strong>
-                        ASINEC IA
-                    </strong>
+<span class="kicker">
+ASISTENCIA INTELIGENTE
+</span>
 
-                    <p>
+<h2 class="title">
 
-                        Hola 👋 Puedo orientarte
-                        sobre normas, sistemas de
-                        gestión y servicios
-                        de Grupo ASINEC.
+Una primera respuesta
+sin hacerte esperar.
 
-                    </p>
+</h2>
 
-                </div>
+<p class="description">
 
+ASINEC IA puede brindarte
+orientación inicial sobre normas,
+auditorías, implementación,
+capacitación, LOPDP, BASC
+y nuestros servicios.
 
-            </div>
+</p>
 
 
+<div class="ai-grid">
 
-            <div class="ai-content">
+<div class="ai-item">✓ Normas ISO</div>
+<div class="ai-item">✓ Auditorías</div>
+<div class="ai-item">✓ Implementación</div>
+<div class="ai-item">✓ Capacitación</div>
+<div class="ai-item">✓ LOPDP</div>
+<div class="ai-item">✓ BASC</div>
 
+</div>
 
-                <span class="kicker">
 
-                    ASISTENCIA INTELIGENTE
+<button
+class="btn btn-blue"
+onclick="abrirChat()">
 
-                </span>
+✦ Iniciar conversación
 
+</button>
 
-                <h2 class="title">
+</div>
 
-                    Una primera respuesta
-                    sin hacerte esperar.
 
-                </h2>
+</div>
 
-
-                <p class="description">
-
-                    ASINEC IA puede brindarte
-                    orientación inicial sobre normas,
-                    auditorías, implementación,
-                    capacitación, LOPDP, BASC
-                    y nuestros servicios.
-
-                    Cuando tu consulta requiera
-                    atención especializada,
-                    podrás comunicarte directamente
-                    con Grupo ASINEC.
-
-                </p>
-
-
-
-                <div class="ai-points">
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        Normas ISO
-
-                    </div>
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        Auditorías
-
-                    </div>
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        Implementación
-
-                    </div>
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        Capacitación
-
-                    </div>
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        LOPDP
-
-                    </div>
-
-
-                    <div class="ai-point">
-
-                        <span>✓</span>
-                        BASC
-
-                    </div>
-
-
-                </div>
-
-
-                <button
-                class="btn btn-blue"
-                onclick="abrirChat()">
-
-                    ✦ Iniciar conversación
-
-                </button>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
+</div>
 
 </section>
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      CONTACTO
-========================================================= -->
+===================================================== -->
 
 <section
 class="contact"
 id="contacto">
 
-
-    <div class="contact-grid">
-
-
-        <div>
+<div class="contact-grid">
 
 
-            <h2>
+<div>
 
-                ¿Hablamos sobre
-                tu organización?
+<h2>
+¿Hablamos sobre
+tu organización?
+</h2>
 
-            </h2>
+<p>
 
+Para una cotización,
+propuesta o atención personalizada,
+comunícate directamente
+con Grupo ASINEC.
 
-            <p>
+</p>
 
-                Para una cotización,
-                propuesta o atención personalizada,
-                comunícate directamente
-                con Grupo ASINEC.
-
-            </p>
-
-
-        </div>
+</div>
 
 
+<a
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20deseo%20recibir%20información%20sobre%20sus%20servicios."
+target="_blank"
+rel="noopener"
+class="btn whatsapp">
 
-        <a
-        href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20deseo%20recibir%20información%20sobre%20sus%20servicios."
-        target="_blank"
-        rel="noopener"
-        class="btn whatsapp">
+Contactar a Grupo ASINEC →
 
-            Contactar a Grupo ASINEC →
-
-        </a>
+</a>
 
 
-    </div>
-
+</div>
 
 </section>
 
@@ -3822,695 +2238,1265 @@ id="contacto">
 
 <footer>
 
-    <strong>
-        GRUPO ASINEC
-    </strong>
-
-
-    <span>
-
-        © 2026 · Gestión · Cumplimiento ·
-        Seguridad · Mejora Continua
-
-    </span>
+© 2026 Grupo ASINEC ·
+Gestión · Cumplimiento ·
+Seguridad · Mejora Continua
 
 </footer>
 
 
-</div>
 
+<!-- =====================================================
+     ISO 9001
+===================================================== -->
 
-
-<!-- =========================================================
-     VISTA INTERNA DE CADA NORMA
-========================================================= -->
-
-<div
+<section
 class="service-page"
-id="servicePage">
+id="iso9001">
 
+<header class="service-page-header">
 
-    <!-- HEADER INTERNO -->
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
 
-    <header class="service-page-header">
+<a
+href="#servicios"
+class="back-button">
 
+← Volver a servicios
 
-        <img
-        src="./GRUPO ASINEC LOGO.png"
-        class="service-page-logo"
-        alt="Grupo ASINEC">
+</a>
 
+</header>
 
-        <button
-        class="back-btn"
-        onclick="cerrarServicio()">
 
-            ← Volver a servicios
+<section class="service-inner-hero">
 
-        </button>
+<div class="service-inner-grid">
 
+<div>
 
-    </header>
+<div class="breadcrumb">
+INICIO / SERVICIOS / ISO 9001
+</div>
 
+<span class="service-tag">
+GESTIÓN DE LA CALIDAD
+</span>
 
+<h1>
+ISO 9001
+</h1>
 
-    <!-- HERO -->
+<p>
 
-    <section class="service-hero">
+Sistema de gestión orientado
+a la calidad, los procesos,
+la satisfacción del cliente
+y la mejora continua.
 
-
-        <div class="service-hero-grid">
-
-
-            <div>
-
-
-                <div class="service-breadcrumb">
-
-                    INICIO / SERVICIOS /
-                    <span id="detailBreadcrumb"></span>
-
-                </div>
-
-
-                <span
-                class="service-category-large"
-                id="detailCategory">
-                </span>
-
-
-                <h1
-                class="service-title"
-                id="detailTitle">
-                </h1>
-
-
-                <p
-                class="service-subtitle"
-                id="detailSubtitle">
-                </p>
-
-
-                <div class="service-hero-actions">
-
-
-                    <a
-                    href="#packageSection"
-                    class="btn btn-blue">
-
-                        Ver paquete →
-
-                    </a>
-
-
-                    <button
-                    class="btn btn-ghost"
-                    onclick="abrirChat()">
-
-                        ✦ Preguntar a ASINEC IA
-
-                    </button>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <div class="service-hero-image">
-
-
-                <img
-                id="detailImage"
-                alt="">
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- INFORMACIÓN -->
-
-    <section class="service-info">
-
-
-        <div class="service-info-container">
-
-
-            <span class="kicker">
-
-                CONOCE EL SERVICIO
-
-            </span>
-
-
-            <h2 class="title">
-
-                ¿Qué implica
-
-                <span id="detailTitle2"></span>?
-
-            </h2>
-
-
-            <p
-            class="service-intro"
-            id="detailIntro">
-            </p>
-
-
-
-            <div class="service-detail-grid">
-
-
-                <article class="service-detail-card">
-
-                    <small>
-                        01 / PROPÓSITO
-                    </small>
-
-                    <h3>
-                        ¿Qué busca?
-                    </h3>
-
-                    <p id="detailPurpose"></p>
-
-                </article>
-
-
-
-                <article class="service-detail-card">
-
-                    <small>
-                        02 / APLICACIÓN
-                    </small>
-
-                    <h3>
-                        ¿Para quién puede ser útil?
-                    </h3>
-
-                    <p id="detailApplication"></p>
-
-                </article>
-
-
-
-                <article class="service-detail-card">
-
-                    <small>
-                        03 / GESTIÓN
-                    </small>
-
-                    <h3>
-                        ¿Qué puede involucrar?
-                    </h3>
-
-                    <p id="detailManagement"></p>
-
-                </article>
-
-
-
-                <article class="service-detail-card">
-
-                    <small>
-                        04 / GRUPO ASINEC
-                    </small>
-
-                    <h3>
-                        ¿Cómo podemos acompañarte?
-                    </h3>
-
-                    <p id="detailSupport"></p>
-
-                </article>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- QUÉ PUEDE INCLUIR -->
-
-    <section class="includes">
-
-
-        <div class="includes-container">
-
-
-            <span class="kicker">
-
-                ACOMPAÑAMIENTO
-
-            </span>
-
-
-            <h2 class="title">
-
-                ¿Qué puede incluir
-                nuestro servicio?
-
-            </h2>
-
-
-            <p class="description">
-
-                La configuración final se adapta
-                a las necesidades de cada organización.
-
-            </p>
-
-
-            <div
-            class="includes-grid"
-            id="includesGrid">
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- PROCESO -->
-
-    <section class="service-process">
-
-
-        <div class="service-info-container">
-
-
-            <span class="kicker">
-
-                METODOLOGÍA
-
-            </span>
-
-
-            <h2 class="title">
-
-                Un proceso organizado
-                para avanzar.
-
-            </h2>
-
-
-            <p class="description">
-
-                El alcance definitivo dependerá
-                del contexto, situación actual
-                y objetivos de la organización.
-
-            </p>
-
-
-
-            <div class="service-steps">
-
-
-                <article class="service-step">
-
-                    <small>01</small>
-
-                    <h3>
-                        Diagnóstico
-                    </h3>
-
-                    <p>
-
-                        Evaluación inicial
-                        de necesidades
-                        y situación actual.
-
-                    </p>
-
-                </article>
-
-
-
-                <article class="service-step">
-
-                    <small>02</small>
-
-                    <h3>
-                        Planificación
-                    </h3>
-
-                    <p>
-
-                        Definición de alcance,
-                        prioridades y metodología.
-
-                    </p>
-
-                </article>
-
-
-
-                <article class="service-step">
-
-                    <small>03</small>
-
-                    <h3>
-                        Acompañamiento
-                    </h3>
-
-                    <p>
-
-                        Desarrollo y fortalecimiento
-                        de los elementos necesarios.
-
-                    </p>
-
-                </article>
-
-
-
-                <article class="service-step">
-
-                    <small>04</small>
-
-                    <h3>
-                        Seguimiento
-                    </h3>
-
-                    <p>
-
-                        Evaluación de resultados
-                        y mejora continua.
-
-                    </p>
-
-                </article>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- PAQUETE -->
-
-    <section
-    class="package"
-    id="packageSection">
-
-
-        <div class="package-card">
-
-
-            <div>
-
-
-                <span class="kicker">
-
-                    PAQUETE GRUPO ASINEC
-
-                </span>
-
-
-                <h2 id="packageTitle">
-
-                    ¿Quieres este paquete?
-
-                </h2>
-
-
-                <p id="packageDescription">
-
-                    Solicita información sobre alcance,
-                    metodología y condiciones
-                    de acompañamiento.
-
-                </p>
-
-
-            </div>
-
-
-
-            <div class="package-actions">
-
-
-                <a
-                id="packageButton"
-                class="package-btn"
-                target="_blank"
-                rel="noopener">
-
-                    Quiero este paquete →
-
-                </a>
-
-
-                <span
-                class="package-note"
-                id="packageNote">
-
-                    Actualmente la solicitud
-                    se gestiona por WhatsApp.
-
-                </span>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
+</p>
 
 </div>
 
 
+<div class="service-inner-image">
 
-<!-- =========================================================
-     BOTÓN ASINEC IA
-========================================================= -->
+<img
+src="./ISO 9001.png"
+alt="ISO 9001">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE ISO 9001
+</span>
+
+<h2 class="title">
+¿Qué puede aportar
+a tu organización?
+</h2>
+
+<p class="description">
+
+ISO 9001 está relacionada
+con sistemas de gestión de calidad.
+Busca fortalecer procesos,
+resultados consistentes,
+orientación al cliente
+y mejora continua.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Fortalecer la gestión de calidad,
+la consistencia de los procesos
+y el enfoque hacia clientes
+y partes interesadas.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Puede ser considerada por organizaciones
+de diferentes tamaños y actividades
+que busquen estructurar
+su sistema de gestión.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Procesos, responsabilidades,
+objetivos, riesgos, documentación,
+indicadores, seguimiento
+y mejora continua.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Diagnóstico, implementación,
+capacitación, auditoría
+y acompañamiento
+del sistema de gestión.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="includes">
+
+<div class="inner-container">
+
+<span class="kicker">
+PAQUETE ISO 9001
+</span>
+
+<h2 class="title">
+¿Qué puede incluir?
+</h2>
+
+
+<div class="includes-list">
+
+<div class="include"><span class="check">✓</span>Diagnóstico inicial</div>
+<div class="include"><span class="check">✓</span>Análisis de brechas</div>
+<div class="include"><span class="check">✓</span>Orientación de procesos</div>
+<div class="include"><span class="check">✓</span>Acompañamiento documental</div>
+<div class="include"><span class="check">✓</span>Capacitación</div>
+<div class="include"><span class="check">✓</span>Seguimiento y mejora</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-process">
+
+<div class="inner-container">
+
+<span class="kicker">
+METODOLOGÍA
+</span>
+
+<h2 class="title">
+Un proceso organizado
+para avanzar.
+</h2>
+
+<div class="inner-steps">
+
+<div class="inner-step">
+<small>01</small>
+<h3>Diagnóstico</h3>
+<p>Revisión inicial de la situación actual.</p>
+</div>
+
+<div class="inner-step">
+<small>02</small>
+<h3>Planificación</h3>
+<p>Definición del alcance y prioridades.</p>
+</div>
+
+<div class="inner-step">
+<small>03</small>
+<h3>Implementación</h3>
+<p>Fortalecimiento del sistema.</p>
+</div>
+
+<div class="inner-step">
+<small>04</small>
+<h3>Seguimiento</h3>
+<p>Evaluación y mejora continua.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete ISO 9001?
+</h2>
+
+<p>
+Solicita información sobre alcance,
+metodología y condiciones
+del acompañamiento.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%209001."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     ISO 18788
+===================================================== -->
+
+<section
+class="service-page"
+id="iso18788">
+
+<header class="service-page-header">
+
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
+
+<a href="#servicios" class="back-button">
+← Volver a servicios
+</a>
+
+</header>
+
+
+<section class="service-inner-hero">
+
+<div class="service-inner-grid">
+
+<div>
+
+<div class="breadcrumb">
+INICIO / SERVICIOS / ISO 18788
+</div>
+
+<span class="service-tag">
+OPERACIONES DE SEGURIDAD PRIVADA
+</span>
+
+<h1>
+ISO 18788
+</h1>
+
+<p>
+
+Gestión de operaciones
+de seguridad privada,
+riesgos y control operacional.
+
+</p>
+
+</div>
+
+
+<div class="service-inner-image">
+
+<img
+src="./ISO 18788.png"
+alt="ISO 18788">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE ISO 18788
+</span>
+
+<h2 class="title">
+Gestión responsable
+de operaciones de seguridad.
+</h2>
+
+<p class="description">
+
+ISO 18788 está relacionada
+con sistemas de gestión
+para operaciones de seguridad privada
+y fortalecimiento del control operacional.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Promover una gestión organizada,
+responsable y controlada
+de las operaciones de seguridad.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Organizaciones vinculadas
+con servicios y operaciones
+de seguridad privada.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Riesgos operacionales,
+responsabilidades,
+planificación, controles,
+competencias y seguimiento.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Diagnóstico, estructuración,
+implementación, capacitación,
+auditoría y fortalecimiento.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete ISO 18788?
+</h2>
+
+<p>
+Solicita información personalizada
+para tu organización.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2018788."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     ISO 45001
+===================================================== -->
+
+<section
+class="service-page"
+id="iso45001">
+
+<header class="service-page-header">
+
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
+
+<a href="#servicios" class="back-button">
+← Volver a servicios
+</a>
+
+</header>
+
+
+<section class="service-inner-hero">
+
+<div class="service-inner-grid">
+
+<div>
+
+<div class="breadcrumb">
+INICIO / SERVICIOS / ISO 45001
+</div>
+
+<span class="service-tag">
+SEGURIDAD Y SALUD EN EL TRABAJO
+</span>
+
+<h1>
+ISO 45001
+</h1>
+
+<p>
+
+Gestión de seguridad
+y salud en el trabajo
+y prevención de riesgos laborales.
+
+</p>
+
+</div>
+
+
+<div class="service-inner-image">
+
+<img
+src="./ISO 45001.png"
+alt="ISO 45001">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE ISO 45001
+</span>
+
+<h2 class="title">
+Una gestión enfocada
+en trabajo seguro.
+</h2>
+
+<p class="description">
+
+ISO 45001 está orientada
+a fortalecer la gestión
+de seguridad y salud
+en el trabajo.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Fortalecer la prevención
+de riesgos laborales
+y promover condiciones
+de trabajo más seguras.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Organizaciones que buscan
+fortalecer la seguridad
+y salud de sus trabajadores.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Peligros, riesgos,
+controles, responsabilidades,
+objetivos, incidentes
+y seguimiento.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Diagnóstico, implementación,
+capacitación, auditoría
+y acompañamiento.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete ISO 45001?
+</h2>
+
+<p>
+Solicita información personalizada
+sobre nuestro acompañamiento.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2045001."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     ISO 27001
+===================================================== -->
+
+<section
+class="service-page"
+id="iso27001">
+
+<header class="service-page-header">
+
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
+
+<a href="#servicios" class="back-button">
+← Volver a servicios
+</a>
+
+</header>
+
+
+<section class="service-inner-hero">
+
+<div class="service-inner-grid">
+
+<div>
+
+<div class="breadcrumb">
+INICIO / SERVICIOS / ISO 27001
+</div>
+
+<span class="service-tag">
+SEGURIDAD DE LA INFORMACIÓN
+</span>
+
+<h1>
+ISO 27001
+</h1>
+
+<p>
+
+Gestión de seguridad
+de la información,
+riesgos y protección
+de activos críticos.
+
+</p>
+
+</div>
+
+
+<div class="service-inner-image">
+
+<img
+src="./ISO 27001.png"
+alt="ISO 27001">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE ISO 27001
+</span>
+
+<h2 class="title">
+Protección estructurada
+de la información.
+</h2>
+
+<p class="description">
+
+ISO 27001 está relacionada
+con sistemas de gestión
+de seguridad de la información.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Fortalecer la protección
+de la información
+y gestionar riesgos
+de forma organizada.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Organizaciones que manejan
+información, datos,
+tecnología o activos críticos.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Activos de información,
+riesgos, controles,
+accesos, incidentes
+y seguimiento.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Orientación, diagnóstico,
+implementación, capacitación
+y fortalecimiento del sistema.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete ISO 27001?
+</h2>
+
+<p>
+Solicita información personalizada
+sobre nuestro acompañamiento.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20ISO%2027001."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOPDP
+===================================================== -->
+
+<section
+class="service-page"
+id="lopdp">
+
+<header class="service-page-header">
+
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
+
+<a href="#servicios" class="back-button">
+← Volver a servicios
+</a>
+
+</header>
+
+
+<section class="service-inner-hero">
+
+<div class="service-inner-grid">
+
+<div>
+
+<div class="breadcrumb">
+INICIO / SERVICIOS / LOPDP
+</div>
+
+<span class="service-tag">
+PROTECCIÓN DE DATOS PERSONALES
+</span>
+
+<h1>
+LOPDP
+</h1>
+
+<p>
+
+Gestión y protección
+responsable de datos personales.
+
+</p>
+
+</div>
+
+
+<div class="service-inner-image">
+
+<img
+src="./LOPDP.png"
+alt="LOPDP">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE LOPDP
+</span>
+
+<h2 class="title">
+Fortalecer la gestión
+de datos personales.
+</h2>
+
+<p class="description">
+
+La Ley Orgánica de Protección
+de Datos Personales establece
+un marco relacionado
+con el tratamiento y protección
+de información personal.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Fortalecer prácticas responsables
+de tratamiento y protección
+de datos personales.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Organizaciones que recopilan,
+usan, almacenan
+o gestionan datos personales.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Procesos, responsabilidades,
+documentación, controles
+y gestión de datos.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Orientación y acompañamiento
+general para fortalecer
+la gestión de protección de datos.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete LOPDP?
+</h2>
+
+<p>
+Solicita información personalizada
+sobre nuestro acompañamiento.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20LOPDP."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     BASC
+===================================================== -->
+
+<section
+class="service-page"
+id="basc">
+
+<header class="service-page-header">
+
+<img
+src="./GRUPO ASINEC LOGO.png"
+class="service-page-logo"
+alt="Grupo ASINEC">
+
+<a href="#servicios" class="back-button">
+← Volver a servicios
+</a>
+
+</header>
+
+
+<section class="service-inner-hero">
+
+<div class="service-inner-grid">
+
+<div>
+
+<div class="breadcrumb">
+INICIO / SERVICIOS / BASC
+</div>
+
+<span class="service-tag">
+CONTROL Y SEGURIDAD
+</span>
+
+<h1>
+BASC
+</h1>
+
+<p>
+
+Gestión de control
+y seguridad para organizaciones
+y cadenas logísticas.
+
+</p>
+
+</div>
+
+
+<div class="service-inner-image">
+
+<img
+src="./BASC.png"
+alt="BASC">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="inner-info">
+
+<div class="inner-container">
+
+<span class="kicker">
+CONOCE BASC
+</span>
+
+<h2 class="title">
+Control y seguridad
+para operaciones logísticas.
+</h2>
+
+<p class="description">
+
+BASC está relacionado
+con sistemas de gestión
+de control y seguridad
+para organizaciones
+y cadenas logísticas.
+
+</p>
+
+
+<div class="inner-grid">
+
+<div class="info-card">
+<small>01 / PROPÓSITO</small>
+<h3>¿Qué busca?</h3>
+<p>
+Fortalecer controles,
+gestión de riesgos
+y prácticas de seguridad
+en las operaciones.
+</p>
+</div>
+
+<div class="info-card">
+<small>02 / APLICACIÓN</small>
+<h3>¿Para quién?</h3>
+<p>
+Organizaciones vinculadas
+con comercio, logística,
+transporte y cadenas
+de suministro.
+</p>
+</div>
+
+<div class="info-card">
+<small>03 / GESTIÓN</small>
+<h3>¿Qué puede involucrar?</h3>
+<p>
+Riesgos, controles,
+seguridad, proveedores,
+procesos y seguimiento.
+</p>
+</div>
+
+<div class="info-card">
+<small>04 / ASINEC</small>
+<h3>¿Cómo podemos apoyar?</h3>
+<p>
+Diagnóstico, implementación,
+capacitación y fortalecimiento
+del sistema de control y seguridad.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="package">
+
+<div class="package-card">
+
+<div>
+
+<span class="kicker">
+GRUPO ASINEC
+</span>
+
+<h2>
+¿Quieres el paquete BASC?
+</h2>
+
+<p>
+Solicita información personalizada
+sobre nuestro acompañamiento.
+</p>
+
+</div>
+
+
+<a
+class="package-button"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20estoy%20interesado%20en%20el%20paquete%20BASC."
+target="_blank">
+
+Quiero este paquete →
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     ASINEC IA
+===================================================== -->
 
 <button
 class="chat-launcher"
 id="chatLauncher"
 onclick="abrirChat()">
 
+<img
+src="./ASISTENTE.png"
+alt="">
 
-    <img
-    src="./ASISTENTE.png"
-    alt="">
+<span>
 
+<strong>
+ASINEC IA
+</strong>
 
-    <span>
+<small>
+Consulta rápida
+</small>
 
-        <strong>
-            ASINEC IA
-        </strong>
-
-        <small>
-            Consulta rápida
-        </small>
-
-    </span>
-
+</span>
 
 </button>
 
 
-
-<!-- =========================================================
-     CHAT ASINEC IA
-========================================================= -->
 
 <div
 class="chat-window"
 id="chatWindow">
 
 
-    <div class="chat-head">
+<div class="chat-head">
+
+<div class="chat-profile">
+
+<img
+src="./ASISTENTE.png"
+alt="ASINEC IA">
+
+<div>
+
+<strong>
+ASINEC IA
+</strong>
+
+<br>
+
+<small>
+Asistente disponible
+</small>
+
+</div>
+
+</div>
 
 
-        <div class="chat-profile">
+<button
+class="chat-close"
+onclick="cerrarChat()">
 
+×
 
-            <img
-            src="./ASISTENTE.png"
-            alt="ASINEC IA">
+</button>
 
-
-            <div>
-
-                <strong>
-                    ASINEC IA
-                </strong>
-
-
-                <div class="chat-status">
-
-                    <span class="online"></span>
-
-                    Asistente disponible
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <button
-        class="chat-close"
-        onclick="cerrarChat()">
-
-            ×
-
-        </button>
-
-
-    </div>
+</div>
 
 
 
-    <div class="quick-questions">
+<div
+class="chat-messages"
+id="chatMessages">
 
-
-        <button
-        onclick="preguntaRapida('¿Qué es ISO 9001?')">
-
-            ISO 9001
-
-        </button>
-
-
-        <button
-        onclick="preguntaRapida('¿Qué es ISO 18788?')">
-
-            ISO 18788
-
-        </button>
-
-
-        <button
-        onclick="preguntaRapida('¿Qué es ISO 45001?')">
-
-            ISO 45001
-
-        </button>
-
-
-        <button
-        onclick="preguntaRapida('¿Qué es ISO 27001?')">
-
-            ISO 27001
-
-        </button>
-
-
-        <button
-        onclick="preguntaRapida('¿Qué es LOPDP?')">
-
-            LOPDP
-
-        </button>
-
-
-        <button
-        onclick="preguntaRapida('¿Qué es BASC?')">
-
-            BASC
-
-        </button>
-
-
-    </div>
-
-
-
-    <div
-    class="chat-messages"
-    id="chatMessages">
-
-
-        <div class="message ai-message">
+<div class="message ai-message">
 
 ¡Hola! 👋 Soy ASINEC IA.
 
-Puedo brindarte una orientación inicial sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC, auditorías, implementación, capacitación y los servicios de Grupo ASINEC.
+Puedo orientarte inicialmente sobre
+ISO 9001, ISO 18788, ISO 45001,
+ISO 27001, LOPDP, BASC,
+auditorías e implementación.
 
 ¿En qué puedo ayudarte?
 
-        </div>
+</div>
 
-
-    </div>
-
-
-
-    <div
-    class="typing"
-    id="typing">
-
-        ASINEC IA está escribiendo...
-
-    </div>
+</div>
 
 
 
-    <a
-    class="human-contact"
-    id="humanContact"
-    href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20vengo%20desde%20ASINEC%20IA%20y%20necesito%20atención%20personalizada."
-    target="_blank"
-    rel="noopener">
+<div class="chat-input">
 
-        Contactar a Grupo ASINEC →
+<input
+id="chatInput"
+placeholder="Escribe tu consulta..."
+autocomplete="off">
 
-    </a>
+<button onclick="enviarMensaje()">
 
+➤
 
+</button>
 
-    <div class="chat-input">
-
-
-        <input
-        id="chatInput"
-        type="text"
-        autocomplete="off"
-        placeholder="Escribe tu consulta...">
-
-
-        <button
-        onclick="enviarMensaje()">
-
-            ➤
-
-        </button>
-
-
-    </div>
+</div>
 
 
 </div>
@@ -4519,782 +3505,43 @@ Puedo brindarte una orientación inicial sobre ISO 9001, ISO 18788, ISO 45001, I
 
 <script>
 
-/* =========================================================
-   CONFIGURACIÓN FUTURA
-========================================================= */
-
-/*
-Cuando exista un backend real para ASINEC IA,
-coloca su dirección aquí.
-
-NUNCA coloques una API KEY pública en GitHub Pages.
-*/
-
-const BACKEND_URL = "";
-
-
-/*
-=========================================================
-PAGO REAL
-
-Si posteriormente obtienes links de checkout
-de una pasarela de pago, colócalos en la propiedad
-"checkout" de cada servicio.
-
-Mientras checkout esté vacío, el botón enviará
-al cliente a WhatsApp.
-
-Ejemplo:
-
-checkout:
-"https://tu-pasarela.com/pago-iso9001"
-=========================================================
-*/
-
-
-/* =========================================================
-   INFORMACIÓN DE LOS 6 SERVICIOS
-========================================================= */
-
-const servicios = {
-
-
-    iso9001:{
-
-        titulo:
-        "ISO 9001",
-
-        categoria:
-        "GESTIÓN DE LA CALIDAD",
-
-        imagen:
-        "./ISO 9001.png",
-
-        subtitulo:
-        "Gestión de calidad, procesos, satisfacción del cliente y mejora continua.",
-
-        introduccion:
-        "ISO 9001 está relacionada con los sistemas de gestión de la calidad. Permite estructurar y fortalecer procesos, orientar la gestión hacia resultados consistentes y promover una cultura de mejora continua.",
-
-        proposito:
-        "Fortalecer la capacidad de una organización para gestionar sus procesos de manera consistente, mejorar su desempeño y mantener un enfoque orientado hacia clientes y partes interesadas.",
-
-        aplicacion:
-        "Puede ser considerada por organizaciones de diferentes tamaños y actividades que busquen estructurar, implementar o fortalecer un sistema de gestión de calidad.",
-
-        gestion:
-        "Puede involucrar contexto organizacional, procesos, responsabilidades, objetivos, riesgos y oportunidades, documentación, indicadores, seguimiento, evaluación y acciones de mejora.",
-
-        apoyo:
-        "Grupo ASINEC puede brindar diagnóstico, orientación, implementación, capacitación, auditoría y acompañamiento para fortalecer el sistema de gestión.",
-
-        incluye:[
-
-            "Diagnóstico inicial del sistema de gestión",
-
-            "Identificación de brechas y oportunidades de mejora",
-
-            "Orientación para estructuración de procesos",
-
-            "Acompañamiento documental",
-
-            "Capacitación relacionada con el sistema",
-
-            "Preparación y seguimiento de acciones de mejora"
-
-        ],
-
-        checkout:""
-
-    },
-
-
-
-    iso18788:{
-
-        titulo:
-        "ISO 18788",
-
-        categoria:
-        "OPERACIONES DE SEGURIDAD PRIVADA",
-
-        imagen:
-        "./ISO 18788.png",
-
-        subtitulo:
-        "Gestión para operaciones de seguridad privada y fortalecimiento del control operacional.",
-
-        introduccion:
-        "ISO 18788 está relacionada con sistemas de gestión aplicables a organizaciones que desarrollan operaciones de seguridad privada. Su enfoque busca fortalecer la planificación, el control y la gestión responsable de las operaciones.",
-
-        proposito:
-        "Promover una gestión organizada, controlada y responsable de las operaciones de seguridad, considerando riesgos, responsabilidades y mecanismos de seguimiento.",
-
-        aplicacion:
-        "Puede ser relevante para organizaciones vinculadas con servicios de seguridad privada y actividades relacionadas con operaciones de seguridad.",
-
-        gestion:
-        "Puede involucrar riesgos operacionales, planificación, responsabilidades, controles, recursos, competencias, evaluación y seguimiento de las operaciones.",
-
-        apoyo:
-        "Grupo ASINEC puede acompañar procesos de diagnóstico, estructuración, implementación, capacitación y fortalecimiento del sistema de gestión.",
-
-        incluye:[
-
-            "Diagnóstico del sistema de gestión",
-
-            "Análisis inicial de brechas",
-
-            "Orientación de procesos operacionales",
-
-            "Apoyo en documentación y controles",
-
-            "Capacitación al personal involucrado",
-
-            "Seguimiento y fortalecimiento del sistema"
-
-        ],
-
-        checkout:""
-
-    },
-
-
-
-    iso45001:{
-
-        titulo:
-        "ISO 45001",
-
-        categoria:
-        "SEGURIDAD Y SALUD EN EL TRABAJO",
-
-        imagen:
-        "./ISO 45001.png",
-
-        subtitulo:
-        "Gestión de seguridad y salud en el trabajo y prevención de riesgos laborales.",
-
-        introduccion:
-        "ISO 45001 está enfocada en sistemas de gestión de seguridad y salud en el trabajo. Su aplicación busca fortalecer la prevención de lesiones, enfermedades y riesgos relacionados con las actividades laborales.",
-
-        proposito:
-        "Fortalecer la prevención de riesgos y promover condiciones de trabajo más seguras mediante una gestión organizada de seguridad y salud.",
-
-        aplicacion:
-        "Puede ser considerada por organizaciones que busquen implementar o fortalecer mecanismos para gestionar riesgos relacionados con la seguridad y salud de sus trabajadores.",
-
-        gestion:
-        "Puede involucrar identificación de peligros, evaluación de riesgos, controles, responsabilidades, participación, objetivos, seguimiento, incidentes y mejora.",
-
-        apoyo:
-        "Grupo ASINEC puede brindar diagnóstico, implementación, capacitación, auditoría y acompañamiento para fortalecer el sistema de seguridad y salud en el trabajo.",
-
-        incluye:[
-
-            "Evaluación inicial del sistema",
-
-            "Identificación de brechas de gestión",
-
-            "Orientación para peligros y riesgos",
-
-            "Fortalecimiento de controles y procesos",
-
-            "Capacitación y sensibilización",
-
-            "Seguimiento y mejora continua"
-
-        ],
-
-        checkout:""
-
-    },
-
-
-
-    iso27001:{
-
-        titulo:
-        "ISO 27001",
-
-        categoria:
-        "SEGURIDAD DE LA INFORMACIÓN",
-
-        imagen:
-        "./ISO 27001.png",
-
-        subtitulo:
-        "Gestión de seguridad de la información y protección de activos críticos.",
-
-        introduccion:
-        "ISO 27001 está relacionada con sistemas de gestión de seguridad de la información. Su enfoque permite estructurar la gestión de riesgos asociados con información, tecnología y otros activos relevantes para una organización.",
-
-        proposito:
-        "Fortalecer la protección de la información y gestionar de forma organizada los riesgos que pueden afectar su confidencialidad, integridad y disponibilidad.",
-
-        aplicacion:
-        "Puede ser relevante para organizaciones que administran información, datos, tecnología, infraestructura digital o activos de información importantes para sus operaciones.",
-
-        gestion:
-        "Puede involucrar activos de información, riesgos, controles, responsabilidades, accesos, incidentes, continuidad, seguimiento y mejora.",
-
-        apoyo:
-        "Grupo ASINEC puede brindar orientación, diagnóstico, implementación, capacitación y acompañamiento para fortalecer un sistema de gestión de seguridad de la información.",
-
-        incluye:[
-
-            "Diagnóstico inicial de seguridad de la información",
-
-            "Identificación de brechas",
-
-            "Orientación para gestión de riesgos",
-
-            "Apoyo en controles y documentación",
-
-            "Capacitación relacionada con seguridad",
-
-            "Seguimiento del sistema y mejora"
-
-        ],
-
-        checkout:""
-
-    },
-
-
-
-    lopdp:{
-
-        titulo:
-        "LOPDP",
-
-        categoria:
-        "PROTECCIÓN DE DATOS PERSONALES",
-
-        imagen:
-        "./LOPDP.png",
-
-        subtitulo:
-        "Protección y gestión responsable de datos personales.",
-
-        introduccion:
-        "La Ley Orgánica de Protección de Datos Personales establece un marco relacionado con el tratamiento y protección de datos personales. Las organizaciones pueden requerir procesos, controles y responsabilidades para fortalecer su gestión en esta materia.",
-
-        proposito:
-        "Promover prácticas responsables relacionadas con el tratamiento, utilización y protección de datos personales.",
-
-        aplicacion:
-        "Puede ser relevante para organizaciones que recopilan, almacenan, utilizan, transfieren o gestionan información vinculada con personas.",
-
-        gestion:
-        "Puede involucrar procesos de tratamiento, responsabilidades, documentación, controles, gestión de riesgos, atención de requerimientos y medidas organizativas.",
-
-        apoyo:
-        "Grupo ASINEC puede brindar orientación y acompañamiento general para fortalecer la gestión de protección de datos personales. Las situaciones legales específicas pueden requerir análisis profesional especializado.",
-
-        incluye:[
-
-            "Diagnóstico general de gestión de datos",
-
-            "Identificación de procesos relevantes",
-
-            "Orientación documental",
-
-            "Revisión general de controles",
-
-            "Capacitación y sensibilización",
-
-            "Acompañamiento para fortalecimiento de gestión"
-
-        ],
-
-        checkout:""
-
-    },
-
-
-
-    basc:{
-
-        titulo:
-        "BASC",
-
-        categoria:
-        "CONTROL Y SEGURIDAD",
-
-        imagen:
-        "./BASC.png",
-
-        subtitulo:
-        "Gestión de control y seguridad para organizaciones y cadenas logísticas.",
-
-        introduccion:
-        "BASC está relacionado con sistemas de gestión de control y seguridad aplicables a organizaciones vinculadas con operaciones, comercio y cadenas logísticas.",
-
-        proposito:
-        "Fortalecer mecanismos de control, gestión de riesgos y prácticas de seguridad relacionadas con las operaciones de una organización.",
-
-        aplicacion:
-        "Puede ser relevante para organizaciones vinculadas con comercio, logística, transporte, almacenamiento y otras actividades relacionadas con cadenas de suministro.",
-
-        gestion:
-        "Puede involucrar riesgos, controles operacionales, seguridad, proveedores, instalaciones, procesos, responsabilidades, seguimiento y mejora.",
-
-        apoyo:
-        "Grupo ASINEC puede orientar y acompañar procesos relacionados con diagnóstico, implementación, capacitación y fortalecimiento de sistemas de control y seguridad.",
-
-        incluye:[
-
-            "Diagnóstico inicial de control y seguridad",
-
-            "Identificación de brechas",
-
-            "Orientación para gestión de riesgos",
-
-            "Fortalecimiento de controles",
-
-            "Capacitación relacionada con el sistema",
-
-            "Seguimiento y mejora continua"
-
-        ],
-
-        checkout:""
-
-    }
-
-};
-
-
-
-/* =========================================================
-   MENÚ MÓVIL
-========================================================= */
-
-function toggleMenu(){
-
-    document
-    .getElementById("mainNav")
-    .classList
-    .toggle("open");
-
-}
-
-
-
-/* =========================================================
-   ABRIR CUALQUIER NORMA
-========================================================= */
-
-function abrirServicio(codigo){
-
-    const servicio =
-    servicios[codigo];
-
-
-    if(!servicio){
-
-        alert(
-            "No se encontró información para este servicio."
-        );
-
-        return;
-
-    }
-
-
-    document
-    .getElementById(
-        "detailBreadcrumb"
-    )
-    .textContent =
-    servicio.titulo;
-
-
-    document
-    .getElementById(
-        "detailCategory"
-    )
-    .textContent =
-    servicio.categoria;
-
-
-    document
-    .getElementById(
-        "detailTitle"
-    )
-    .textContent =
-    servicio.titulo;
-
-
-    document
-    .getElementById(
-        "detailTitle2"
-    )
-    .textContent =
-    servicio.titulo;
-
-
-    document
-    .getElementById(
-        "detailSubtitle"
-    )
-    .textContent =
-    servicio.subtitulo;
-
-
-    const imagen =
-    document.getElementById(
-        "detailImage"
-    );
-
-
-    imagen.src =
-    servicio.imagen;
-
-
-    imagen.alt =
-    servicio.titulo;
-
-
-    document
-    .getElementById(
-        "detailIntro"
-    )
-    .textContent =
-    servicio.introduccion;
-
-
-    document
-    .getElementById(
-        "detailPurpose"
-    )
-    .textContent =
-    servicio.proposito;
-
-
-    document
-    .getElementById(
-        "detailApplication"
-    )
-    .textContent =
-    servicio.aplicacion;
-
-
-    document
-    .getElementById(
-        "detailManagement"
-    )
-    .textContent =
-    servicio.gestion;
-
-
-    document
-    .getElementById(
-        "detailSupport"
-    )
-    .textContent =
-    servicio.apoyo;
-
-
-
-    /* QUÉ INCLUYE */
-
-    const grid =
-    document.getElementById(
-        "includesGrid"
-    );
-
-
-    grid.innerHTML = "";
-
-
-    servicio.incluye.forEach(
-        function(item){
-
-            const div =
-            document.createElement(
-                "div"
-            );
-
-
-            div.className =
-            "include-item";
-
-
-            div.innerHTML =
-            '<span class="include-check">✓</span>' +
-            '<span></span>';
-
-
-            div
-            .querySelector(
-                "span:last-child"
-            )
-            .textContent =
-            item;
-
-
-            grid.appendChild(
-                div
-            );
-
-        }
-    );
-
-
-
-    /* PAQUETE */
-
-    document
-    .getElementById(
-        "packageTitle"
-    )
-    .textContent =
-
-    "¿Quieres adquirir el paquete " +
-    servicio.titulo +
-    "?";
-
-
-
-    document
-    .getElementById(
-        "packageDescription"
-    )
-    .textContent =
-
-    "Solicita información sobre el alcance, metodología, condiciones y alternativas de acompañamiento para " +
-    servicio.titulo +
-    ".";
-
-
-
-    const packageButton =
-    document.getElementById(
-        "packageButton"
-    );
-
-
-    const packageNote =
-    document.getElementById(
-        "packageNote"
-    );
-
-
-
-    /*
-    Si existe un checkout real,
-    el botón lleva a pagar.
-    */
-
-
-    if(
-        servicio.checkout &&
-        servicio.checkout.trim() !== ""
-    ){
-
-        packageButton.href =
-        servicio.checkout;
-
-
-        packageButton.textContent =
-        "Comprar paquete →";
-
-
-        packageNote.textContent =
-        "Serás dirigido al sistema seguro de pago.";
-
-    }
-
-
-    /*
-    Mientras no exista checkout,
-    abre WhatsApp.
-    */
-
-    else{
-
-        const mensaje =
-
-        "Hola Grupo ASINEC, estoy interesado en el paquete " +
-        servicio.titulo +
-        " y deseo recibir información para adquirirlo.";
-
-
-        packageButton.href =
-
-        "https://wa.me/593992487177?text=" +
-
-        encodeURIComponent(
-            mensaje
-        );
-
-
-        packageButton.textContent =
-        "Quiero este paquete →";
-
-
-        packageNote.textContent =
-        "Actualmente la solicitud se gestiona directamente con Grupo ASINEC.";
-
-    }
-
-
-
-    /* ABRIR PÁGINA */
-
-    const pagina =
-    document.getElementById(
-        "servicePage"
-    );
-
-
-    pagina.classList.add(
-        "open"
-    );
-
-
-    pagina.scrollTop = 0;
-
-
-    document.body.classList.add(
-        "service-open"
-    );
-
-
-    document.title =
-
-    servicio.titulo +
-    " | Grupo ASINEC";
-
-}
-
-
-
-/* =========================================================
-   CERRAR NORMA
-========================================================= */
-
-function cerrarServicio(){
-
-    const pagina =
-    document.getElementById(
-        "servicePage"
-    );
-
-
-    pagina.classList.remove(
-        "open"
-    );
-
-
-    document.body.classList.remove(
-        "service-open"
-    );
-
-
-    document.title =
-
-    "Grupo ASINEC | Gestión · Cumplimiento · Evolución";
-
-
-    setTimeout(
-        function(){
-
-            document
-            .getElementById(
-                "servicios"
-            )
-            .scrollIntoView({
-
-                behavior:"smooth",
-
-                block:"start"
-
-            });
-
-        },
-
-        60
-    );
-
-}
-
-
-
-/* =========================================================
-   CHAT ASINEC IA
-========================================================= */
+/* =====================================================
+   CHAT
+   LAS NORMAS NO DEPENDEN DE ESTE SCRIPT
+===================================================== */
 
 const chatWindow =
-document.getElementById(
-    "chatWindow"
-);
-
+document.getElementById("chatWindow");
 
 const chatLauncher =
-document.getElementById(
-    "chatLauncher"
-);
-
+document.getElementById("chatLauncher");
 
 const chatMessages =
-document.getElementById(
-    "chatMessages"
-);
-
+document.getElementById("chatMessages");
 
 const chatInput =
-document.getElementById(
-    "chatInput"
-);
-
-
-const typing =
-document.getElementById(
-    "typing"
-);
-
-
-const humanContact =
-document.getElementById(
-    "humanContact"
-);
-
+document.getElementById("chatInput");
 
 
 function abrirChat(){
 
-    chatWindow.classList.add(
-        "open"
-    );
-
+    chatWindow.classList.add("open");
 
     chatLauncher.style.display =
     "none";
 
+    setTimeout(function(){
 
-    setTimeout(
-        function(){
+        chatInput.focus();
 
-            chatInput.focus();
-
-        },
-
-        170
-    );
+    },150);
 
 }
 
 
-
 function cerrarChat(){
 
-    chatWindow.classList.remove(
-        "open"
-    );
-
+    chatWindow.classList.remove("open");
 
     chatLauncher.style.display =
     "flex";
@@ -5302,64 +3549,33 @@ function cerrarChat(){
 }
 
 
-
-function preguntaRapida(texto){
-
-    chatInput.value =
-    texto;
-
-
-    enviarMensaje();
-
-}
-
-
-
 chatInput.addEventListener(
+"keydown",
+function(event){
 
-    "keydown",
+    if(event.key === "Enter"){
 
-    function(event){
+        event.preventDefault();
 
-        if(
-            event.key === "Enter"
-        ){
-
-            event.preventDefault();
-
-            enviarMensaje();
-
-        }
+        enviarMensaje();
 
     }
 
-);
+});
 
 
-
-function agregarMensaje(
-    texto,
-    clase
-){
+function agregarMensaje(texto,tipo){
 
     const div =
-    document.createElement(
-        "div"
-    );
-
+    document.createElement("div");
 
     div.className =
-    "message " + clase;
-
+    "message " + tipo;
 
     div.textContent =
     texto;
 
-
-    chatMessages.appendChild(
-        div
-    );
-
+    chatMessages.appendChild(div);
 
     chatMessages.scrollTop =
     chatMessages.scrollHeight;
@@ -5367,15 +3583,11 @@ function agregarMensaje(
 }
 
 
-
 function normalizar(texto){
 
     return texto
-
     .toLowerCase()
-
     .normalize("NFD")
-
     .replace(
         /[\u0300-\u036f]/g,
         ""
@@ -5384,556 +3596,88 @@ function normalizar(texto){
 }
 
 
-
-function requiereContacto(texto){
-
-    const t =
-    normalizar(texto);
-
-
-    const palabras = [
-
-        "precio",
-        "precios",
-        "costo",
-        "costos",
-        "cotizacion",
-        "cotizar",
-        "comprar",
-        "paquete",
-        "pagar",
-        "pago",
-        "propuesta",
-        "contratar",
-        "asesor",
-        "persona",
-        "humano",
-        "whatsapp",
-        "telefono",
-        "reunion",
-        "llamada",
-        "visita"
-
-    ];
-
-
-    return palabras.some(
-        function(palabra){
-
-            return t.includes(
-                palabra
-            );
-
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   RESPUESTAS LOCALES
-========================================================= */
-
-function respuestaLocal(pregunta){
-
-    const t =
-    normalizar(
-        pregunta
-    );
-
-
-    if(
-        t.includes("hola") ||
-        t.includes("buenas")
-    ){
-
-        return{
-
-            texto:
-            "¡Hola! 👋 Puedo orientarte sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC, auditorías, implementación y los servicios de Grupo ASINEC.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("9001")
-    ){
-
-        return{
-
-            texto:
-            "ISO 9001 está relacionada con sistemas de gestión de la calidad, procesos, satisfacción del cliente y mejora continua. Puedes abrir la tarjeta ISO 9001 en nuestra página para conocer el servicio con mayor detalle.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("18788")
-    ){
-
-        return{
-
-            texto:
-            "ISO 18788 está relacionada con sistemas de gestión para operaciones de seguridad privada y control operacional. Puedes abrir la tarjeta ISO 18788 para conocer más detalles.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("45001")
-    ){
-
-        return{
-
-            texto:
-            "ISO 45001 está enfocada en sistemas de gestión de seguridad y salud en el trabajo y prevención de riesgos laborales.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("27001")
-    ){
-
-        return{
-
-            texto:
-            "ISO 27001 está orientada a sistemas de gestión de seguridad de la información y protección de activos de información.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("lopdp") ||
-        t.includes(
-            "datos personales"
-        ) ||
-        t.includes(
-            "proteccion de datos"
-        )
-    ){
-
-        return{
-
-            texto:
-            "La LOPDP está relacionada con la protección y gestión responsable de datos personales. Grupo ASINEC puede brindar orientación general en este ámbito.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("basc")
-    ){
-
-        return{
-
-            texto:
-            "BASC está relacionado con sistemas de gestión de control y seguridad para organizaciones y cadenas logísticas.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("auditoria") ||
-        t.includes("auditar")
-    ){
-
-        return{
-
-            texto:
-            "Una auditoría permite evaluar el estado de un sistema de gestión, identificar hallazgos y oportunidades de mejora. Grupo ASINEC puede brindar acompañamiento relacionado con este proceso.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("implementacion") ||
-        t.includes("implementar")
-    ){
-
-        return{
-
-            texto:
-            "Grupo ASINEC puede acompañar procesos de implementación y fortalecimiento de sistemas de gestión. Si me indicas la norma que te interesa, puedo darte una orientación inicial.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("capacitacion") ||
-        t.includes("curso")
-    ){
-
-        return{
-
-            texto:
-            "Grupo ASINEC contempla servicios de capacitación relacionados con sistemas de gestión, cumplimiento y fortalecimiento organizacional.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    if(
-        t.includes("servicio") ||
-        t.includes("que hacen")
-    ){
-
-        return{
-
-            texto:
-            "Grupo ASINEC trabaja en consultoría, implementación, auditoría, capacitación y fortalecimiento de sistemas de gestión, incluyendo ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP y BASC.",
-
-            contacto:false
-
-        };
-
-    }
-
-
-
-    return{
-
-        texto:
-        "No tengo suficiente información para responder esa consulta con seguridad. Para evitar darte una orientación incorrecta, puedo ayudarte a comunicarte directamente con Grupo ASINEC.",
-
-        contacto:true
-
-    };
-
-}
-
-
-
-/* =========================================================
-   ENVIAR MENSAJE
-========================================================= */
-
-async function enviarMensaje(){
+function enviarMensaje(){
 
     const pregunta =
     chatInput.value.trim();
 
-
     if(!pregunta){
-
         return;
-
     }
 
 
     agregarMensaje(
-
         pregunta,
-
         "user-message"
-
     );
-
 
     chatInput.value = "";
 
 
-    humanContact.classList.remove(
-        "show"
-    );
+    const t =
+    normalizar(pregunta);
 
 
-    typing.style.display =
-    "block";
+    let respuesta =
+    "No tengo suficiente información para responder esa consulta con seguridad. Para atención especializada puedes comunicarte directamente con Grupo ASINEC.";
 
 
-    chatMessages.scrollTop =
-    chatMessages.scrollHeight;
+    if(t.includes("9001")){
 
+        respuesta =
+        "ISO 9001 está relacionada con gestión de calidad, procesos y mejora continua. También puedes abrir la tarjeta ISO 9001 para conocer el servicio completo.";
 
+    }
 
-    /* DERIVACIÓN HUMANA */
+    else if(t.includes("18788")){
 
-    if(
-        requiereContacto(
-            pregunta
-        )
+        respuesta =
+        "ISO 18788 está relacionada con sistemas de gestión para operaciones de seguridad privada.";
+
+    }
+
+    else if(t.includes("45001")){
+
+        respuesta =
+        "ISO 45001 está enfocada en seguridad y salud en el trabajo y prevención de riesgos laborales.";
+
+    }
+
+    else if(t.includes("27001")){
+
+        respuesta =
+        "ISO 27001 está orientada a la gestión de seguridad de la información.";
+
+    }
+
+    else if(
+        t.includes("lopdp") ||
+        t.includes("datos personales")
     ){
 
-        setTimeout(
-            function(){
+        respuesta =
+        "La LOPDP está relacionada con la protección y gestión responsable de datos personales.";
 
-                typing.style.display =
-                "none";
+    }
 
+    else if(t.includes("basc")){
 
-                agregarMensaje(
+        respuesta =
+        "BASC está relacionado con sistemas de gestión de control y seguridad para organizaciones y cadenas logísticas.";
 
-                    "Para precios, paquetes, pagos, cotizaciones o atención personalizada, lo mejor es comunicarte directamente con Grupo ASINEC. Te dejo el acceso a continuación.",
-
-                    "ai-message"
-
-                );
+    }
 
 
-                humanContact.classList.add(
-                    "show"
-                );
+    setTimeout(function(){
 
-
-                chatMessages.scrollTop =
-                chatMessages.scrollHeight;
-
-            },
-
-            600
+        agregarMensaje(
+            respuesta,
+            "ai-message"
         );
 
-
-        return;
-
-    }
-
-
-
-    /* =====================================================
-       BACKEND DE IA REAL - FUTURO
-    ===================================================== */
-
-    if(BACKEND_URL){
-
-        try{
-
-            const response =
-            await fetch(
-
-                BACKEND_URL,
-
-                {
-
-                    method:"POST",
-
-                    headers:{
-
-                        "Content-Type":
-                        "application/json"
-
-                    },
-
-                    body:JSON.stringify({
-
-                        mensaje:pregunta
-
-                    })
-
-                }
-
-            );
-
-
-            if(!response.ok){
-
-                throw new Error(
-                    "Error del servidor"
-                );
-
-            }
-
-
-            const data =
-            await response.json();
-
-
-            typing.style.display =
-            "none";
-
-
-            agregarMensaje(
-
-                data.respuesta,
-
-                "ai-message"
-
-            );
-
-
-            if(
-                data.contactarGrupo
-            ){
-
-                humanContact
-                .classList
-                .add(
-                    "show"
-                );
-
-            }
-
-
-            return;
-
-        }
-
-        catch(error){
-
-            console.error(
-                "ASINEC IA:",
-                error
-            );
-
-        }
-
-    }
-
-
-
-    /* RESPUESTA LOCAL */
-
-    setTimeout(
-        function(){
-
-            const respuesta =
-            respuestaLocal(
-                pregunta
-            );
-
-
-            typing.style.display =
-            "none";
-
-
-            agregarMensaje(
-
-                respuesta.texto,
-
-                "ai-message"
-
-            );
-
-
-            if(
-                respuesta.contacto
-            ){
-
-                humanContact
-                .classList
-                .add(
-                    "show"
-                );
-
-            }
-
-
-            chatMessages.scrollTop =
-            chatMessages.scrollHeight;
-
-        },
-
-        620
-    );
+    },450);
 
 }
-
-
-
-/* =========================================================
-   ANIMACIONES
-========================================================= */
-
-const revealElements =
-document.querySelectorAll(
-    ".reveal"
-);
-
-
-const revealObserver =
-new IntersectionObserver(
-
-    function(entries){
-
-        entries.forEach(
-            function(entry){
-
-                if(
-                    entry.isIntersecting
-                ){
-
-                    entry.target
-                    .classList
-                    .add(
-                        "visible"
-                    );
-
-                }
-
-            }
-        );
-
-    },
-
-    {
-
-        threshold:.10
-
-    }
-
-);
-
-
-revealElements.forEach(
-    function(element){
-
-        revealObserver.observe(
-            element
-        );
-
-    }
-);
 
 </script>
 

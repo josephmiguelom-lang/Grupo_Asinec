@@ -37,67 +37,40 @@ body{
 ======================================== */
 
 header{
-
     width:100%;
-
     background:#ffffff;
-
     padding:12px 7%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     position:sticky;
-
     top:0;
-
     z-index:1000;
-
     box-shadow:0 4px 20px rgba(0,0,0,0.08);
 }
 
-
 .logo{
-
     width:230px;
-
     height:auto;
-
     object-fit:contain;
-
     display:block;
 }
 
-
 nav{
-
     display:flex;
-
     align-items:center;
-
     gap:30px;
 }
 
-
 nav a{
-
     color:#10213b;
-
     font-weight:700;
-
     text-decoration:none;
-
     font-size:15px;
-
     transition:0.3s;
 }
 
-
 nav a:hover{
-
     color:#087cff;
 }
 
@@ -107,31 +80,21 @@ nav a:hover{
 ======================================== */
 
 .hero{
-
     min-height:620px;
-
     padding:70px 8%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     gap:60px;
-
     overflow:hidden;
-
     color:white;
 
     background:
-
     radial-gradient(
         circle at 80% 45%,
         rgba(0,153,255,0.30),
         transparent 30%
     ),
-
     linear-gradient(
         135deg,
         #02162f,
@@ -140,117 +103,76 @@ nav a:hover{
     );
 }
 
-
 .hero-texto{
-
     width:58%;
-
     max-width:680px;
 }
 
-
 .hero-etiqueta{
-
     color:#49adff;
-
     font-size:16px;
-
     letter-spacing:2px;
-
     font-weight:bold;
-
     margin-bottom:18px;
-
     display:block;
 }
 
-
 .hero h1{
-
     font-size:52px;
-
     line-height:1.1;
-
     margin-bottom:22px;
 }
 
-
 .hero h1 span{
-
     color:#50b4ff;
 }
 
-
 .hero p{
-
     max-width:650px;
-
     font-size:18px;
-
     line-height:1.8;
-
     color:#e0ecfa;
 }
 
 
-/* BOTONES */
+/* ========================================
+   BOTONES
+======================================== */
 
 .botones{
-
     margin-top:32px;
-
     display:flex;
-
     flex-wrap:wrap;
-
     gap:15px;
 }
 
-
 .boton{
-
     display:inline-block;
-
     padding:15px 25px;
-
     background:#1688ff;
-
     color:white;
-
     text-decoration:none;
-
     font-weight:bold;
-
     border-radius:9px;
-
     transition:0.3s;
-
     box-shadow:0 8px 25px rgba(0,119,255,0.30);
+    border:none;
+    cursor:pointer;
 }
 
-
 .boton:hover{
-
     transform:translateY(-4px);
-
     background:#0577e7;
 }
 
-
 .boton-secundario{
-
     background:transparent;
-
     border:2px solid white;
-
     box-shadow:none;
 }
 
-
 .boton-secundario:hover{
-
     background:white;
-
     color:#074f9e;
 }
 
@@ -260,15 +182,10 @@ nav a:hover{
 ======================================== */
 
 .hero-robot{
-
     width:340px;
-
     max-width:38%;
-
     height:auto;
-
     display:block;
-
     object-fit:contain;
 
     filter:
@@ -277,7 +194,6 @@ nav a:hover{
 
     animation:robotFlotante 4s ease-in-out infinite;
 }
-
 
 @keyframes robotFlotante{
 
@@ -292,7 +208,6 @@ nav a:hover{
     100%{
         transform:translateY(0);
     }
-
 }
 
 
@@ -301,171 +216,105 @@ nav a:hover{
 ======================================== */
 
 .servicios{
-
     max-width:1350px;
-
     margin:auto;
-
     padding:85px 7%;
 }
 
-
 .titulo{
-
     text-align:center;
-
     margin-bottom:50px;
 }
 
-
 .titulo span{
-
     color:#087cff;
-
     font-size:14px;
-
     letter-spacing:2px;
-
     font-weight:bold;
 }
 
-
 .titulo h2{
-
     margin-top:10px;
-
     font-size:40px;
-
     color:#08244a;
 }
 
-
 .titulo p{
-
     max-width:700px;
-
     margin:15px auto 0;
-
     color:#64748b;
-
     line-height:1.7;
-
     font-size:17px;
 }
 
-
-/* ========================================
-   CUADRÍCULA DE SERVICIOS
-======================================== */
-
 .grid{
-
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:28px;
 }
 
-
-/* ========================================
-   TARJETAS
-======================================== */
-
 .card{
-
     min-height:390px;
-
     background:white;
-
     border-radius:20px;
-
     border:1px solid #e2e8f0;
-
     padding:28px 25px;
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     justify-content:center;
 
     text-align:center;
-
     transition:0.35s;
 
     box-shadow:
     0 12px 35px rgba(16,33,59,0.09);
 }
 
-
 .card:hover{
-
     transform:translateY(-10px);
-
     border-color:#8ac8ff;
 
     box-shadow:
     0 22px 45px rgba(16,74,140,0.17);
 }
 
-
-/* IMÁGENES DE LAS CERTIFICACIONES */
-
 .card img{
-
     width:190px;
-
     height:190px;
-
     object-fit:contain;
-
     display:block;
-
     margin:0 auto 20px;
 }
 
-
 .card h3{
-
     color:#08244a;
-
     font-size:24px;
-
     margin-bottom:12px;
 }
 
-
 .card p{
-
     color:#64748b;
-
     font-size:16px;
-
     line-height:1.6;
-
     max-width:320px;
 }
 
 
 /* ========================================
-   ASISTENTE INTELIGENTE
+   SECCIÓN ASINEC IA
 ======================================== */
 
 .ia{
-
     padding:90px 7%;
 
     background:
-
     radial-gradient(
         circle at 20% 50%,
         rgba(0,153,255,0.13),
         transparent 35%
     ),
-
     linear-gradient(
         135deg,
         #edf7ff,
@@ -473,33 +322,20 @@ nav a:hover{
     );
 }
 
-
 .ia-contenido{
-
     max-width:1200px;
-
     margin:auto;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     gap:90px;
 }
 
-
 .ia-robot{
-
     width:320px;
-
     max-width:40%;
-
     height:auto;
-
     object-fit:contain;
-
     display:block;
 
     filter:
@@ -507,53 +343,34 @@ nav a:hover{
     drop-shadow(0 0 30px rgba(0,153,255,0.15));
 }
 
-
 .ia-texto{
-
     max-width:600px;
 }
 
-
 .ia-texto h2{
-
     font-size:42px;
-
     color:#08244a;
-
     margin-bottom:20px;
 }
 
-
 .ia-texto h2 span{
-
     color:#087cff;
 }
 
-
 .ia-texto p{
-
     color:#53657d;
-
     font-size:18px;
-
     line-height:1.8;
 }
 
-
 .ia-lista{
-
     margin:25px 0 30px;
 }
 
-
 .ia-lista div{
-
     margin:14px 0;
-
     font-weight:bold;
-
     font-size:16px;
-
     color:#16375f;
 }
 
@@ -563,21 +380,16 @@ nav a:hover{
 ======================================== */
 
 .contacto{
-
     padding:80px 20px;
-
     text-align:center;
-
     color:white;
 
     background:
-
     radial-gradient(
         circle at center,
         rgba(0,140,255,0.20),
         transparent 45%
     ),
-
     linear-gradient(
         135deg,
         #031a3d,
@@ -585,26 +397,61 @@ nav a:hover{
     );
 }
 
-
 .contacto h2{
-
     font-size:40px;
-
     margin-bottom:20px;
 }
 
-
 .contacto p{
-
     max-width:720px;
-
     margin:0 auto 30px;
-
     color:#d4e4f8;
-
     font-size:18px;
-
     line-height:1.7;
+}
+
+
+/* ========================================
+   REDES SOCIALES
+======================================== */
+
+.redes{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.red-social{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    min-width:125px;
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.30);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.red-social:hover{
+    background:white;
+    color:#063f82;
+    transform:translateY(-3px);
 }
 
 
@@ -613,14 +460,276 @@ nav a:hover{
 ======================================== */
 
 footer{
-
     background:#021329;
-
     color:#cbd5e1;
+    text-align:center;
+    padding:28px 15px;
+    font-size:14px;
+}
+
+
+/* ========================================
+   BOTÓN FLOTANTE WHATSAPP
+======================================== */
+
+.whatsapp-flotante{
+    position:fixed;
+    right:24px;
+    bottom:92px;
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#25D366;
+    color:white;
+
+    font-size:28px;
+    text-decoration:none;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+    z-index:4999;
+
+    transition:.3s;
+}
+
+.whatsapp-flotante:hover{
+    transform:scale(1.10);
+}
+
+
+/* ========================================
+   CHAT FLOTANTE ASINEC IA
+======================================== */
+
+.chat-boton{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+
+    border:none;
+
+    background:linear-gradient(135deg,#087cff,#053d86);
+
+    color:white;
+
+    padding:15px 21px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+    font-size:14px;
+
+    cursor:pointer;
+
+    z-index:5000;
+
+    box-shadow:
+    0 12px 30px rgba(0,77,170,.35);
+
+    transition:.3s;
+}
+
+.chat-boton:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+
+.chat-contenedor{
+    position:fixed;
+
+    right:24px;
+    bottom:24px;
+
+    width:390px;
+    max-width:calc(100vw - 30px);
+
+    height:580px;
+    max-height:calc(100vh - 50px);
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    display:none;
+    flex-direction:column;
+
+    z-index:6000;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.28);
+}
+
+
+.chat-cabecera{
+    padding:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #031a3d,
+        #087cff
+    );
+}
+
+.chat-identidad{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.chat-avatar{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+    border-radius:50%;
+    background:white;
+    padding:3px;
+}
+
+.chat-cabecera strong{
+    display:block;
+    font-size:17px;
+}
+
+.chat-cabecera small{
+    display:block;
+    margin-top:3px;
+    color:#d9eaff;
+}
+
+.chat-cerrar{
+    border:none;
+    background:transparent;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+}
+
+
+.chat-mensajes{
+    flex:1;
+    overflow-y:auto;
+
+    padding:18px;
+
+    background:#f4f8fd;
+}
+
+
+.mensaje{
+    max-width:85%;
+
+    padding:12px 14px;
+
+    margin-bottom:12px;
+
+    border-radius:15px;
+
+    line-height:1.5;
+
+    font-size:14px;
+
+    white-space:pre-line;
+}
+
+.ia-mensaje{
+    background:white;
+
+    color:#173b64;
+
+    border:1px solid #e1e8f0;
+
+    border-bottom-left-radius:4px;
+}
+
+.usuario-mensaje{
+    background:#087cff;
+
+    color:white;
+
+    margin-left:auto;
+
+    border-bottom-right-radius:4px;
+}
+
+
+.escribiendo{
+    display:none;
+
+    padding:8px 18px;
+
+    color:#64748b;
+
+    background:#f4f8fd;
+
+    font-size:12px;
+}
+
+
+.chat-input{
+    display:flex;
+
+    background:white;
+
+    border-top:1px solid #e2e8f0;
+}
+
+.chat-input input{
+    flex:1;
+
+    padding:17px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:14px;
+}
+
+.chat-input button{
+    width:60px;
+
+    border:none;
+
+    background:#087cff;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+
+.boton-asesor{
+    display:none;
+
+    padding:14px;
 
     text-align:center;
 
-    padding:28px 15px;
+    text-decoration:none;
+
+    color:white;
+
+    background:#25D366;
+
+    font-weight:bold;
 
     font-size:14px;
 }
@@ -633,79 +742,52 @@ footer{
 @media(max-width:950px){
 
     header{
-
         justify-content:center;
     }
 
-
     .logo{
-
         width:200px;
     }
 
-
     nav{
-
         display:none;
     }
 
-
     .hero{
-
         flex-direction:column;
-
         text-align:center;
-
         padding:60px 7%;
     }
 
-
     .hero-texto{
-
         width:100%;
     }
 
-
     .hero h1{
-
         font-size:40px;
     }
 
-
     .botones{
-
         justify-content:center;
     }
 
-
     .hero-robot{
-
         width:280px;
-
         max-width:80%;
     }
 
-
     .grid{
-
         grid-template-columns:repeat(2,1fr);
     }
 
-
     .ia-contenido{
-
         flex-direction:column;
-
         text-align:center;
-
         gap:40px;
     }
 
-
     .ia-robot{
-
         width:270px;
-
         max-width:80%;
     }
 
@@ -715,60 +797,60 @@ footer{
 @media(max-width:650px){
 
     .logo{
-
         width:175px;
     }
 
-
     .hero h1{
-
         font-size:33px;
     }
 
-
     .hero p{
-
         font-size:16px;
     }
 
-
     .grid{
-
         grid-template-columns:1fr;
     }
 
-
     .card{
-
         min-height:360px;
     }
 
-
     .card img{
-
         width:180px;
-
         height:180px;
     }
 
-
     .titulo h2{
-
         font-size:32px;
     }
 
-
     .ia-texto h2{
-
         font-size:34px;
     }
 
-
     .contacto h2{
-
         font-size:32px;
     }
 
+    .chat-contenedor{
+        right:10px;
+        bottom:10px;
+
+        width:calc(100vw - 20px);
+
+        height:78vh;
+    }
+
+    .chat-boton{
+        right:15px;
+        bottom:18px;
+    }
+
+    .whatsapp-flotante{
+        right:15px;
+        bottom:82px;
+    }
 }
 
 </style>
@@ -792,21 +874,13 @@ alt="Grupo ASINEC">
 
 <nav>
 
-<a href="#inicio">
-Inicio
-</a>
+<a href="#inicio">Inicio</a>
 
-<a href="#servicios">
-Servicios
-</a>
+<a href="#servicios">Servicios</a>
 
-<a href="#asistente">
-Asistente IA
-</a>
+<a href="#asistente">Asistente IA</a>
 
-<a href="#contacto">
-Contacto
-</a>
+<a href="#contacto">Contacto</a>
 
 </nav>
 
@@ -853,7 +927,6 @@ de calidad, seguridad y confianza.
 
 <div class="botones">
 
-
 <a
 href="#servicios"
 class="boton">
@@ -863,14 +936,13 @@ Conoce nuestros servicios
 </a>
 
 
-<a
-href="#asistente"
-class="boton boton-secundario">
+<button
+class="boton boton-secundario"
+onclick="abrirChat()">
 
 Habla con ASINEC IA
 
-</a>
-
+</button>
 
 </div>
 
@@ -917,9 +989,7 @@ y los sistemas de gestión de tu organización.
 </div>
 
 
-
 <div class="grid">
-
 
 
 <!-- ISO 9001 -->
@@ -944,7 +1014,6 @@ optimización de procesos y mejora continua.
 </div>
 
 
-
 <!-- ISO 18788 -->
 
 <div class="card">
@@ -965,7 +1034,6 @@ de seguridad privada y control operacional.
 </p>
 
 </div>
-
 
 
 <!-- ISO 45001 -->
@@ -990,7 +1058,6 @@ para prevenir riesgos laborales.
 </div>
 
 
-
 <!-- ISO 27001 -->
 
 <div class="card">
@@ -1011,7 +1078,6 @@ y protección de los activos empresariales.
 </p>
 
 </div>
-
 
 
 <!-- LOPDP -->
@@ -1035,7 +1101,6 @@ Personales del Ecuador.
 </p>
 
 </div>
-
 
 
 <!-- BASC -->
@@ -1100,46 +1165,38 @@ ASINEC IA
 
 <p>
 
-Nuestro asistente inteligente estará disponible
-para orientar a empresas y usuarios sobre normas ISO,
-sistemas de gestión, seguridad, protección de datos
-y los servicios ofrecidos por Grupo ASINEC.
+Nuestro asistente inteligente puede orientarte sobre
+normas ISO, sistemas de gestión, seguridad,
+protección de datos y los servicios de Grupo ASINEC.
+
+Si tu consulta requiere atención personalizada,
+podrás comunicarte directamente con un asesor.
 
 </p>
 
 
 <div class="ia-lista">
 
-<div>
-✓ Consultas sobre normas ISO
-</div>
+<div>✓ Consultas sobre normas ISO</div>
 
-<div>
-✓ Diagnóstico inicial de tu empresa
-</div>
+<div>✓ Diagnóstico inicial de tu empresa</div>
 
-<div>
-✓ Orientación sobre documentación
-</div>
+<div>✓ Orientación sobre documentación</div>
 
-<div>
-✓ Información sobre nuestros servicios
-</div>
+<div>✓ Información sobre nuestros servicios</div>
 
-<div>
-✓ Asistencia inteligente 24/7
-</div>
+<div>✓ Derivación directa a un asesor</div>
 
 </div>
 
 
-<a
-href="#contacto"
-class="boton">
+<button
+class="boton"
+onclick="abrirChat()">
 
 Quiero hablar con ASINEC IA
 
-</a>
+</button>
 
 
 </div>
@@ -1175,12 +1232,53 @@ y sistemas de gestión.
 
 
 <a
-href="#"
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20necesito%20asesoría."
+target="_blank"
+rel="noopener"
 class="boton">
 
-Contactar a Grupo ASINEC
+Contactar por WhatsApp
 
 </a>
+
+
+<div class="redes">
+
+<!-- CAMBIA ESTAS 3 DIRECCIONES CUANDO TENGAS TUS LINKS REALES -->
+
+<a
+href="https://www.facebook.com/TU_PAGINA"
+target="_blank"
+rel="noopener"
+class="red-social">
+
+Facebook
+
+</a>
+
+
+<a
+href="https://www.instagram.com/TU_USUARIO"
+target="_blank"
+rel="noopener"
+class="red-social">
+
+Instagram
+
+</a>
+
+
+<a
+href="https://www.tiktok.com/@TU_USUARIO"
+target="_blank"
+rel="noopener"
+class="red-social">
+
+TikTok
+
+</a>
+
+</div>
 
 
 </section>
@@ -1196,65 +1294,705 @@ Contactar a Grupo ASINEC
 © 2026 Grupo ASINEC · Gestión empresarial · Cumplimiento · Mejora continua
 
 </footer>
-<!-- ASINEC IA - CHAT FLOTANTE -->
 
-<button id="abrir-chat" class="chat-boton">
-    💬 ASINEC IA
+
+
+<!-- ======================================
+     WHATSAPP FLOTANTE
+======================================= -->
+
+<a
+href="https://wa.me/593992487177?text=Hola%20Grupo%20ASINEC,%20necesito%20información."
+target="_blank"
+rel="noopener"
+class="whatsapp-flotante"
+title="Hablar por WhatsApp">
+
+☎
+
+</a>
+
+
+
+<!-- ======================================
+     BOTÓN FLOTANTE ASINEC IA
+======================================= -->
+
+<button
+id="abrir-chat"
+class="chat-boton"
+onclick="abrirChat()">
+
+💬 ASINEC IA
+
 </button>
 
-<div id="chat-asinec" class="chat-contenedor">
 
-    <div class="chat-cabecera">
-        <div>
-            <strong>ASINEC IA</strong>
-            <small>Asistente inteligente</small>
-        </div>
 
-        <button onclick="cerrarChat()">✕</button>
-    </div>
+<!-- ======================================
+     VENTANA DEL CHAT
+======================================= -->
 
-    <div id="mensajes" class="chat-mensajes">
+<div
+id="chat-asinec"
+class="chat-contenedor">
 
-        <div class="mensaje ia-mensaje">
-            ¡Hola! 👋 Soy ASINEC IA.
 
-            Puedo orientarte sobre ISO 9001, ISO 18788,
-            ISO 45001, ISO 27001, LOPDP, BASC y nuestros
-            servicios.
+<div class="chat-cabecera">
 
-            ¿En qué puedo ayudarte?
-        </div>
 
-    </div>
+<div class="chat-identidad">
 
-    <div id="escribiendo" class="escribiendo">
-        ASINEC IA está escribiendo...
-    </div>
+<img
+src="./ASISTENTE.png"
+class="chat-avatar"
+alt="ASINEC IA">
 
-    <div class="chat-input">
 
-        <input
-            id="pregunta"
-            type="text"
-            placeholder="Escribe tu consulta..."
-        >
+<div>
 
-        <button onclick="enviarPregunta()">
-            ➤
-        </button>
+<strong>
+ASINEC IA
+</strong>
 
-    </div>
-
-    <a
-        id="boton-asesor"
-        class="boton-asesor"
-        href="https://wa.me/593XXXXXXXXX"
-        target="_blank"
-    >
-        🟢 Hablar con un asesor
-    </a>
+<small>
+Asistente inteligente
+</small>
 
 </div>
+
+</div>
+
+
+<button
+class="chat-cerrar"
+onclick="cerrarChat()">
+
+✕
+
+</button>
+
+
+</div>
+
+
+
+<div
+id="mensajes"
+class="chat-mensajes">
+
+
+<div class="mensaje ia-mensaje">
+
+¡Hola! 👋 Soy ASINEC IA.
+
+Puedo orientarte sobre ISO 9001, ISO 18788,
+ISO 45001, ISO 27001, LOPDP, BASC
+y los servicios de Grupo ASINEC.
+
+¿En qué puedo ayudarte?
+
+</div>
+
+
+</div>
+
+
+
+<div
+id="escribiendo"
+class="escribiendo">
+
+ASINEC IA está escribiendo...
+
+</div>
+
+
+
+<div class="chat-input">
+
+<input
+id="pregunta"
+type="text"
+placeholder="Escribe tu consulta..."
+autocomplete="off">
+
+<button
+onclick="enviarPregunta()"
+aria-label="Enviar">
+
+➤
+
+</button>
+
+</div>
+
+
+
+<a
+id="boton-asesor"
+class="boton-asesor"
+href="https://wa.me/593992487177?text=Hola,%20ASINEC%20IA%20me%20indicó%20que%20necesito%20hablar%20con%20un%20asesor."
+target="_blank"
+rel="noopener">
+
+🟢 Hablar con un asesor por WhatsApp
+
+</a>
+
+
+</div>
+
+
+
+<script>
+
+/* ========================================
+   CONFIGURACIÓN
+======================================== */
+
+/*
+IMPORTANTE:
+
+Cuando tengas un backend real para la IA,
+cambia esta línea.
+
+Ejemplo:
+
+const BACKEND_URL =
+"https://tu-servidor.com/chat";
+
+Por ahora déjala vacía.
+
+Mientras esté vacía,
+ASINEC IA responderá con la información
+básica incluida en esta misma página.
+*/
+
+const BACKEND_URL = "";
+
+
+/* ========================================
+   ELEMENTOS DEL CHAT
+======================================== */
+
+const chat =
+document.getElementById("chat-asinec");
+
+const botonFlotante =
+document.getElementById("abrir-chat");
+
+const mensajes =
+document.getElementById("mensajes");
+
+const input =
+document.getElementById("pregunta");
+
+const escribiendo =
+document.getElementById("escribiendo");
+
+const botonAsesor =
+document.getElementById("boton-asesor");
+
+
+/* ========================================
+   ABRIR / CERRAR CHAT
+======================================== */
+
+function abrirChat(){
+
+    chat.style.display = "flex";
+
+    botonFlotante.style.display = "none";
+
+    setTimeout(() => {
+        input.focus();
+    },200);
+
+}
+
+
+function cerrarChat(){
+
+    chat.style.display = "none";
+
+    botonFlotante.style.display = "block";
+
+}
+
+
+/* ========================================
+   ENTER PARA ENVIAR
+======================================== */
+
+input.addEventListener(
+"keydown",
+function(event){
+
+    if(event.key === "Enter"){
+
+        event.preventDefault();
+
+        enviarPregunta();
+
+    }
+
+});
+
+
+/* ========================================
+   AGREGAR MENSAJE
+======================================== */
+
+function agregarMensaje(texto,tipo){
+
+    const mensaje =
+    document.createElement("div");
+
+    mensaje.classList.add(
+        "mensaje",
+        tipo
+    );
+
+    mensaje.textContent = texto;
+
+    mensajes.appendChild(mensaje);
+
+    mensajes.scrollTop =
+    mensajes.scrollHeight;
+
+}
+
+
+/* ========================================
+   NORMALIZAR TEXTO
+======================================== */
+
+function normalizar(texto){
+
+    return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"");
+
+}
+
+
+/* ========================================
+   DETECTAR SI NECESITA ASESOR
+======================================== */
+
+function necesitaAsesor(pregunta){
+
+    const texto =
+    normalizar(pregunta);
+
+    const palabras = [
+
+        "asesor",
+        "persona",
+        "humano",
+        "hablar con alguien",
+        "cotizacion",
+        "cotizar",
+        "precio",
+        "cuanto cuesta",
+        "costo",
+        "contratar",
+        "contratacion",
+        "whatsapp",
+        "telefono",
+        "llamar",
+        "llamenme",
+        "contactarme",
+        "reunion",
+        "visita",
+        "propuesta comercial"
+
+    ];
+
+    return palabras.some(
+        palabra =>
+        texto.includes(palabra)
+    );
+
+}
+
+
+/* ========================================
+   RESPUESTAS LOCALES
+   (FUNCIONAN SIN BACKEND)
+======================================== */
+
+function respuestaLocal(pregunta){
+
+    const texto =
+    normalizar(pregunta);
+
+
+    if(
+        texto.includes("hola") ||
+        texto.includes("buenos dias") ||
+        texto.includes("buenas tardes") ||
+        texto.includes("buenas noches")
+    ){
+
+        return {
+            respuesta:
+            "¡Hola! 👋 Soy ASINEC IA. Puedo orientarte sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP, BASC y los servicios de Grupo ASINEC. ¿Qué necesitas conocer?",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("iso 9001") ||
+        texto.includes("9001")
+    ){
+
+        return {
+            respuesta:
+            "ISO 9001 está relacionada con la gestión de la calidad, la optimización de procesos y la mejora continua. Grupo ASINEC puede orientarte en implementación, auditoría, capacitación y fortalecimiento del sistema de gestión.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("18788")
+    ){
+
+        return {
+            respuesta:
+            "ISO 18788 está orientada a la gestión de operaciones de seguridad privada y al control operacional. Grupo ASINEC puede ayudarte con orientación, implementación y fortalecimiento del sistema.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("45001")
+    ){
+
+        return {
+            respuesta:
+            "ISO 45001 se enfoca en la seguridad y salud en el trabajo, ayudando a prevenir riesgos laborales y fortalecer la gestión de ambientes de trabajo seguros.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("27001")
+    ){
+
+        return {
+            respuesta:
+            "ISO 27001 está enfocada en la gestión de la seguridad de la información y la protección de los activos de información de una organización.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("lopdp") ||
+        texto.includes("proteccion de datos") ||
+        texto.includes("datos personales")
+    ){
+
+        return {
+            respuesta:
+            "Grupo ASINEC brinda orientación para el cumplimiento de la Ley Orgánica de Protección de Datos Personales. Para analizar un caso específico o necesidades legales concretas, puedo ponerte en contacto con un asesor.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("basc")
+    ){
+
+        return {
+            respuesta:
+            "BASC está relacionado con la gestión de control y seguridad para organizaciones y cadenas logísticas. Grupo ASINEC puede orientarte sobre este tipo de sistemas de gestión.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("auditoria") ||
+        texto.includes("auditar")
+    ){
+
+        return {
+            respuesta:
+            "Grupo ASINEC ofrece servicios relacionados con auditoría de sistemas de gestión. Para definir el alcance de una auditoría en tu organización, lo mejor es conocer primero tu actividad, tamaño y norma de interés.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("capacitacion") ||
+        texto.includes("curso") ||
+        texto.includes("formacion")
+    ){
+
+        return {
+            respuesta:
+            "Grupo ASINEC brinda capacitación relacionada con sistemas de gestión y cumplimiento. Si me indicas la norma o tema que te interesa, puedo orientarte mejor.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("implementacion") ||
+        texto.includes("implementar")
+    ){
+
+        return {
+            respuesta:
+            "Podemos orientarte en procesos de implementación de sistemas de gestión. Para determinar cuál aplica mejor a tu organización necesitamos conocer la actividad de tu empresa y el objetivo que deseas alcanzar.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("servicio") ||
+        texto.includes("servicios")
+    ){
+
+        return {
+            respuesta:
+            "Grupo ASINEC trabaja en implementación, auditoría, capacitación, consultoría, cumplimiento normativo y fortalecimiento de sistemas de gestión. También orientamos sobre ISO 9001, ISO 18788, ISO 45001, ISO 27001, LOPDP y BASC.",
+            transferir:false
+        };
+
+    }
+
+
+    if(
+        texto.includes("empresa") &&
+        (
+            texto.includes("que necesito") ||
+            texto.includes("cual norma") ||
+            texto.includes("que norma")
+        )
+    ){
+
+        return {
+            respuesta:
+            "Puedo ayudarte a realizar una orientación inicial. Cuéntame qué actividad realiza tu empresa y qué deseas mejorar: calidad, seguridad privada, seguridad laboral, seguridad de información, protección de datos o seguridad logística.",
+            transferir:false
+        };
+
+    }
+
+
+    return {
+        respuesta:
+        "No tengo suficiente información para responder esa consulta con seguridad. Para evitar darte información incorrecta, te recomiendo hablar directamente con un asesor de Grupo ASINEC.",
+        transferir:true
+    };
+
+}
+
+
+/* ========================================
+   ENVIAR PREGUNTA
+======================================== */
+
+async function enviarPregunta(){
+
+    const pregunta =
+    input.value.trim();
+
+
+    if(!pregunta){
+        return;
+    }
+
+
+    agregarMensaje(
+        pregunta,
+        "usuario-mensaje"
+    );
+
+
+    input.value = "";
+
+    botonAsesor.style.display =
+    "none";
+
+
+    escribiendo.style.display =
+    "block";
+
+
+    mensajes.scrollTop =
+    mensajes.scrollHeight;
+
+
+    /*
+    Si el cliente ya pide cotización,
+    precio, asesor, llamada, etc.,
+    no hace falta consultar la IA.
+    */
+
+    if(necesitaAsesor(pregunta)){
+
+        setTimeout(() => {
+
+            escribiendo.style.display =
+            "none";
+
+            agregarMensaje(
+                "Claro. Para ayudarte personalmente, puedes comunicarte directamente con un asesor de Grupo ASINEC mediante el botón de WhatsApp que aparece aquí abajo.",
+                "ia-mensaje"
+            );
+
+            botonAsesor.style.display =
+            "block";
+
+            mensajes.scrollTop =
+            mensajes.scrollHeight;
+
+        },600);
+
+        return;
+
+    }
+
+
+    /*
+    SI EXISTE BACKEND REAL,
+    SE CONSULTA PRIMERO.
+    */
+
+    if(BACKEND_URL){
+
+        try{
+
+            const respuestaServidor =
+            await fetch(
+                BACKEND_URL,
+                {
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":
+                        "application/json"
+                    },
+
+                    body:JSON.stringify({
+                        mensaje:pregunta
+                    })
+                }
+            );
+
+
+            if(!respuestaServidor.ok){
+
+                throw new Error(
+                    "Error del servidor"
+                );
+
+            }
+
+
+            const datos =
+            await respuestaServidor.json();
+
+
+            escribiendo.style.display =
+            "none";
+
+
+            agregarMensaje(
+                datos.respuesta ||
+                "No pude procesar la consulta.",
+                "ia-mensaje"
+            );
+
+
+            if(datos.transferirAsesor){
+
+                botonAsesor.style.display =
+                "block";
+
+            }
+
+
+            return;
+
+        }
+        catch(error){
+
+            console.error(
+                "Error ASINEC IA:",
+                error
+            );
+
+            /*
+            Si falla el backend,
+            utiliza la respuesta local.
+            */
+
+        }
+
+    }
+
+
+    /*
+    RESPUESTA LOCAL PARA LA PRÁCTICA.
+    */
+
+    setTimeout(() => {
+
+        const resultado =
+        respuestaLocal(pregunta);
+
+
+        escribiendo.style.display =
+        "none";
+
+
+        agregarMensaje(
+            resultado.respuesta,
+            "ia-mensaje"
+        );
+
+
+        if(resultado.transferir){
+
+            botonAsesor.style.display =
+            "block";
+
+        }
+
+
+        mensajes.scrollTop =
+        mensajes.scrollHeight;
+
+    },700);
+
+}
+
+</script>
+
 
 </body>
 
